@@ -1,3 +1,0 @@
-2023-06-14 17:34:36.500 | INFO     | httprunner.runner:test_start:450 - Start to run testcase: 门户首页查询已删除的标识, TestCase ID: 807e36f5-e251-4771-a638-607ea7299e58
-2023-06-14 17:34:36.501 | INFO     | httprunner.runner:__run_step:292 - run step begin: 企业申请托管并审核通过 >>>>>>
-2023-06-14 17:34:36.758 | INFO     | httprunner.runner:__run_step:292 - run step begin: 企业注册并前缀审核通过 >>>>>>
