@@ -1,0 +1,67 @@
+# 标识业务数据更新
+config:
+    name: 标识业务数据更新
+    base_url: ${ENV(HOST)}
+    verify: false
+    variables:
+        account: ${ENV(adminaccount)}
+        password: ${ENV(adminpassword)}
+        session: ${get_session($account, $password)}
+        id: 34
+        useRecursion: null
+        appDesc: sdad
+        appName: dasdasssss
+        appRdunit: 'aaaaaaaaaaaaaaaa'
+        appType: 1
+        appUserCount: '7777'
+        entId: 230
+        orgName: ada
+        prefix: 88.502.696
+teststeps:
+-   name: 标识业务数据更新
+    request:
+        cookies:
+            SESSION: $session
+        headers:
+            Accept: application/json, text/plain, */*
+            Accept-Encoding: gzip, deflate
+            Accept-Language: zh-CN,zh;q=0.9
+            Connection: keep-alive
+            Content-Length: '168'
+            Content-Type: application/json;charset=UTF-8
+#            Cookie: SESSION=NDg2YzBlZjctYTdkYy00M2I0LWJhNGUtNDNiZDk2Y2U2ZjI3
+#            Host: 139.198.115.70:8000
+#            Origin: http://139.198.115.70:8000
+#            Referer: http://139.198.115.70:8000/snms/ui/bussInfo
+            User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36
+            X-HTTP-Method-Override: put
+        json:
+            appDesc: $appDesc
+            appName: $appName
+            appRdunit: $appRdunit
+            appType: $appType
+            appUserCount: $appUserCount
+            entId: $entId
+            orgName: $orgName
+            prefix: $prefix
+            id: $id
+            useRecursion: $useRecursion
+        method: POST
+        url: /api/v3/entBussInfo
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json
+    -   eq:
+        - body.message
+        - success
+    -   eq:
+        - body.status
+        - 1
+    -   eq:
+        - body.data
+        - true

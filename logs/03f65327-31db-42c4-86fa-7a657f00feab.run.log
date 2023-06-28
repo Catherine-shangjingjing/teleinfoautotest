@@ -1,0 +1,6 @@
+2023-06-13 15:54:52.941 | INFO     | httprunner.runner:test_start:450 - Start to run testcase: 企业注册信息暂存用例集2, TestCase ID: 03f65327-31db-42c4-86fa-7a657f00feab
+2023-06-13 15:56:07.947 | ERROR    | httprunner.parser:parse_string:342 - call function error:
+func_name: get_session
+args: ['entaccount', 'entpassword']
+kwargs: {}
+ConnectTimeout: HTTPConnectionPool(host='139.198.115.70', port=8000): Max retries exceeded with url: /api/home/test/login (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x1040de9b0>, 'Connection to 139.198.115.70 timed out. (connect timeout=None)'))

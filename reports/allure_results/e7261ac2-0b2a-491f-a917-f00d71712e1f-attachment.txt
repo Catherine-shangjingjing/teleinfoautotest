@@ -1,0 +1,1965 @@
+[32m2023-06-25 18:42:44.053[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m450[0m - [1mStart to run testcase: 前缀分配用例集-40,41, TestCase ID: 2c42e7a6-6147-415c-883f-10ec946ca004[0m
+[32m2023-06-25 18:42:44.053[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 用户注册 >>>>>>[0m
+[32m2023-06-25 18:42:44.054[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 用户注册 >>>>>>[0m
+[32m2023-06-25 18:42:44.163[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 127.0.0.1, Port: 56214[0m
+[32m2023-06-25 18:42:44.163[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 127.0.0.1, Port: 8888[0m
+[32m2023-06-25 18:42:44.164[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/home/test/registry
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "HRUN-Request-ID": "HRUN-2c42e7a6-6147-415c-883f-10ec946ca004-764054",
+    "Content-Length": "187",
+    "Content-Type": "application/json"
+}
+cookies  : {}
+body     : {
+    "email": "FKNFCD9dkbVKLk77@qaqseq.com",
+    "mobile": "16404704039",
+    "openId": "",
+    "openUserName": "",
+    "password": "Admin@123",
+    "remarks": "",
+    "username": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL"
+}
+[0m
+[32m2023-06-25 18:42:44.164[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:42:44 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": true
+}
+[0m
+[32m2023-06-25 18:42:44.164[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m217[0m - [1mstatus_code: 200, response_time(ms): 109.15 ms, response_length: 0 bytes[0m
+[32m2023-06-25 18:42:44.164[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2023-06-25 18:42:44.164[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.message equal success(str)	==> pass[0m
+[32m2023-06-25 18:42:44.164[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.status equal 1(int)	==> pass[0m
+[32m2023-06-25 18:42:44.164[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.message contains success(str)	==> pass[0m
+[32m2023-06-25 18:42:44.164[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.status contained_by [1, 200](list)	==> pass[0m
+[32m2023-06-25 18:42:44.164[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 用户注册 <<<<<<
+[0m
+[32m2023-06-25 18:42:44.164[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 用户注册 <<<<<<
+[0m
+[32m2023-06-25 18:42:44.165[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 登录-企业 >>>>>>[0m
+[32m2023-06-25 18:42:44.165[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 登录-企业用户 >>>>>>[0m
+[32m2023-06-25 18:42:44.516[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 127.0.0.1, Port: 56214[0m
+[32m2023-06-25 18:42:44.516[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 127.0.0.1, Port: 8888[0m
+[32m2023-06-25 18:42:44.517[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/home/test/login
+headers  : {
+    "User-Agent": "python-requests/2.28.1",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Content-Length": "170",
+    "Content-Type": "application/json",
+    "HRUN-Request-ID": "HRUN-2c42e7a6-6147-415c-883f-10ec946ca004-764165"
+}
+cookies  : {}
+body     : {
+    "captcha": "0000",
+    "captchaSign": "0bde58dd4bb15d3e9cbe12efd813333c90bdb4043315c5ac2f6dfd763abc4b3d",
+    "emailCaptcha": "",
+    "username": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL"
+}
+[0m
+[32m2023-06-25 18:42:44.518[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:42:44 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Set-Cookie": "SESSION=NTYzZWVmNWYtMjRlMS00OGJhLWI1ZWEtNzg3OWNlNzRkZjVl; Path=/; HttpOnly; SameSite=Lax",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {
+    "SESSION": "NTYzZWVmNWYtMjRlMS00OGJhLWI1ZWEtNzg3OWNlNzRkZjVl"
+}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": true
+}
+[0m
+[32m2023-06-25 18:42:44.518[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m217[0m - [1mstatus_code: 200, response_time(ms): 350.7 ms, response_length: 0 bytes[0m
+[32m2023-06-25 18:42:44.519[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mextract[0m:[36m179[0m - [1mextract mapping: {'entSession': 'response.headers."Set-Cookie".session'}[0m
+[32m2023-06-25 18:42:44.519[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2023-06-25 18:42:44.519[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2023-06-25 18:42:44.520[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.message equal success(str)	==> pass[0m
+[32m2023-06-25 18:42:44.520[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.status equal 1(int)	==> pass[0m
+[32m2023-06-25 18:42:44.520[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.data equal True(bool)	==> pass[0m
+[32m2023-06-25 18:42:44.520[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 登录-企业用户 <<<<<<
+[0m
+[32m2023-06-25 18:42:44.520[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step_testcase[0m:[36m286[0m - [1mexport variables: {'entSession': 'response.headers."Set-Cookie".session'}[0m
+[32m2023-06-25 18:42:44.520[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 登录-企业 <<<<<<
+[0m
+[32m2023-06-25 18:42:44.520[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 前缀注册企业资质图片上传 >>>>>>[0m
+[32m2023-06-25 18:42:44.521[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 前缀注册企业资质图片上传 >>>>>>[0m
+[32m2023-06-25 18:42:44.625[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 127.0.0.1, Port: 56214[0m
+[32m2023-06-25 18:42:44.625[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 127.0.0.1, Port: 8888[0m
+[32m2023-06-25 18:42:44.626[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/file/img/upload
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Type": "multipart/form-data; boundary=cc9b6ccfd2cf474ba6968bd951607188",
+    "HRUN-Request-ID": "HRUN-2c42e7a6-6147-415c-883f-10ec946ca004-764522",
+    "Cookie": "SESSION=NTYzZWVmNWYtMjRlMS00OGJhLWI1ZWEtNzg3OWNlNzRkZjVl; SESSION=response.headers.\"Set-Cookie\".session",
+    "Content-Length": "20435"
+}
+cookies  : {
+    "SESSION": "NTYzZWVmNWYtMjRlMS00OGJhLWI1ZWEtNzg3OWNlNzRkZjVl"
+}
+body     : upload file stream (OMITTED)
+[0m
+[32m2023-06-25 18:42:44.627[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:42:44 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": {
+        "id": 2800,
+        "path": "f7deb199-d584-44e0-b3a1-62336302c4f3.jpeg"
+    }
+}
+[0m
+[32m2023-06-25 18:42:44.627[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m217[0m - [1mstatus_code: 200, response_time(ms): 102.85 ms, response_length: 0 bytes[0m
+[32m2023-06-25 18:42:44.627[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mextract[0m:[36m179[0m - [1mextract mapping: {'imgId': 2800}[0m
+[32m2023-06-25 18:42:44.628[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2023-06-25 18:42:44.628[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 前缀注册企业资质图片上传 <<<<<<
+[0m
+[32m2023-06-25 18:42:44.628[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step_testcase[0m:[36m286[0m - [1mexport variables: {'imgId': 2800}[0m
+[32m2023-06-25 18:42:44.629[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 前缀注册企业资质图片上传 <<<<<<
+[0m
+[32m2023-06-25 18:42:44.629[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 前缀注册企业联系人身份证图片正面上传 >>>>>>[0m
+[32m2023-06-25 18:42:44.629[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 前缀注册企业联系人身份证图片背面上传 >>>>>>[0m
+[32m2023-06-25 18:42:44.765[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 127.0.0.1, Port: 56214[0m
+[32m2023-06-25 18:42:44.766[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 127.0.0.1, Port: 8888[0m
+[32m2023-06-25 18:42:44.766[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/file/img/upload
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Type": "multipart/form-data; boundary=1a2688d3f79a4d8185812d0c6422f065",
+    "HRUN-Request-ID": "HRUN-2c42e7a6-6147-415c-883f-10ec946ca004-764630",
+    "Cookie": "SESSION=NTYzZWVmNWYtMjRlMS00OGJhLWI1ZWEtNzg3OWNlNzRkZjVl; SESSION=response.headers.\"Set-Cookie\".session",
+    "Content-Length": "20435"
+}
+cookies  : {
+    "SESSION": "NTYzZWVmNWYtMjRlMS00OGJhLWI1ZWEtNzg3OWNlNzRkZjVl"
+}
+body     : upload file stream (OMITTED)
+[0m
+[32m2023-06-25 18:42:44.767[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:42:44 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": {
+        "id": 2801,
+        "path": "7fe41f0e-4bfd-4219-83c6-4220fe5c81bb.jpeg"
+    }
+}
+[0m
+[32m2023-06-25 18:42:44.768[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m217[0m - [1mstatus_code: 200, response_time(ms): 135.71 ms, response_length: 0 bytes[0m
+[32m2023-06-25 18:42:44.768[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mextract[0m:[36m179[0m - [1mextract mapping: {'imgId_f': 2801}[0m
+[32m2023-06-25 18:42:44.768[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2023-06-25 18:42:44.768[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 前缀注册企业联系人身份证图片背面上传 <<<<<<
+[0m
+[32m2023-06-25 18:42:44.769[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step_testcase[0m:[36m286[0m - [1mexport variables: {'imgId_f': 2801}[0m
+[32m2023-06-25 18:42:44.769[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 前缀注册企业联系人身份证图片正面上传 <<<<<<
+[0m
+[32m2023-06-25 18:42:44.769[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 前缀注册企业联系人身份证图片背面上传 >>>>>>[0m
+[32m2023-06-25 18:42:44.770[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 前缀注册企业联系人身份证图片背面上传 >>>>>>[0m
+[32m2023-06-25 18:42:44.933[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 127.0.0.1, Port: 56214[0m
+[32m2023-06-25 18:42:44.934[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 127.0.0.1, Port: 8888[0m
+[32m2023-06-25 18:42:44.934[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/file/img/upload
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Type": "multipart/form-data; boundary=73b791f47cba46a1b3bf06676fff94ea",
+    "HRUN-Request-ID": "HRUN-2c42e7a6-6147-415c-883f-10ec946ca004-764770",
+    "Cookie": "SESSION=NTYzZWVmNWYtMjRlMS00OGJhLWI1ZWEtNzg3OWNlNzRkZjVl; SESSION=response.headers.\"Set-Cookie\".session",
+    "Content-Length": "20435"
+}
+cookies  : {
+    "SESSION": "NTYzZWVmNWYtMjRlMS00OGJhLWI1ZWEtNzg3OWNlNzRkZjVl"
+}
+body     : upload file stream (OMITTED)
+[0m
+[32m2023-06-25 18:42:44.935[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:42:45 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": {
+        "id": 2802,
+        "path": "7d663a50-529b-4628-96a7-e132df8f3430.jpeg"
+    }
+}
+[0m
+[32m2023-06-25 18:42:44.935[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m217[0m - [1mstatus_code: 200, response_time(ms): 163.11 ms, response_length: 0 bytes[0m
+[32m2023-06-25 18:42:44.936[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mextract[0m:[36m179[0m - [1mextract mapping: {'imgId_b': 2802}[0m
+[32m2023-06-25 18:42:44.936[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2023-06-25 18:42:44.936[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 前缀注册企业联系人身份证图片背面上传 <<<<<<
+[0m
+[32m2023-06-25 18:42:44.936[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step_testcase[0m:[36m286[0m - [1mexport variables: {'imgId_b': 2802}[0m
+[32m2023-06-25 18:42:44.936[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 前缀注册企业联系人身份证图片背面上传 <<<<<<
+[0m
+[32m2023-06-25 18:42:44.937[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 企业注册第一步提交信息 >>>>>>[0m
+[32m2023-06-25 18:42:44.938[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 企业注册第一步提交信息 >>>>>>[0m
+[32m2023-06-25 18:42:45.128[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 127.0.0.1, Port: 56214[0m
+[32m2023-06-25 18:42:45.128[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 127.0.0.1, Port: 8888[0m
+[32m2023-06-25 18:42:45.130[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/v3/entApply/basicInfo/submit
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Type": "application/json;charset=UTF-8",
+    "HRUN-Request-ID": "HRUN-2c42e7a6-6147-415c-883f-10ec946ca004-764938",
+    "Cookie": "SESSION=NTYzZWVmNWYtMjRlMS00OGJhLWI1ZWEtNzg3OWNlNzRkZjVl; SESSION=response.headers.\"Set-Cookie\".session",
+    "Content-Length": "2555"
+}
+cookies  : {
+    "SESSION": "NTYzZWVmNWYtMjRlMS00OGJhLWI1ZWEtNzg3OWNlNzRkZjVl"
+}
+body     : {
+    "applyStep": 2,
+    "applyType": null,
+    "area": [
+        "110000",
+        "110100",
+        "110101"
+    ],
+    "cltrid": null,
+    "contactCrtBackImgPath": null,
+    "contactCrtBackImgRid": 2802,
+    "contactCrtFrontImgPath": null,
+    "contactCrtFrontImgRid": 2801,
+    "contactCrtNo": "429599197808131634",
+    "contactCrtType": 1,
+    "contactEmail": "FKNFCD9dkbVKLk77@qaqseq.com",
+    "contactName": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL",
+    "contactPhone": "16404704039",
+    "createDate": null,
+    "dataHostingContractFilePath": null,
+    "dataHostingContractFileRid": null,
+    "dataHostingOrg": null,
+    "entGeneralId": null,
+    "entInfoLicenses": [],
+    "entInfoSerIndustrys": [],
+    "entPrefix": "88.408.8195471988",
+    "escrowId": null,
+    "escrowOrgName": null,
+    "establishDate": null,
+    "extDomain": null,
+    "extIpAddr": null,
+    "extWebName": null,
+    "finalAuditMsg": null,
+    "finalAuditStatus": null,
+    "firstAuditMsg": null,
+    "firstAuditStatus": null,
+    "id": null,
+    "idRegNaImp": null,
+    "industry": [
+        "A",
+        "01"
+    ],
+    "industryCategory": "A",
+    "industrySpecific": "01",
+    "isSubmit": 0,
+    "legalCrtBackImgContent": null,
+    "legalCrtBackImgPath": null,
+    "legalCrtBackImgRid": 2802,
+    "legalCrtFrontImgContent": null,
+    "legalCrtFrontImgPath": null,
+    "legalCrtFrontImgRid": 2801,
+    "legalCrtNo": "429599197808131634",
+    "legalCrtType": "1",
+    "legalCrtTypeDesc": "中国居民身份证",
+    "legalEmail": null,
+    "legalFax": null,
+    "legalName": "张三",
+    "legalPhone": null,
+    "orgAddr": "致真",
+    "orgAddrCity": "110100",
+    "orgAddrCityDesc": "市辖区",
+    "orgAddrCounty": "110101",
+    "orgAddrCountyDesc": "东城区",
+    "orgAddrProvince": "110000",
+    "orgAddrProvinceDesc": "北京市",
+    "orgCategorySpecificDesc": "农、林、牧、渔业-农业",
+    "orgCrtCode": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL",
+    "orgCrtImgContent": null,
+    "orgCrtImgPath": null,
+    "orgCrtImgRid": 2800,
+    "orgCrtType": "1",
+    "orgDesc": null,
+    "orgName": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL",
+    "orgNature": "1",
+    "orgNatureDesc": "国有控股",
+    "periodValidity": null,
+    "regAuthority": null,
+    "regCapital": null,
+    "regRealNaImpName": null,
+    "regRealNaImpType": null,
+    "servHostingContractFilePath": null,
+    "servHostingContractFileRid": null,
+    "servHostingOrg": null,
+    "servSysBuildContractFilePath": null,
+    "servSysBuildContractFileRid": null,
+    "servSysBuildName": null,
+    "servSysBuildType": 1,
+    "servSysOperContractFilePath": null,
+    "servSysOperContractFileRid": null,
+    "servSysOperName": null,
+    "servSysOperType": 1,
+    "svtrid": null,
+    "thirdServiceMsg": null,
+    "thirdServiceStatus": null,
+    "updateDate": null,
+    "userId": null,
+    "userName": null,
+    "website": null
+}
+[0m
+[32m2023-06-25 18:42:45.131[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:42:45 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": true
+}
+[0m
+[32m2023-06-25 18:42:45.131[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m217[0m - [1mstatus_code: 200, response_time(ms): 189.81 ms, response_length: 0 bytes[0m
+[32m2023-06-25 18:42:45.132[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2023-06-25 18:42:45.132[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.message equal success(str)	==> pass[0m
+[32m2023-06-25 18:42:45.132[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 企业注册第一步提交信息 <<<<<<
+[0m
+[32m2023-06-25 18:42:45.132[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 企业注册第一步提交信息 <<<<<<
+[0m
+[32m2023-06-25 18:42:45.132[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 企业注册查询注册信息 >>>>>>[0m
+[32m2023-06-25 18:42:45.132[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 企业注册查询注册信息 >>>>>>[0m
+[32m2023-06-25 18:42:45.227[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 127.0.0.1, Port: 56214[0m
+[32m2023-06-25 18:42:45.228[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 127.0.0.1, Port: 8888[0m
+[32m2023-06-25 18:42:45.228[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://139.198.116.76:8000/api/v3/entApply/applyOrNot
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "HRUN-Request-ID": "HRUN-2c42e7a6-6147-415c-883f-10ec946ca004-765133",
+    "Cookie": "SESSION=NTYzZWVmNWYtMjRlMS00OGJhLWI1ZWEtNzg3OWNlNzRkZjVl; SESSION=response.headers.\"Set-Cookie\".session"
+}
+cookies  : {
+    "SESSION": "NTYzZWVmNWYtMjRlMS00OGJhLWI1ZWEtNzg3OWNlNzRkZjVl"
+}
+body     : None
+[0m
+[32m2023-06-25 18:42:45.229[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:42:45 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": {
+        "nbmsEntApplyPO": {
+            "id": 1408,
+            "createDate": "2023-06-25 18:42:45",
+            "updateDate": "2023-06-25 18:42:45",
+            "applyType": null,
+            "entGeneralId": null,
+            "applyStep": 2,
+            "isSubmit": 0,
+            "entPrefix": "88.408.8195471988",
+            "firstAuditStatus": null,
+            "firstAuditMsg": null,
+            "thirdServiceStatus": null,
+            "thirdServiceMsg": null,
+            "userName": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL",
+            "finalAuditStatus": null,
+            "finalAuditMsg": null,
+            "svtrid": null,
+            "cltrid": null,
+            "userId": 1643,
+            "orgName": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL",
+            "orgNature": "1",
+            "orgAddrProvince": "110000",
+            "orgAddrCity": "110100",
+            "orgAddrCounty": "110101",
+            "orgAddr": "致真",
+            "orgCrtType": "1",
+            "orgCrtCode": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL",
+            "legalName": "张三",
+            "legalCrtType": "1",
+            "legalCrtNo": "429599197808131634",
+            "orgDesc": null,
+            "industryCategory": "A",
+            "industrySpecific": "01",
+            "contactName": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL",
+            "contactPhone": "16404704039",
+            "contactCrtType": 1,
+            "contactCrtNo": "429599197808131634",
+            "contactEmail": "FKNFCD9dkbVKLk77@qaqseq.com",
+            "website": null,
+            "regAuthority": null,
+            "regCapital": null,
+            "establishDate": null,
+            "periodValidity": null,
+            "legalEmail": null,
+            "legalPhone": null,
+            "legalFax": null,
+            "servSysBuildType": null,
+            "servSysBuildName": null,
+            "servSysOperType": null,
+            "servSysOperName": null,
+            "dataHostingOrg": null,
+            "servHostingOrg": null,
+            "regRealNaImpType": null,
+            "regRealNaImpName": null,
+            "idRegNaImp": null,
+            "extWebName": null,
+            "extDomain": null,
+            "extIpAddr": null,
+            "orgCrtImgRid": 2800,
+            "contactCrtFrontImgRid": 2801,
+            "contactCrtBackImgRid": 2802,
+            "legalCrtFrontImgRid": 2801,
+            "legalCrtBackImgRid": 2802,
+            "servSysBuildContractFileRid": null,
+            "servSysOperContractFileRid": null,
+            "dataHostingContractFileRid": null,
+            "servHostingContractFileRid": null,
+            "entInfoLicenses": [],
+            "entInfoSyss": [],
+            "entInfoSerIndustrys": [],
+            "escrowId": null,
+            "industryQualificationRid": null,
+            "certificationRid": null,
+            "openingBank": null,
+            "bankCard": null,
+            "verificationName": null,
+            "orgNatureDesc": "国有控股",
+            "orgCrtImgContent": null,
+            "orgCategorySpecificDesc": "农、林、牧、渔业-农业",
+            "orgAddrProvinceDesc": "北京市",
+            "orgAddrCountyDesc": "东城区",
+            "orgAddrCityDesc": "市辖区",
+            "legalCrtTypeDesc": "中国居民身份证",
+            "legalCrtFrontImgContent": null,
+            "legalCrtBackImgContent": null,
+            "orgCrtImgPath": "f7deb199-d584-44e0-b3a1-62336302c4f3.jpeg",
+            "contactCrtFrontImgPath": "7fe41f0e-4bfd-4219-83c6-4220fe5c81bb.jpeg",
+            "contactCrtBackImgPath": "7d663a50-529b-4628-96a7-e132df8f3430.jpeg",
+            "legalCrtFrontImgPath": "7fe41f0e-4bfd-4219-83c6-4220fe5c81bb.jpeg",
+            "legalCrtBackImgPath": "7d663a50-529b-4628-96a7-e132df8f3430.jpeg",
+            "servSysBuildContractFilePath": null,
+            "servSysOperContractFilePath": null,
+            "dataHostingContractFilePath": null,
+            "servHostingContractFilePath": null,
+            "industryQualificationFilePath": null,
+            "certificationFilePath": null,
+            "escrowOrgName": null
+        },
+        "nbmsEntPO": null,
+        "nbmsEntPrefixApplyPO": null,
+        "needRelog": null,
+        "applyStatus": 0
+    }
+}
+[0m
+[32m2023-06-25 18:42:45.230[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m217[0m - [1mstatus_code: 200, response_time(ms): 94.42 ms, response_length: 0 bytes[0m
+[32m2023-06-25 18:42:45.233[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mextract[0m:[36m179[0m - [1mextract mapping: {'applyId': 1408, 'userId': 1643, 'userName': 'oGp8wzRP8ips9kmbMUavwyB86PuNi9EL', 'imgId_f': 2801, 'imgId_b': 2802, 'entId': None, 'entUserId': None, 'prefix': '88.408.8195471988', 'contactCrtNo': '429599197808131634', 'contactCrtType': 1, 'contactEmail': 'FKNFCD9dkbVKLk77@qaqseq.com', 'contactName': 'oGp8wzRP8ips9kmbMUavwyB86PuNi9EL', 'contactPhone': '16404704039', 'industryCategory': 'A', 'industrySpecific': '01', 'orgName': 'oGp8wzRP8ips9kmbMUavwyB86PuNi9EL', 'orgNature': '1', 'orgAddrProvince': '110000', 'orgAddrCity': '110100', 'orgAddrCounty': '110101', 'orgAddr': '致真', 'orgCrtType': '1', 'orgCrtCode': 'oGp8wzRP8ips9kmbMUavwyB86PuNi9EL', 'legalName': '张三', 'legalEmail': None, 'legalPhone': None, 'legalCrtType': '1', 'legalCrtNo': '429599197808131634', 'legalCrtFrontImgRid': 2801, 'legalCrtBackImgRid': 2802, 'orgCrtImgRid': 2800, 'imgId': 2800, 'orgNatureDesc': '国有控股', 'orgCategorySpecificDesc': '农、林、牧、渔业-农业', 'orgAddrProvinceDesc': '北京市', 'orgAddrCountyDesc': '东城区', 'orgAddrCityDesc': '市辖区', 'legalCrtTypeDesc': '中国居民身份证', 'createDate': '2023-06-25 18:42:45', 'updateDate': '2023-06-25 18:42:45', 'entInfoSyss_0_id': None, 'entInfoSyss_0_entApplyId': None, 'entApplyId': None, 'entInfoSyss_0_sysType': None, 'entInfoSyss_0_deployMode': None, 'entInfoSyss_0_deployAddr': None, 'entInfoSyss_0_deployAddrProvince': None, 'entInfoSyss_0_deployAddrCity': None, 'entInfoSyss_0_deployAddrCounty': None, 'entInfoSyss_1_id': None, 'entInfoSyss_1_entApplyId': None, 'entInfoSyss_1_sysType': None, 'entInfoSyss_1_deployMode': None, 'entInfoSyss_1_deployAddr': None, 'entInfoSyss_1_deployAddrProvince': None, 'entInfoSyss_1_deployAddrCity': None, 'entInfoSyss_1_deployAddrCounty': None, 'entInfoSyss_2_id': None, 'entInfoSyss_2_entApplyId': None, 'entInfoSyss_2_sysType': None, 'entInfoSyss_2_deployMode': None, 'entInfoSyss_2_deployAddr': None, 'entInfoSyss_2_deployAddrProvince': None, 'entInfoSyss_2_deployAddrCity': None, 'entInfoSyss_2_deployAddrCounty': None, 'entInfoSyss_3_id': None, 'entInfoSyss_3_entApplyId': None, 'entInfoSyss_3_sysType': None, 'entInfoSyss_3_deployMode': None, 'entInfoSyss_3_deployAddr': None, 'entInfoSyss_3_deployAddrProvince': None, 'entInfoSyss_3_deployAddrCity': None, 'entInfoSyss_3_deployAddrCounty': None}[0m
+[32m2023-06-25 18:42:45.233[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2023-06-25 18:42:45.233[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.message equal success(str)	==> pass[0m
+[32m2023-06-25 18:42:45.233[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 企业注册查询注册信息 <<<<<<
+[0m
+[32m2023-06-25 18:42:45.233[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step_testcase[0m:[36m286[0m - [1mexport variables: {'entInfoSyss_3_deployAddrCounty': None, 'orgCategorySpecificDesc': '农、林、牧、渔业-农业', 'userId': 1643, 'imgId_b': 2802, 'entInfoSyss_1_deployAddr': None, 'userName': 'oGp8wzRP8ips9kmbMUavwyB86PuNi9EL', 'entInfoSyss_0_entApplyId': None, 'entInfoSyss_0_deployAddrCounty': None, 'entInfoSyss_0_id': None, 'updateDate': '2023-06-25 18:42:45', 'entInfoSyss_3_entApplyId': None, 'entInfoSyss_3_id': None, 'entInfoSyss_2_deployAddrCity': None, 'legalCrtNo': '429599197808131634', 'orgCrtType': '1', 'entInfoSyss_3_deployAddrCity': None, 'entInfoSyss_2_deployAddrCounty': None, 'entInfoSyss_1_sysType': None, 'entInfoSyss_1_deployAddrCity': None, 'entUserId': None, 'entInfoSyss_0_deployAddrCity': None, 'imgId': 2800, 'industryCategory': 'A', 'entInfoSyss_2_entApplyId': None, 'orgCrtCode': 'oGp8wzRP8ips9kmbMUavwyB86PuNi9EL', 'entInfoSyss_2_sysType': None, 'legalCrtType': '1', 'orgAddrCityDesc': '市辖区', 'entInfoSyss_1_id': None, 'entInfoSyss_1_entApplyId': None, 'entInfoSyss_1_deployAddrCounty': None, 'contactCrtNo': '429599197808131634', 'contactName': 'oGp8wzRP8ips9kmbMUavwyB86PuNi9EL', 'contactPhone': '16404704039', 'prefix': '88.408.8195471988', 'orgAddrProvinceDesc': '北京市', 'entInfoSyss_3_deployAddrProvince': None, 'entId': None, 'orgAddrCity': '110100', 'entInfoSyss_2_deployAddr': None, 'entInfoSyss_0_sysType': None, 'orgCrtImgRid': 2800, 'entInfoSyss_0_deployAddrProvince': None, 'orgAddrCountyDesc': '东城区', 'entInfoSyss_0_deployMode': None, 'orgAddrCounty': '110101', 'createDate': '2023-06-25 18:42:45', 'legalCrtFrontImgRid': 2801, 'entInfoSyss_3_sysType': None, 'imgId_f': 2801, 'orgAddr': '致真', 'legalPhone': None, 'contactEmail': 'FKNFCD9dkbVKLk77@qaqseq.com', 'industrySpecific': '01', 'entInfoSyss_1_deployMode': None, 'legalCrtBackImgRid': 2802, 'legalEmail': None, 'orgNatureDesc': '国有控股', 'legalCrtTypeDesc': '中国居民身份证', 'entApplyId': None, 'entInfoSyss_3_deployAddr': None, 'contactCrtType': 1, 'orgNature': '1', 'entInfoSyss_2_deployMode': None, 'entInfoSyss_3_deployMode': None, 'orgName': 'oGp8wzRP8ips9kmbMUavwyB86PuNi9EL', 'applyId': 1408, 'entInfoSyss_2_deployAddrProvince': None, 'entInfoSyss_2_id': None, 'entInfoSyss_1_deployAddrProvince': None, 'entInfoSyss_0_deployAddr': None, 'orgAddrProvince': '110000', 'legalName': '张三'}[0m
+[32m2023-06-25 18:42:45.233[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 企业注册查询注册信息 <<<<<<
+[0m
+[32m2023-06-25 18:42:45.233[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 企业注册第二步提交信息 >>>>>>[0m
+[32m2023-06-25 18:42:45.234[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 企业注册第二步提交信息 >>>>>>[0m
+[32m2023-06-25 18:42:45.301[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 127.0.0.1, Port: 56214[0m
+[32m2023-06-25 18:42:45.301[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 127.0.0.1, Port: 8888[0m
+[32m2023-06-25 18:42:45.303[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/v3/entApply/registerManageInfo
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Type": "application/json;charset=UTF-8",
+    "X-HTTP-Method-Override": "put",
+    "HRUN-Request-ID": "HRUN-2c42e7a6-6147-415c-883f-10ec946ca004-765234",
+    "Cookie": "SESSION=NTYzZWVmNWYtMjRlMS00OGJhLWI1ZWEtNzg3OWNlNzRkZjVl; SESSION=response.headers.\"Set-Cookie\".session",
+    "Content-Length": "3280"
+}
+cookies  : {
+    "SESSION": "NTYzZWVmNWYtMjRlMS00OGJhLWI1ZWEtNzg3OWNlNzRkZjVl"
+}
+body     : {
+    "applyStep": 3,
+    "applyType": null,
+    "cltrid": null,
+    "contactCrtBackImgPath": null,
+    "contactCrtBackImgRid": 2802,
+    "contactCrtFrontImgPath": null,
+    "contactCrtFrontImgRid": 2801,
+    "contactCrtNo": "429599197808131634",
+    "contactCrtType": 1,
+    "contactEmail": "FKNFCD9dkbVKLk77@qaqseq.com",
+    "contactName": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL",
+    "contactPhone": "16404704039",
+    "createDate": "2023-06-25 18:42:45",
+    "dataHostingContractFilePath": null,
+    "dataHostingContractFileRid": null,
+    "dataHostingOrg": null,
+    "entGeneralId": null,
+    "entInfoLicenses": [],
+    "entInfoSerIndustrys": [],
+    "entInfoSyss": [
+        {
+            "deployAddr": "致真",
+            "deployAddrCity": "110100",
+            "deployAddrCounty": "110101",
+            "deployAddrProvince": "110000",
+            "deployMode": 1,
+            "ipPort": null,
+            "name": null,
+            "sysType": 1
+        },
+        {
+            "deployAddr": "致真",
+            "deployAddrCity": "110100",
+            "deployAddrCounty": "110101",
+            "deployAddrProvince": "110000",
+            "deployMode": 1,
+            "ipPort": null,
+            "name": null,
+            "sysType": 2
+        },
+        {
+            "deployAddr": "天津",
+            "deployAddrCity": "120100",
+            "deployAddrCounty": "120101",
+            "deployAddrProvince": "120000",
+            "deployMode": 1,
+            "ipPort": null,
+            "name": null,
+            "sysType": 3
+        },
+        {
+            "deployAddr": "天津",
+            "deployAddrCity": "120100",
+            "deployAddrCounty": "120101",
+            "deployAddrProvince": "120000",
+            "deployMode": 1,
+            "ipPort": null,
+            "name": null,
+            "sysType": 4
+        }
+    ],
+    "entPrefix": "88.408.8195471988",
+    "escrowId": null,
+    "escrowOrgName": null,
+    "establishDate": null,
+    "extDomain": null,
+    "extIpAddr": null,
+    "extWebName": null,
+    "finalAuditMsg": null,
+    "finalAuditStatus": null,
+    "firstAuditMsg": null,
+    "firstAuditStatus": null,
+    "id": 1408,
+    "idRegNaImp": null,
+    "industryCategory": "A",
+    "industrySpecific": "01",
+    "isSubmit": 0,
+    "legalCrtBackImgContent": null,
+    "legalCrtBackImgPath": null,
+    "legalCrtBackImgRid": 2802,
+    "legalCrtFrontImgContent": null,
+    "legalCrtFrontImgPath": null,
+    "legalCrtFrontImgRid": 2801,
+    "legalCrtNo": "429599197808131634",
+    "legalCrtType": "1",
+    "legalCrtTypeDesc": "中国居民身份证",
+    "legalEmail": null,
+    "legalFax": null,
+    "legalName": "张三",
+    "legalPhone": null,
+    "orgAddr": "致真",
+    "orgAddrCity": "110100",
+    "orgAddrCityDesc": "市辖区",
+    "orgAddrCounty": "110101",
+    "orgAddrCountyDesc": "东城区",
+    "orgAddrProvince": "110000",
+    "orgAddrProvinceDesc": "北京市",
+    "orgCategorySpecificDesc": "农、林、牧、渔业-农业",
+    "orgCrtCode": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL",
+    "orgCrtImgContent": null,
+    "orgCrtImgPath": null,
+    "orgCrtImgRid": 2800,
+    "orgCrtType": "1",
+    "orgDesc": null,
+    "orgName": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL",
+    "orgNature": "1",
+    "orgNatureDesc": "1",
+    "periodValidity": null,
+    "regAuthority": null,
+    "regCapital": null,
+    "regRealNaImpName": null,
+    "regRealNaImpType": null,
+    "servHostingContractFilePath": null,
+    "servHostingContractFileRid": null,
+    "servHostingOrg": null,
+    "servSysBuildContractFilePath": null,
+    "servSysBuildContractFileRid": null,
+    "servSysBuildName": null,
+    "servSysBuildType": 1,
+    "servSysOperContractFilePath": null,
+    "servSysOperContractFileRid": null,
+    "servSysOperName": null,
+    "servSysOperType": 1,
+    "svtrid": null,
+    "thirdServiceMsg": null,
+    "thirdServiceStatus": null,
+    "updateDate": "2023-06-25 18:42:45",
+    "userId": 1643,
+    "userName": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL",
+    "website": null
+}
+[0m
+[32m2023-06-25 18:42:45.304[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:42:45 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": true
+}
+[0m
+[32m2023-06-25 18:42:45.304[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m217[0m - [1mstatus_code: 200, response_time(ms): 66.77 ms, response_length: 0 bytes[0m
+[32m2023-06-25 18:42:45.305[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2023-06-25 18:42:45.305[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.message equal success(str)	==> pass[0m
+[32m2023-06-25 18:42:45.305[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 企业注册第二步提交信息 <<<<<<
+[0m
+[32m2023-06-25 18:42:45.305[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 企业注册第二步提交信息 <<<<<<
+[0m
+[32m2023-06-25 18:42:45.306[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 企业注册查询注册信息 >>>>>>[0m
+[32m2023-06-25 18:42:45.307[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 企业注册查询注册信息 >>>>>>[0m
+[32m2023-06-25 18:42:45.383[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 127.0.0.1, Port: 56214[0m
+[32m2023-06-25 18:42:45.383[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 127.0.0.1, Port: 8888[0m
+[32m2023-06-25 18:42:45.384[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://139.198.116.76:8000/api/v3/entApply/applyOrNot
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "HRUN-Request-ID": "HRUN-2c42e7a6-6147-415c-883f-10ec946ca004-765307",
+    "Cookie": "SESSION=NTYzZWVmNWYtMjRlMS00OGJhLWI1ZWEtNzg3OWNlNzRkZjVl; SESSION=response.headers.\"Set-Cookie\".session"
+}
+cookies  : {
+    "SESSION": "NTYzZWVmNWYtMjRlMS00OGJhLWI1ZWEtNzg3OWNlNzRkZjVl"
+}
+body     : None
+[0m
+[32m2023-06-25 18:42:45.386[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:42:45 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": {
+        "nbmsEntApplyPO": {
+            "id": 1408,
+            "createDate": "2023-06-25 18:42:45",
+            "updateDate": "2023-06-25 18:42:45",
+            "applyType": null,
+            "entGeneralId": null,
+            "applyStep": 3,
+            "isSubmit": 0,
+            "entPrefix": "88.408.8195471988",
+            "firstAuditStatus": null,
+            "firstAuditMsg": null,
+            "thirdServiceStatus": null,
+            "thirdServiceMsg": null,
+            "userName": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL",
+            "finalAuditStatus": null,
+            "finalAuditMsg": null,
+            "svtrid": null,
+            "cltrid": null,
+            "userId": 1643,
+            "orgName": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL",
+            "orgNature": "1",
+            "orgAddrProvince": "110000",
+            "orgAddrCity": "110100",
+            "orgAddrCounty": "110101",
+            "orgAddr": "致真",
+            "orgCrtType": "1",
+            "orgCrtCode": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL",
+            "legalName": "张三",
+            "legalCrtType": "1",
+            "legalCrtNo": "429599197808131634",
+            "orgDesc": null,
+            "industryCategory": "A",
+            "industrySpecific": "01",
+            "contactName": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL",
+            "contactPhone": "16404704039",
+            "contactCrtType": 1,
+            "contactCrtNo": "429599197808131634",
+            "contactEmail": "FKNFCD9dkbVKLk77@qaqseq.com",
+            "website": null,
+            "regAuthority": null,
+            "regCapital": null,
+            "establishDate": null,
+            "periodValidity": null,
+            "legalEmail": null,
+            "legalPhone": null,
+            "legalFax": null,
+            "servSysBuildType": 1,
+            "servSysBuildName": null,
+            "servSysOperType": 1,
+            "servSysOperName": null,
+            "dataHostingOrg": null,
+            "servHostingOrg": null,
+            "regRealNaImpType": null,
+            "regRealNaImpName": null,
+            "idRegNaImp": null,
+            "extWebName": null,
+            "extDomain": null,
+            "extIpAddr": null,
+            "orgCrtImgRid": 2800,
+            "contactCrtFrontImgRid": 2801,
+            "contactCrtBackImgRid": 2802,
+            "legalCrtFrontImgRid": 2801,
+            "legalCrtBackImgRid": 2802,
+            "servSysBuildContractFileRid": null,
+            "servSysOperContractFileRid": null,
+            "dataHostingContractFileRid": null,
+            "servHostingContractFileRid": null,
+            "entInfoLicenses": [],
+            "entInfoSyss": [
+                {
+                    "id": 3492,
+                    "entApplyId": 1408,
+                    "sysType": 1,
+                    "deployMode": 1,
+                    "deployAddr": "致真",
+                    "deployAddrProvince": "110000",
+                    "deployAddrCity": "110100",
+                    "deployAddrCounty": "110101",
+                    "name": null,
+                    "ipPort": null
+                },
+                {
+                    "id": 3493,
+                    "entApplyId": 1408,
+                    "sysType": 2,
+                    "deployMode": 1,
+                    "deployAddr": "致真",
+                    "deployAddrProvince": "110000",
+                    "deployAddrCity": "110100",
+                    "deployAddrCounty": "110101",
+                    "name": null,
+                    "ipPort": null
+                },
+                {
+                    "id": 3494,
+                    "entApplyId": 1408,
+                    "sysType": 3,
+                    "deployMode": 1,
+                    "deployAddr": "天津",
+                    "deployAddrProvince": "120000",
+                    "deployAddrCity": "120100",
+                    "deployAddrCounty": "120101",
+                    "name": null,
+                    "ipPort": null
+                },
+                {
+                    "id": 3495,
+                    "entApplyId": 1408,
+                    "sysType": 4,
+                    "deployMode": 1,
+                    "deployAddr": "天津",
+                    "deployAddrProvince": "120000",
+                    "deployAddrCity": "120100",
+                    "deployAddrCounty": "120101",
+                    "name": null,
+                    "ipPort": null
+                }
+            ],
+            "entInfoSerIndustrys": [],
+            "escrowId": null,
+            "industryQualificationRid": null,
+            "certificationRid": null,
+            "openingBank": null,
+            "bankCard": null,
+            "verificationName": null,
+            "orgNatureDesc": "国有控股",
+            "orgCrtImgContent": null,
+            "orgCategorySpecificDesc": "农、林、牧、渔业-农业",
+            "orgAddrProvinceDesc": "北京市",
+            "orgAddrCountyDesc": "东城区",
+            "orgAddrCityDesc": "市辖区",
+            "legalCrtTypeDesc": "中国居民身份证",
+            "legalCrtFrontImgContent": null,
+            "legalCrtBackImgContent": null,
+            "orgCrtImgPath": "f7deb199-d584-44e0-b3a1-62336302c4f3.jpeg",
+            "contactCrtFrontImgPath": "7fe41f0e-4bfd-4219-83c6-4220fe5c81bb.jpeg",
+            "contactCrtBackImgPath": "7d663a50-529b-4628-96a7-e132df8f3430.jpeg",
+            "legalCrtFrontImgPath": "7fe41f0e-4bfd-4219-83c6-4220fe5c81bb.jpeg",
+            "legalCrtBackImgPath": "7d663a50-529b-4628-96a7-e132df8f3430.jpeg",
+            "servSysBuildContractFilePath": null,
+            "servSysOperContractFilePath": null,
+            "dataHostingContractFilePath": null,
+            "servHostingContractFilePath": null,
+            "industryQualificationFilePath": null,
+            "certificationFilePath": null,
+            "escrowOrgName": null
+        },
+        "nbmsEntPO": null,
+        "nbmsEntPrefixApplyPO": null,
+        "needRelog": null,
+        "applyStatus": 0
+    }
+}
+[0m
+[32m2023-06-25 18:42:45.386[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m217[0m - [1mstatus_code: 200, response_time(ms): 76.17 ms, response_length: 0 bytes[0m
+[32m2023-06-25 18:42:45.387[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mextract[0m:[36m179[0m - [1mextract mapping: {'applyId': 1408, 'userId': 1643, 'userName': 'oGp8wzRP8ips9kmbMUavwyB86PuNi9EL', 'imgId_f': 2801, 'imgId_b': 2802, 'entId': None, 'entUserId': None, 'prefix': '88.408.8195471988', 'contactCrtNo': '429599197808131634', 'contactCrtType': 1, 'contactEmail': 'FKNFCD9dkbVKLk77@qaqseq.com', 'contactName': 'oGp8wzRP8ips9kmbMUavwyB86PuNi9EL', 'contactPhone': '16404704039', 'industryCategory': 'A', 'industrySpecific': '01', 'orgName': 'oGp8wzRP8ips9kmbMUavwyB86PuNi9EL', 'orgNature': '1', 'orgAddrProvince': '110000', 'orgAddrCity': '110100', 'orgAddrCounty': '110101', 'orgAddr': '致真', 'orgCrtType': '1', 'orgCrtCode': 'oGp8wzRP8ips9kmbMUavwyB86PuNi9EL', 'legalName': '张三', 'legalEmail': None, 'legalPhone': None, 'legalCrtType': '1', 'legalCrtNo': '429599197808131634', 'legalCrtFrontImgRid': 2801, 'legalCrtBackImgRid': 2802, 'orgCrtImgRid': 2800, 'imgId': 2800, 'orgNatureDesc': '国有控股', 'orgCategorySpecificDesc': '农、林、牧、渔业-农业', 'orgAddrProvinceDesc': '北京市', 'orgAddrCountyDesc': '东城区', 'orgAddrCityDesc': '市辖区', 'legalCrtTypeDesc': '中国居民身份证', 'createDate': '2023-06-25 18:42:45', 'updateDate': '2023-06-25 18:42:45', 'entInfoSyss_0_id': 3492, 'entInfoSyss_0_entApplyId': 1408, 'entApplyId': 1408, 'entInfoSyss_0_sysType': 1, 'entInfoSyss_0_deployMode': 1, 'entInfoSyss_0_deployAddr': '致真', 'entInfoSyss_0_deployAddrProvince': '110000', 'entInfoSyss_0_deployAddrCity': '110100', 'entInfoSyss_0_deployAddrCounty': '110101', 'entInfoSyss_1_id': 3493, 'entInfoSyss_1_entApplyId': 1408, 'entInfoSyss_1_sysType': 2, 'entInfoSyss_1_deployMode': 1, 'entInfoSyss_1_deployAddr': '致真', 'entInfoSyss_1_deployAddrProvince': '110000', 'entInfoSyss_1_deployAddrCity': '110100', 'entInfoSyss_1_deployAddrCounty': '110101', 'entInfoSyss_2_id': 3494, 'entInfoSyss_2_entApplyId': 1408, 'entInfoSyss_2_sysType': 3, 'entInfoSyss_2_deployMode': 1, 'entInfoSyss_2_deployAddr': '天津', 'entInfoSyss_2_deployAddrProvince': '120000', 'entInfoSyss_2_deployAddrCity': '120100', 'entInfoSyss_2_deployAddrCounty': '120101', 'entInfoSyss_3_id': 3495, 'entInfoSyss_3_entApplyId': 1408, 'entInfoSyss_3_sysType': 4, 'entInfoSyss_3_deployMode': 1, 'entInfoSyss_3_deployAddr': '天津', 'entInfoSyss_3_deployAddrProvince': '120000', 'entInfoSyss_3_deployAddrCity': '120100', 'entInfoSyss_3_deployAddrCounty': '120101'}[0m
+[32m2023-06-25 18:42:45.387[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2023-06-25 18:42:45.387[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.message equal success(str)	==> pass[0m
+[32m2023-06-25 18:42:45.388[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 企业注册查询注册信息 <<<<<<
+[0m
+[32m2023-06-25 18:42:45.388[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step_testcase[0m:[36m286[0m - [1mexport variables: {'entInfoSyss_3_deployAddrCounty': '120101', 'orgCategorySpecificDesc': '农、林、牧、渔业-农业', 'userId': 1643, 'imgId_b': 2802, 'entInfoSyss_1_deployAddr': '致真', 'userName': 'oGp8wzRP8ips9kmbMUavwyB86PuNi9EL', 'entInfoSyss_0_entApplyId': 1408, 'entInfoSyss_0_deployAddrCounty': '110101', 'entInfoSyss_0_id': 3492, 'updateDate': '2023-06-25 18:42:45', 'entInfoSyss_3_entApplyId': 1408, 'entInfoSyss_3_id': 3495, 'entInfoSyss_2_deployAddrCity': '120100', 'legalCrtNo': '429599197808131634', 'orgCrtType': '1', 'entInfoSyss_3_deployAddrCity': '120100', 'entInfoSyss_2_deployAddrCounty': '120101', 'entInfoSyss_1_sysType': 2, 'entInfoSyss_1_deployAddrCity': '110100', 'entUserId': None, 'entInfoSyss_0_deployAddrCity': '110100', 'imgId': 2800, 'industryCategory': 'A', 'entInfoSyss_2_entApplyId': 1408, 'orgCrtCode': 'oGp8wzRP8ips9kmbMUavwyB86PuNi9EL', 'entInfoSyss_2_sysType': 3, 'legalCrtType': '1', 'orgAddrCityDesc': '市辖区', 'entInfoSyss_1_id': 3493, 'entInfoSyss_1_entApplyId': 1408, 'entInfoSyss_1_deployAddrCounty': '110101', 'contactCrtNo': '429599197808131634', 'contactName': 'oGp8wzRP8ips9kmbMUavwyB86PuNi9EL', 'contactPhone': '16404704039', 'prefix': '88.408.8195471988', 'orgAddrProvinceDesc': '北京市', 'entInfoSyss_3_deployAddrProvince': '120000', 'entId': None, 'orgAddrCity': '110100', 'entInfoSyss_2_deployAddr': '天津', 'entInfoSyss_0_sysType': 1, 'orgCrtImgRid': 2800, 'entInfoSyss_0_deployAddrProvince': '110000', 'orgAddrCountyDesc': '东城区', 'entInfoSyss_0_deployMode': 1, 'orgAddrCounty': '110101', 'createDate': '2023-06-25 18:42:45', 'legalCrtFrontImgRid': 2801, 'entInfoSyss_3_sysType': 4, 'imgId_f': 2801, 'orgAddr': '致真', 'legalPhone': None, 'contactEmail': 'FKNFCD9dkbVKLk77@qaqseq.com', 'industrySpecific': '01', 'entInfoSyss_1_deployMode': 1, 'legalCrtBackImgRid': 2802, 'legalEmail': None, 'orgNatureDesc': '国有控股', 'legalCrtTypeDesc': '中国居民身份证', 'entApplyId': 1408, 'entInfoSyss_3_deployAddr': '天津', 'contactCrtType': 1, 'orgNature': '1', 'entInfoSyss_2_deployMode': 1, 'entInfoSyss_3_deployMode': 1, 'orgName': 'oGp8wzRP8ips9kmbMUavwyB86PuNi9EL', 'applyId': 1408, 'entInfoSyss_2_deployAddrProvince': '120000', 'entInfoSyss_2_id': 3494, 'entInfoSyss_1_deployAddrProvince': '110000', 'entInfoSyss_0_deployAddr': '致真', 'orgAddrProvince': '110000', 'legalName': '张三'}[0m
+[32m2023-06-25 18:42:45.388[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 企业注册查询注册信息 <<<<<<
+[0m
+[32m2023-06-25 18:42:45.388[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 企业注册最终第三步提交信息 >>>>>>[0m
+[32m2023-06-25 18:42:45.388[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 企业注册最终第三步提交信息 >>>>>>[0m
+[32m2023-06-25 18:42:45.547[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 127.0.0.1, Port: 56214[0m
+[32m2023-06-25 18:42:45.547[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 127.0.0.1, Port: 8888[0m
+[32m2023-06-25 18:42:45.549[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/v3/entApply/apply
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Type": "application/json;charset=UTF-8",
+    "HRUN-Request-ID": "HRUN-2c42e7a6-6147-415c-883f-10ec946ca004-765389",
+    "Cookie": "SESSION=NTYzZWVmNWYtMjRlMS00OGJhLWI1ZWEtNzg3OWNlNzRkZjVl; SESSION=response.headers.\"Set-Cookie\".session",
+    "Content-Length": "3280"
+}
+cookies  : {
+    "SESSION": "NTYzZWVmNWYtMjRlMS00OGJhLWI1ZWEtNzg3OWNlNzRkZjVl"
+}
+body     : {
+    "applyStep": 4,
+    "applyType": null,
+    "cltrid": null,
+    "contactCrtBackImgPath": null,
+    "contactCrtBackImgRid": 2802,
+    "contactCrtFrontImgPath": null,
+    "contactCrtFrontImgRid": 2801,
+    "contactCrtNo": "429599197808131634",
+    "contactCrtType": 1,
+    "contactEmail": "FKNFCD9dkbVKLk77@qaqseq.com",
+    "contactName": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL",
+    "contactPhone": "16404704039",
+    "createDate": "2023-06-25 18:42:45",
+    "dataHostingContractFilePath": null,
+    "dataHostingContractFileRid": null,
+    "dataHostingOrg": null,
+    "entGeneralId": null,
+    "entInfoLicenses": [],
+    "entInfoSerIndustrys": [],
+    "entInfoSyss": [
+        {
+            "deployAddr": "致真",
+            "deployAddrCity": "110100",
+            "deployAddrCounty": "110101",
+            "deployAddrProvince": "110000",
+            "deployMode": 1,
+            "ipPort": null,
+            "name": null,
+            "sysType": 2
+        },
+        {
+            "deployAddr": "致真",
+            "deployAddrCity": "110100",
+            "deployAddrCounty": "110101",
+            "deployAddrProvince": "110000",
+            "deployMode": 1,
+            "ipPort": null,
+            "name": null,
+            "sysType": 3
+        },
+        {
+            "deployAddr": "天津",
+            "deployAddrCity": "120100",
+            "deployAddrCounty": "120101",
+            "deployAddrProvince": "120000",
+            "deployMode": 1,
+            "ipPort": null,
+            "name": null,
+            "sysType": 4
+        },
+        {
+            "deployAddr": "天津",
+            "deployAddrCity": "120100",
+            "deployAddrCounty": "120101",
+            "deployAddrProvince": "120000",
+            "deployMode": 1,
+            "ipPort": null,
+            "name": null,
+            "sysType": 4
+        }
+    ],
+    "entPrefix": "88.408.8195471988",
+    "escrowId": null,
+    "escrowOrgName": null,
+    "establishDate": null,
+    "extDomain": null,
+    "extIpAddr": null,
+    "extWebName": null,
+    "finalAuditMsg": null,
+    "finalAuditStatus": null,
+    "firstAuditMsg": null,
+    "firstAuditStatus": null,
+    "id": 1408,
+    "idRegNaImp": null,
+    "industryCategory": "A",
+    "industrySpecific": "01",
+    "isSubmit": 0,
+    "legalCrtBackImgContent": null,
+    "legalCrtBackImgPath": null,
+    "legalCrtBackImgRid": 2802,
+    "legalCrtFrontImgContent": null,
+    "legalCrtFrontImgPath": null,
+    "legalCrtFrontImgRid": 2801,
+    "legalCrtNo": "429599197808131634",
+    "legalCrtType": "1",
+    "legalCrtTypeDesc": "中国居民身份证",
+    "legalEmail": null,
+    "legalFax": null,
+    "legalName": "张三",
+    "legalPhone": null,
+    "orgAddr": "致真",
+    "orgAddrCity": "110100",
+    "orgAddrCityDesc": "市辖区",
+    "orgAddrCounty": "110101",
+    "orgAddrCountyDesc": "东城区",
+    "orgAddrProvince": "110000",
+    "orgAddrProvinceDesc": "北京市",
+    "orgCategorySpecificDesc": "农、林、牧、渔业-农业",
+    "orgCrtCode": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL",
+    "orgCrtImgContent": null,
+    "orgCrtImgPath": null,
+    "orgCrtImgRid": 2800,
+    "orgCrtType": "1",
+    "orgDesc": null,
+    "orgName": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL",
+    "orgNature": "1",
+    "orgNatureDesc": "1",
+    "periodValidity": null,
+    "regAuthority": null,
+    "regCapital": null,
+    "regRealNaImpName": null,
+    "regRealNaImpType": null,
+    "servHostingContractFilePath": null,
+    "servHostingContractFileRid": null,
+    "servHostingOrg": null,
+    "servSysBuildContractFilePath": null,
+    "servSysBuildContractFileRid": null,
+    "servSysBuildName": null,
+    "servSysBuildType": 1,
+    "servSysOperContractFilePath": null,
+    "servSysOperContractFileRid": null,
+    "servSysOperName": null,
+    "servSysOperType": 1,
+    "svtrid": null,
+    "thirdServiceMsg": null,
+    "thirdServiceStatus": null,
+    "updateDate": "2023-06-25 18:42:45",
+    "userId": 1643,
+    "userName": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL",
+    "website": null
+}
+[0m
+[32m2023-06-25 18:42:45.550[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:42:45 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": true
+}
+[0m
+[32m2023-06-25 18:42:45.550[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m217[0m - [1mstatus_code: 200, response_time(ms): 157.95 ms, response_length: 0 bytes[0m
+[32m2023-06-25 18:42:45.551[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2023-06-25 18:42:45.551[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.message equal success(str)	==> pass[0m
+[32m2023-06-25 18:42:45.551[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 企业注册最终第三步提交信息 <<<<<<
+[0m
+[32m2023-06-25 18:42:45.551[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 企业注册最终第三步提交信息 <<<<<<
+[0m
+[32m2023-06-25 18:42:45.551[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 登录-管理员 >>>>>>[0m
+[32m2023-06-25 18:42:45.552[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 登录-企业用户 >>>>>>[0m
+[32m2023-06-25 18:42:45.614[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 127.0.0.1, Port: 56214[0m
+[32m2023-06-25 18:42:45.614[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 127.0.0.1, Port: 8888[0m
+[32m2023-06-25 18:42:45.615[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/home/test/login
+headers  : {
+    "User-Agent": "python-requests/2.28.1",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Content-Length": "144",
+    "Content-Type": "application/json",
+    "HRUN-Request-ID": "HRUN-2c42e7a6-6147-415c-883f-10ec946ca004-765552",
+    "Cookie": "SESSION=NTYzZWVmNWYtMjRlMS00OGJhLWI1ZWEtNzg3OWNlNzRkZjVl"
+}
+cookies  : {
+    "SESSION": "NTYzZWVmNWYtMjRlMS00OGJhLWI1ZWEtNzg3OWNlNzRkZjVl"
+}
+body     : {
+    "captcha": "0000",
+    "captchaSign": "5d39bab12bba81ab59b3931d2ca06ee9603c3803355932be66974f122cab3502",
+    "emailCaptcha": "",
+    "username": "adminy"
+}
+[0m
+[32m2023-06-25 18:42:45.616[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:42:45 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Set-Cookie": "SESSION=OGQ2MmQxOTItZWFhNi00MGIyLTk0N2EtY2FjMWQ2MmIwZWNm; Path=/; HttpOnly; SameSite=Lax",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {
+    "SESSION": "OGQ2MmQxOTItZWFhNi00MGIyLTk0N2EtY2FjMWQ2MmIwZWNm"
+}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": true
+}
+[0m
+[32m2023-06-25 18:42:45.616[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m217[0m - [1mstatus_code: 200, response_time(ms): 61.67 ms, response_length: 0 bytes[0m
+[32m2023-06-25 18:42:45.616[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mextract[0m:[36m179[0m - [1mextract mapping: {'adminSession': 'response.headers."Set-Cookie".session'}[0m
+[32m2023-06-25 18:42:45.617[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2023-06-25 18:42:45.617[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2023-06-25 18:42:45.617[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.message equal success(str)	==> pass[0m
+[32m2023-06-25 18:42:45.618[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.status equal 1(int)	==> pass[0m
+[32m2023-06-25 18:42:45.618[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.data equal True(bool)	==> pass[0m
+[32m2023-06-25 18:42:45.618[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 登录-企业用户 <<<<<<
+[0m
+[32m2023-06-25 18:42:45.618[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step_testcase[0m:[36m286[0m - [1mexport variables: {'adminSession': 'response.headers."Set-Cookie".session'}[0m
+[32m2023-06-25 18:42:45.618[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 登录-管理员 <<<<<<
+[0m
+[32m2023-06-25 18:42:45.619[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 年费费用查询 >>>>>>[0m
+[32m2023-06-25 18:42:45.619[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 财务规则查询-年费 >>>>>>[0m
+[32m2023-06-25 18:42:45.696[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 127.0.0.1, Port: 56214[0m
+[32m2023-06-25 18:42:45.696[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 127.0.0.1, Port: 8888[0m
+[32m2023-06-25 18:42:45.697[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://139.198.116.76:8000/api/finance/rule/findRule?cache=1663837640684&moneyType=2&userId=1643
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
+    "HRUN-Request-ID": "HRUN-2c42e7a6-6147-415c-883f-10ec946ca004-765619",
+    "Cookie": "SESSION=OGQ2MmQxOTItZWFhNi00MGIyLTk0N2EtY2FjMWQ2MmIwZWNm; SESSION=response.headers.\"Set-Cookie\".session"
+}
+cookies  : {
+    "SESSION": "OGQ2MmQxOTItZWFhNi00MGIyLTk0N2EtY2FjMWQ2MmIwZWNm"
+}
+body     : None
+[0m
+[32m2023-06-25 18:42:45.698[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:42:45 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": [
+        {
+            "id": 78,
+            "createDate": "2023-05-31 12:51:47",
+            "updateDate": "2023-05-31 12:51:47",
+            "name": "标准",
+            "money": 10000.0,
+            "moneyType": 2,
+            "prefixCount": 1,
+            "remart": "test",
+            "entName": null,
+            "entUserId": null,
+            "ruleType": 2,
+            "escrowId": null
+        }
+    ]
+}
+[0m
+[32m2023-06-25 18:42:45.698[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m217[0m - [1mstatus_code: 200, response_time(ms): 76.71 ms, response_length: 0 bytes[0m
+[32m2023-06-25 18:42:45.699[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mextract[0m:[36m179[0m - [1mextract mapping: {'annualFeeRuleId': 78}[0m
+[32m2023-06-25 18:42:45.699[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2023-06-25 18:42:45.699[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.message equal success(str)	==> pass[0m
+[32m2023-06-25 18:42:45.700[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.status equal 1(int)	==> pass[0m
+[32m2023-06-25 18:42:45.700[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 财务规则查询-年费 <<<<<<
+[0m
+[32m2023-06-25 18:42:45.700[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step_testcase[0m:[36m286[0m - [1mexport variables: {'annualFeeRuleId': 78}[0m
+[32m2023-06-25 18:42:45.700[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 年费费用查询 <<<<<<
+[0m
+[32m2023-06-25 18:42:45.700[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 注册费费用查询 >>>>>>[0m
+[32m2023-06-25 18:42:45.700[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 财务规则查询-注册费 >>>>>>[0m
+[32m2023-06-25 18:42:45.750[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 127.0.0.1, Port: 56214[0m
+[32m2023-06-25 18:42:45.750[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 127.0.0.1, Port: 8888[0m
+[32m2023-06-25 18:42:45.751[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://139.198.116.76:8000/api/finance/rule/findRule?moneyType=1&userId=1643
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
+    "HRUN-Request-ID": "HRUN-2c42e7a6-6147-415c-883f-10ec946ca004-765700",
+    "Cookie": "SESSION=OGQ2MmQxOTItZWFhNi00MGIyLTk0N2EtY2FjMWQ2MmIwZWNm; SESSION=response.headers.\"Set-Cookie\".session"
+}
+cookies  : {
+    "SESSION": "OGQ2MmQxOTItZWFhNi00MGIyLTk0N2EtY2FjMWQ2MmIwZWNm"
+}
+body     : None
+[0m
+[32m2023-06-25 18:42:45.752[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:42:45 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": [
+        {
+            "id": 77,
+            "createDate": "2023-05-31 12:51:33",
+            "updateDate": "2023-05-31 12:51:33",
+            "name": "标准",
+            "money": 10000.0,
+            "moneyType": 1,
+            "prefixCount": 1,
+            "remart": "test",
+            "entName": null,
+            "entUserId": null,
+            "ruleType": 2,
+            "escrowId": null
+        }
+    ]
+}
+[0m
+[32m2023-06-25 18:42:45.752[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m217[0m - [1mstatus_code: 200, response_time(ms): 48.98 ms, response_length: 0 bytes[0m
+[32m2023-06-25 18:42:45.753[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mextract[0m:[36m179[0m - [1mextract mapping: {'regFeeRuleId': 77}[0m
+[32m2023-06-25 18:42:45.753[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2023-06-25 18:42:45.753[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.message equal success(str)	==> pass[0m
+[32m2023-06-25 18:42:45.753[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.status equal 1(int)	==> pass[0m
+[32m2023-06-25 18:42:45.753[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 财务规则查询-注册费 <<<<<<
+[0m
+[32m2023-06-25 18:42:45.753[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step_testcase[0m:[36m286[0m - [1mexport variables: {'regFeeRuleId': 77}[0m
+[32m2023-06-25 18:42:45.753[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 注册费费用查询 <<<<<<
+[0m
+[32m2023-06-25 18:42:45.754[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 前缀审核结果保存 >>>>>>[0m
+[32m2023-06-25 18:42:45.754[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 企业审核保存 >>>>>>[0m
+[32m2023-06-25 18:42:46.890[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 127.0.0.1, Port: 56214[0m
+[32m2023-06-25 18:42:46.891[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 127.0.0.1, Port: 8888[0m
+[32m2023-06-25 18:42:46.891[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/v3/ent/audit/save?annualFeeRuleId=78&applyId=1408&auditMsg=%E5%AE%A1%E6%A0%B8%E9%80%9A%E8%BF%87&auditResult=pass&entPrefix=88.408.8195471988&regFeeRuleId=77
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
+    "Content-Length": "0",
+    "HRUN-Request-ID": "HRUN-2c42e7a6-6147-415c-883f-10ec946ca004-765754",
+    "Cookie": "SESSION=OGQ2MmQxOTItZWFhNi00MGIyLTk0N2EtY2FjMWQ2MmIwZWNm; SESSION=response.headers.\"Set-Cookie\".session"
+}
+cookies  : {
+    "SESSION": "OGQ2MmQxOTItZWFhNi00MGIyLTk0N2EtY2FjMWQ2MmIwZWNm"
+}
+body     : None
+[0m
+[32m2023-06-25 18:42:46.892[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:42:47 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": true
+}
+[0m
+[32m2023-06-25 18:42:46.892[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m217[0m - [1mstatus_code: 200, response_time(ms): 1135.8 ms, response_length: 0 bytes[0m
+[32m2023-06-25 18:42:46.893[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2023-06-25 18:42:46.893[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.message equal success(str)	==> pass[0m
+[32m2023-06-25 18:42:46.893[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.status equal 1(int)	==> pass[0m
+[32m2023-06-25 18:42:46.894[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.data equal True(bool)	==> pass[0m
+[32m2023-06-25 18:42:46.894[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 企业审核保存 <<<<<<
+[0m
+[32m2023-06-25 18:42:46.894[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 前缀审核结果保存 <<<<<<
+[0m
+[32m2023-06-25 18:42:46.894[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 前缀分配列表 >>>>>>[0m
+[32m2023-06-25 18:42:46.895[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 前缀分配分页 >>>>>>[0m
+[32m2023-06-25 18:42:46.947[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 127.0.0.1, Port: 56214[0m
+[32m2023-06-25 18:42:46.947[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 127.0.0.1, Port: 8888[0m
+[32m2023-06-25 18:42:46.948[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://139.198.116.76:8000/api/v3/ent/prefix/alloc/pageQuery?currentPage=1&order=&orderProp=&orgName=oGp8wzRP8ips9kmbMUavwyB86PuNi9EL
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
+    "HRUN-Request-ID": "HRUN-2c42e7a6-6147-415c-883f-10ec946ca004-766895",
+    "Cookie": "SESSION=OGQ2MmQxOTItZWFhNi00MGIyLTk0N2EtY2FjMWQ2MmIwZWNm; SESSION=response.headers.\"Set-Cookie\".session"
+}
+cookies  : {
+    "SESSION": "OGQ2MmQxOTItZWFhNi00MGIyLTk0N2EtY2FjMWQ2MmIwZWNm"
+}
+body     : None
+[0m
+[32m2023-06-25 18:42:46.949[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:42:47 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": {
+        "first": true,
+        "last": true,
+        "totalPages": 1,
+        "totalElements": 1,
+        "number": 1,
+        "size": 10,
+        "sort": null,
+        "numberOfElements": 1,
+        "content": [
+            {
+                "orgName": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL",
+                "entPrefix": "88.408.8195471988",
+                "orgTypeDesc": "国有控股",
+                "escrowOrgName": null,
+                "orgCategorySpecificDesc": "农、林、牧、渔业-农业",
+                "orgCrtCode": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL",
+                "userId": 1643,
+                "updateDate": "2023-06-25 18:42:47"
+            }
+        ]
+    }
+}
+[0m
+[32m2023-06-25 18:42:46.949[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m217[0m - [1mstatus_code: 200, response_time(ms): 52.25 ms, response_length: 0 bytes[0m
+[32m2023-06-25 18:42:46.950[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mextract[0m:[36m179[0m - [1mextract mapping: {'userId': 1643, 'orgName': 'oGp8wzRP8ips9kmbMUavwyB86PuNi9EL'}[0m
+[32m2023-06-25 18:42:46.950[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2023-06-25 18:42:46.951[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.message equal success(str)	==> pass[0m
+[32m2023-06-25 18:42:46.951[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.status equal 1(int)	==> pass[0m
+[32m2023-06-25 18:42:46.951[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.data.content[0].entPrefix equal 88.408.8195471988(str)	==> pass[0m
+[32m2023-06-25 18:42:46.951[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 前缀分配分页 <<<<<<
+[0m
+[32m2023-06-25 18:42:46.952[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step_testcase[0m:[36m286[0m - [1mexport variables: {'userId': 1643, 'orgName': 'oGp8wzRP8ips9kmbMUavwyB86PuNi9EL'}[0m
+[32m2023-06-25 18:42:46.952[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 前缀分配列表 <<<<<<
+[0m
+[32m2023-06-25 18:42:46.952[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 收费标准查询-注册费 >>>>>>[0m
+[32m2023-06-25 18:42:46.952[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 财务规则查询-注册费 >>>>>>[0m
+[32m2023-06-25 18:42:47.022[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 127.0.0.1, Port: 56214[0m
+[32m2023-06-25 18:42:47.023[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 127.0.0.1, Port: 8888[0m
+[32m2023-06-25 18:42:47.024[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://139.198.116.76:8000/api/finance/rule/findRule?moneyType=1&userId=1643
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
+    "HRUN-Request-ID": "HRUN-2c42e7a6-6147-415c-883f-10ec946ca004-766952",
+    "Cookie": "SESSION=OGQ2MmQxOTItZWFhNi00MGIyLTk0N2EtY2FjMWQ2MmIwZWNm; SESSION=response.headers.\"Set-Cookie\".session"
+}
+cookies  : {
+    "SESSION": "OGQ2MmQxOTItZWFhNi00MGIyLTk0N2EtY2FjMWQ2MmIwZWNm"
+}
+body     : None
+[0m
+[32m2023-06-25 18:42:47.025[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:42:47 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": [
+        {
+            "id": 77,
+            "createDate": "2023-05-31 12:51:33",
+            "updateDate": "2023-05-31 12:51:33",
+            "name": "标准",
+            "money": 10000.0,
+            "moneyType": 1,
+            "prefixCount": 1,
+            "remart": "test",
+            "entName": null,
+            "entUserId": null,
+            "ruleType": 2,
+            "escrowId": null
+        }
+    ]
+}
+[0m
+[32m2023-06-25 18:42:47.025[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m217[0m - [1mstatus_code: 200, response_time(ms): 69.83 ms, response_length: 0 bytes[0m
+[32m2023-06-25 18:42:47.026[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mextract[0m:[36m179[0m - [1mextract mapping: {'regFeeRuleId': 77}[0m
+[32m2023-06-25 18:42:47.026[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2023-06-25 18:42:47.026[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.message equal success(str)	==> pass[0m
+[32m2023-06-25 18:42:47.027[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.status equal 1(int)	==> pass[0m
+[32m2023-06-25 18:42:47.027[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 财务规则查询-注册费 <<<<<<
+[0m
+[32m2023-06-25 18:42:47.027[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step_testcase[0m:[36m286[0m - [1mexport variables: {'regFeeRuleId': 77}[0m
+[32m2023-06-25 18:42:47.027[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 收费标准查询-注册费 <<<<<<
+[0m
+[32m2023-06-25 18:42:47.027[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 收费标准查询-年费 >>>>>>[0m
+[32m2023-06-25 18:42:47.027[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 财务规则查询-年费 >>>>>>[0m
+[32m2023-06-25 18:42:47.214[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 127.0.0.1, Port: 56214[0m
+[32m2023-06-25 18:42:47.214[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 127.0.0.1, Port: 8888[0m
+[32m2023-06-25 18:42:47.215[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://139.198.116.76:8000/api/finance/rule/findRule?cache=1663837640684&moneyType=2&userId=1643
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
+    "HRUN-Request-ID": "HRUN-2c42e7a6-6147-415c-883f-10ec946ca004-767027",
+    "Cookie": "SESSION=OGQ2MmQxOTItZWFhNi00MGIyLTk0N2EtY2FjMWQ2MmIwZWNm; SESSION=response.headers.\"Set-Cookie\".session"
+}
+cookies  : {
+    "SESSION": "OGQ2MmQxOTItZWFhNi00MGIyLTk0N2EtY2FjMWQ2MmIwZWNm"
+}
+body     : None
+[0m
+[32m2023-06-25 18:42:47.216[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:42:47 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": [
+        {
+            "id": 78,
+            "createDate": "2023-05-31 12:51:47",
+            "updateDate": "2023-05-31 12:51:47",
+            "name": "标准",
+            "money": 10000.0,
+            "moneyType": 2,
+            "prefixCount": 1,
+            "remart": "test",
+            "entName": null,
+            "entUserId": null,
+            "ruleType": 2,
+            "escrowId": null
+        }
+    ]
+}
+[0m
+[32m2023-06-25 18:42:47.216[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m217[0m - [1mstatus_code: 200, response_time(ms): 186.34 ms, response_length: 0 bytes[0m
+[32m2023-06-25 18:42:47.217[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mextract[0m:[36m179[0m - [1mextract mapping: {'annualFeeRuleId': 78}[0m
+[32m2023-06-25 18:42:47.217[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2023-06-25 18:42:47.217[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.message equal success(str)	==> pass[0m
+[32m2023-06-25 18:42:47.217[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.status equal 1(int)	==> pass[0m
+[32m2023-06-25 18:42:47.218[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 财务规则查询-年费 <<<<<<
+[0m
+[32m2023-06-25 18:42:47.218[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step_testcase[0m:[36m286[0m - [1mexport variables: {'annualFeeRuleId': 78}[0m
+[32m2023-06-25 18:42:47.218[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 收费标准查询-年费 <<<<<<
+[0m
+[32m2023-06-25 18:42:47.218[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 保存分配前缀 >>>>>>[0m
+[32m2023-06-25 18:42:47.219[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 保存再分配的前缀 >>>>>>[0m
+[32m2023-06-25 18:42:47.830[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 127.0.0.1, Port: 56214[0m
+[32m2023-06-25 18:42:47.830[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 127.0.0.1, Port: 8888[0m
+[32m2023-06-25 18:42:47.831[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/v3/ent/prefix/alloc/savePrefix?annualFeeRuleId=78&pendingPrefix=88.408.9344084317&regFeeRuleId=77&userId=1643
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
+    "Content-Length": "0",
+    "HRUN-Request-ID": "HRUN-2c42e7a6-6147-415c-883f-10ec946ca004-767219",
+    "Cookie": "SESSION=OGQ2MmQxOTItZWFhNi00MGIyLTk0N2EtY2FjMWQ2MmIwZWNm; SESSION=response.headers.\"Set-Cookie\".session"
+}
+cookies  : {
+    "SESSION": "OGQ2MmQxOTItZWFhNi00MGIyLTk0N2EtY2FjMWQ2MmIwZWNm"
+}
+body     : None
+[0m
+[32m2023-06-25 18:42:47.833[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:42:47 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": "分配完成"
+}
+[0m
+[32m2023-06-25 18:42:47.833[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m217[0m - [1mstatus_code: 200, response_time(ms): 610.95 ms, response_length: 0 bytes[0m
+[32m2023-06-25 18:42:47.834[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2023-06-25 18:42:47.834[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.message equal success(str)	==> pass[0m
+[32m2023-06-25 18:42:47.834[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.status equal 1(int)	==> pass[0m
+[32m2023-06-25 18:42:47.834[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.data equal 分配完成(str)	==> pass[0m
+[32m2023-06-25 18:42:47.835[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 保存再分配的前缀 <<<<<<
+[0m
+[32m2023-06-25 18:42:47.835[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 保存分配前缀 <<<<<<
+[0m
+[32m2023-06-25 18:42:47.836[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 前缀分配列表 >>>>>>[0m
+[32m2023-06-25 18:42:47.837[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 前缀分配分页-查询是否包含新分配的前缀 >>>>>>[0m
+[32m2023-06-25 18:42:47.909[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 127.0.0.1, Port: 56214[0m
+[32m2023-06-25 18:42:47.910[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 127.0.0.1, Port: 8888[0m
+[32m2023-06-25 18:42:47.911[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://139.198.116.76:8000/api/v3/ent/prefix/alloc/pageQuery?currentPage=1&order=&orderProp=&orgName=oGp8wzRP8ips9kmbMUavwyB86PuNi9EL
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
+    "HRUN-Request-ID": "HRUN-2c42e7a6-6147-415c-883f-10ec946ca004-767837",
+    "Cookie": "SESSION=OGQ2MmQxOTItZWFhNi00MGIyLTk0N2EtY2FjMWQ2MmIwZWNm; SESSION=response.headers.\"Set-Cookie\".session"
+}
+cookies  : {
+    "SESSION": "OGQ2MmQxOTItZWFhNi00MGIyLTk0N2EtY2FjMWQ2MmIwZWNm"
+}
+body     : None
+[0m
+[32m2023-06-25 18:42:47.912[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:42:48 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": {
+        "first": true,
+        "last": true,
+        "totalPages": 1,
+        "totalElements": 1,
+        "number": 1,
+        "size": 10,
+        "sort": null,
+        "numberOfElements": 1,
+        "content": [
+            {
+                "orgName": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL",
+                "entPrefix": "88.408.8195471988,88.408.9344084317",
+                "orgTypeDesc": "国有控股",
+                "escrowOrgName": null,
+                "orgCategorySpecificDesc": "农、林、牧、渔业-农业",
+                "orgCrtCode": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL",
+                "userId": 1643,
+                "updateDate": "2023-06-25 18:42:47"
+            }
+        ]
+    }
+}
+[0m
+[32m2023-06-25 18:42:47.912[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m217[0m - [1mstatus_code: 200, response_time(ms): 71.71 ms, response_length: 0 bytes[0m
+[32m2023-06-25 18:42:47.912[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mextract[0m:[36m179[0m - [1mextract mapping: {'userId': 1643, 'orgName': 'oGp8wzRP8ips9kmbMUavwyB86PuNi9EL'}[0m
+[32m2023-06-25 18:42:47.912[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2023-06-25 18:42:47.912[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.message equal success(str)	==> pass[0m
+[32m2023-06-25 18:42:47.912[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.status equal 1(int)	==> pass[0m
+[32m2023-06-25 18:42:47.912[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.data.content[0].entPrefix equal 88.408.8195471988,88.408.9344084317(str)	==> pass[0m
+[32m2023-06-25 18:42:47.912[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 前缀分配分页-查询是否包含新分配的前缀 <<<<<<
+[0m
+[32m2023-06-25 18:42:47.913[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step_testcase[0m:[36m286[0m - [1mexport variables: {'userId': 1643, 'orgName': 'oGp8wzRP8ips9kmbMUavwyB86PuNi9EL'}[0m
+[32m2023-06-25 18:42:47.913[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 前缀分配列表 <<<<<<
+[0m
+[32m2023-06-25 18:42:47.913[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 查看详情 >>>>>>[0m
+[32m2023-06-25 18:42:47.913[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 企业信息详情 >>>>>>[0m
+[32m2023-06-25 18:42:48.003[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 127.0.0.1, Port: 56214[0m
+[32m2023-06-25 18:42:48.003[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 127.0.0.1, Port: 8888[0m
+[32m2023-06-25 18:42:48.004[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://139.198.116.76:8000/api/v3/ent/detail?isSensetive=1&userId=1643
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
+    "HRUN-Request-ID": "HRUN-2c42e7a6-6147-415c-883f-10ec946ca004-767914",
+    "Cookie": "SESSION=OGQ2MmQxOTItZWFhNi00MGIyLTk0N2EtY2FjMWQ2MmIwZWNm; SESSION=response.headers.\"Set-Cookie\".session"
+}
+cookies  : {
+    "SESSION": "OGQ2MmQxOTItZWFhNi00MGIyLTk0N2EtY2FjMWQ2MmIwZWNm"
+}
+body     : None
+[0m
+[32m2023-06-25 18:42:48.007[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:42:48 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": {
+        "nbmsEntPO": {
+            "id": 533,
+            "createDate": "2023-06-25 18:42:47",
+            "updateDate": "2023-06-25 18:42:47",
+            "entGeneralId": "2812816000000005",
+            "userId": 1643,
+            "userName": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL",
+            "sync": null,
+            "orgName": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL",
+            "orgNature": "1",
+            "orgAddrProvince": "110000",
+            "orgAddrCity": "110100",
+            "orgAddrCounty": "110101",
+            "orgAddr": "致真",
+            "orgCrtType": "1",
+            "orgCrtCode": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL",
+            "legalName": "*三",
+            "legalCrtType": "1",
+            "legalCrtNo": "**************1634",
+            "orgDesc": null,
+            "industryCategory": "A",
+            "industrySpecific": "01",
+            "contactName": "******************************EL",
+            "contactPhone": "164****4039",
+            "contactCrtType": 1,
+            "contactCrtNo": "**************1634",
+            "contactEmail": "FKN*************@qaqseq.com",
+            "website": null,
+            "regAuthority": null,
+            "regCapital": null,
+            "establishDate": null,
+            "periodValidity": null,
+            "legalEmail": null,
+            "legalPhone": null,
+            "legalFax": null,
+            "servSysBuildType": 1,
+            "servSysBuildName": null,
+            "servSysOperType": "1",
+            "servSysOperName": null,
+            "dataHostingOrg": null,
+            "servHostingOrg": null,
+            "regRealNaImpType": null,
+            "regRealNaImpName": null,
+            "idRegNaImp": null,
+            "extWebName": null,
+            "extDomain": null,
+            "extIpAddr": null,
+            "orgCrtImgRid": 2800,
+            "contactCrtFrontImgRid": 2801,
+            "contactCrtBackImgRid": 2802,
+            "legalCrtFrontImgRid": 2801,
+            "legalCrtBackImgRid": 2802,
+            "servSysBuildContractFileRid": null,
+            "servSysOperContractFileRid": null,
+            "dataHostingContractFileRid": null,
+            "servHostingContractFileRid": null,
+            "isDeleted": 0,
+            "xmlCreated": 0,
+            "xmlUpdateTime": null,
+            "xmlDeleted": 0,
+            "xmlSync": 0,
+            "entInfoLicenses": [],
+            "entInfoSyss": [
+                {
+                    "id": 1749,
+                    "entId": 533,
+                    "sysType": 1,
+                    "deployMode": 1,
+                    "deployAddr": "致真",
+                    "deployAddrProvince": "110000",
+                    "deployAddrCity": "110100",
+                    "deployAddrCounty": "110101",
+                    "name": null,
+                    "ipPort": null
+                },
+                {
+                    "id": 1750,
+                    "entId": 533,
+                    "sysType": 2,
+                    "deployMode": 1,
+                    "deployAddr": "致真",
+                    "deployAddrProvince": "110000",
+                    "deployAddrCity": "110100",
+                    "deployAddrCounty": "110101",
+                    "name": null,
+                    "ipPort": null
+                },
+                {
+                    "id": 1751,
+                    "entId": 533,
+                    "sysType": 3,
+                    "deployMode": 1,
+                    "deployAddr": "天津",
+                    "deployAddrProvince": "120000",
+                    "deployAddrCity": "120100",
+                    "deployAddrCounty": "120101",
+                    "name": null,
+                    "ipPort": null
+                },
+                {
+                    "id": 1752,
+                    "entId": 533,
+                    "sysType": 4,
+                    "deployMode": 1,
+                    "deployAddr": "天津",
+                    "deployAddrProvince": "120000",
+                    "deployAddrCity": "120100",
+                    "deployAddrCounty": "120101",
+                    "name": null,
+                    "ipPort": null
+                }
+            ],
+            "entInfoSerIndustrys": [],
+            "escrowId": null,
+            "industryQualificationRid": null,
+            "certificationRid": null,
+            "openingBank": null,
+            "bankCard": null,
+            "orgTypeDesc": "国有控股",
+            "orgCrtImgContent": null,
+            "orgAddrProvinceDesc": "北京市",
+            "orgAddrCountyDesc": "东城区",
+            "orgAddrCityDesc": "市辖区",
+            "orgCategorySpecificDesc": "农、林、牧、渔业-农业",
+            "legalCrtTypeDesc": "中国居民身份证",
+            "legalCrtFrontImgContent": null,
+            "legalCrtBackImgContent": null,
+            "entPrefix": "88.408.8195471988,88.408.9344084317",
+            "shrPrefix": null,
+            "orgCrtImgPath": "f7deb199-d584-44e0-b3a1-62336302c4f3.jpeg",
+            "contactCrtFrontImgPath": "7fe41f0e-4bfd-4219-83c6-4220fe5c81bb.jpeg",
+            "contactCrtBackImgPath": "7d663a50-529b-4628-96a7-e132df8f3430.jpeg",
+            "legalCrtFrontImgPath": "7fe41f0e-4bfd-4219-83c6-4220fe5c81bb.jpeg",
+            "legalCrtBackImgPath": "7d663a50-529b-4628-96a7-e132df8f3430.jpeg",
+            "servSysBuildContractFilePath": null,
+            "servSysOperContractFilePath": null,
+            "dataHostingContractFilePath": null,
+            "servHostingContractFilePath": null,
+            "industryQualificationFilePath": null,
+            "certificationFilePath": null,
+            "escrowOrgName": null
+        },
+        "nbmsEntPrefixPOs": [
+            {
+                "id": 702,
+                "createDate": "2023-06-25 18:42:47",
+                "updateDate": "2023-06-25 18:42:47",
+                "entPrefix": "88.408.8195471988",
+                "state": 1,
+                "historyState": 1,
+                "entGeneralId": "2812816000000005",
+                "entName": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL",
+                "userId": 1643,
+                "proxyState": 1,
+                "prefixConfigPO": [],
+                "escrowId": null
+            },
+            {
+                "id": 703,
+                "createDate": "2023-06-25 18:42:48",
+                "updateDate": "2023-06-25 18:42:48",
+                "entPrefix": "88.408.9344084317",
+                "state": 1,
+                "historyState": 1,
+                "entGeneralId": "2812816000000005",
+                "entName": "oGp8wzRP8ips9kmbMUavwyB86PuNi9EL",
+                "userId": 1643,
+                "proxyState": 1,
+                "prefixConfigPO": [],
+                "escrowId": null
+            }
+        ]
+    }
+}
+[0m
+[32m2023-06-25 18:42:48.007[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m217[0m - [1mstatus_code: 200, response_time(ms): 89.26 ms, response_length: 0 bytes[0m
+[32m2023-06-25 18:42:48.007[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mextract[0m:[36m179[0m - [1mextract mapping: {'entId': 533}[0m
+[32m2023-06-25 18:42:48.007[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2023-06-25 18:42:48.008[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.message equal success(str)	==> pass[0m
+[32m2023-06-25 18:42:48.008[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m249[0m - [1massert body.status equal 1(int)	==> pass[0m
+[32m2023-06-25 18:42:48.008[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 企业信息详情 <<<<<<
+[0m
+[32m2023-06-25 18:42:48.008[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step_testcase[0m:[36m286[0m - [1mexport variables: {'entId': 533}[0m
+[32m2023-06-25 18:42:48.008[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 查看详情 <<<<<<
+[0m
+[32m2023-06-25 18:42:48.008[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m460[0m - [1mgenerate testcase log: /Users/shangjingjing/Desktop/自动化0613/teleinfoautotest/logs/2c42e7a6-6147-415c-883f-10ec946ca004.run.log[0m

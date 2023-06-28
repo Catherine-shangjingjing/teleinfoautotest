@@ -1,0 +1,22 @@
+config:
+    name: 首页-数据汇总-企业申请中
+    variables: {
+#      entPrefix: get_prefix(),
+#      randomPrefix: "${get_prefix()}",
+      account: "${ENV(adminaccount)}",
+      password: "${ENV(adminpassword)}"
+    }
+    export: ["applyNum", "prefixNum", "entNum"]
+teststeps:
+-   name: 登录-管理员
+    testcase: testcases/login/login-admin.yml
+-   name: 企业申请中统计
+    testcase: testcases/statistics/indexstatistics.yml
+-   name: 前缀注册
+    testcase: testsuites/prefixAudit/prefix_register.yml
+-   name: 登录-管理员
+    testcase: testcases/login/login-admin.yml
+-   name: 企业申请中统计
+    testcase: testcases/statistics/indexstatistics_check_applyNum.yml
+
+

@@ -1,0 +1,166 @@
+config:
+    name: 企业注册查询注册信息
+    base_url: ${ENV(HOST)}
+        # 企业用户
+    export: ["imgId","imgId_b","imgId_f","applyId","entId","entUserId","prefix","entApplyId",
+             "userName","userId","entPrefix",
+             "legalEmail",
+             "legalPhone",
+             "contactCrtNo",
+             "contactCrtType",
+             "contactEmail",
+             "contactName",
+             "contactPhone",
+             "industryCategory",
+             "industrySpecific",
+             "orgName",
+             "orgNature",
+             "orgAddrProvince",
+             "orgAddrCity",
+             "orgAddrCounty",
+             "orgAddr",
+             "orgCrtType",
+             "orgCrtCode",
+             "legalName",
+             "legalCrtType",
+             "legalCrtNo",
+             "legalCrtFrontImgRid",
+             "legalCrtBackImgRid",
+             "orgCrtImgRid",
+             "orgNatureDesc",
+             "orgCategorySpecificDesc",
+             "orgAddrProvinceDesc",
+             "orgAddrCountyDesc",
+             "orgAddrCityDesc",
+             "legalCrtTypeDesc",
+             "createDate",
+             "updateDate",
+             "entInfoSyss_0_id",
+             "entInfoSyss_0_entApplyId",
+             "entInfoSyss_0_sysType",
+             "entInfoSyss_0_deployMode",
+             "entInfoSyss_1_id",
+             "entInfoSyss_1_entApplyId",
+             "entInfoSyss_1_sysType",
+             "entInfoSyss_1_deployMode",
+             "entInfoSyss_2_id",
+             "entInfoSyss_2_entApplyId",
+             "entInfoSyss_2_sysType",
+             "entInfoSyss_2_deployMode",
+             "entInfoSyss_3_id",
+             "entInfoSyss_3_entApplyId",
+             "entInfoSyss_3_sysType",
+             "entInfoSyss_3_deployMode",
+             "entInfoSyss_0_deployAddr",
+              "entInfoSyss_0_deployAddrProvince",
+              "entInfoSyss_0_deployAddrCity",
+              "entInfoSyss_0_deployAddrCounty",
+              "entInfoSyss_1_deployAddr",
+              "entInfoSyss_1_deployAddrProvince",
+              "entInfoSyss_1_deployAddrCity",
+              "entInfoSyss_1_deployAddrCounty",
+              "entInfoSyss_2_deployAddr",
+              "entInfoSyss_2_deployAddrProvince",
+              "entInfoSyss_2_deployAddrCity",
+              "entInfoSyss_2_deployAddrCounty",
+              "entInfoSyss_3_deployAddr",
+              "entInfoSyss_3_deployAddrProvince",
+              "entInfoSyss_3_deployAddrCity",
+              "entInfoSyss_3_deployAddrCounty"]
+    verify: false
+teststeps:
+-   name: 企业注册查询注册信息
+    request:
+        cookies:
+            SESSION: $entSession
+        headers:
+            Accept: application/json, text/plain, */*
+            Accept-Encoding: gzip, deflate
+            Accept-Language: zh-CN,zh;q=0.9
+            Connection: keep-alive
+            User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36
+        method: GET
+        url: /api/v3/entApply/applyOrNot
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - body.message
+        - success
+    extract:
+        applyId: "body.data.nbmsEntApplyPO.id"
+        userId: "body.data.nbmsEntApplyPO.userId"
+        userName: "body.data.nbmsEntApplyPO.userName"
+        imgId_f: "body.data.nbmsEntApplyPO.contactCrtFrontImgRid"
+        imgId_b: "body.data.nbmsEntApplyPO.contactCrtBackImgRid"
+        entId: "body.data.nbmsEntPO.id"
+        entUserId: "body.data.nbmsEntPO.userId"
+        entPrefix: "body.data.nbmsEntPO.entPrefix"
+        prefix: "body.data.nbmsEntPO.entPrefix"
+        contactCrtNo: "body.data.nbmsEntApplyPO.contactCrtNo"
+        contactCrtType: "body.data.nbmsEntApplyPO.contactCrtType"
+        contactEmail: "body.data.nbmsEntApplyPO.contactEmail"
+        contactName: "body.data.nbmsEntApplyPO.contactName"
+        contactPhone: "body.data.nbmsEntApplyPO.contactPhone"
+        industryCategory: "body.data.nbmsEntApplyPO.industryCategory"
+        industrySpecific: "body.data.nbmsEntApplyPO.industrySpecific"
+        orgName: "body.data.nbmsEntApplyPO.orgName"
+        orgNature: "body.data.nbmsEntApplyPO.orgNature"
+        orgAddrProvince: "body.data.nbmsEntApplyPO.orgAddrProvince"
+        orgAddrCity: "body.data.nbmsEntApplyPO.orgAddrCity"
+        orgAddrCounty: "body.data.nbmsEntApplyPO.orgAddrCounty"
+        orgAddr: "body.data.nbmsEntApplyPO.orgAddr"
+        orgCrtType: "body.data.nbmsEntApplyPO.orgCrtType"
+        orgCrtCode: "body.data.nbmsEntApplyPO.orgCrtCode"
+        legalName: "body.data.nbmsEntApplyPO.legalName"
+        legalEmail: "body.data.nbmsEntApplyPO.legalEmail"
+        legalPhone: "body.data.nbmsEntApplyPO.legalPhone"
+        legalCrtType: "body.data.nbmsEntApplyPO.legalCrtType"
+        legalCrtNo: "body.data.nbmsEntApplyPO.legalCrtNo"
+        legalCrtFrontImgRid: "body.data.nbmsEntApplyPO.legalCrtFrontImgRid"
+        legalCrtBackImgRid: "body.data.nbmsEntApplyPO.legalCrtBackImgRid"
+        orgCrtImgRid: "body.data.nbmsEntApplyPO.orgCrtImgRid"
+        imgId: "body.data.nbmsEntApplyPO.orgCrtImgRid"
+        orgNatureDesc: "body.data.nbmsEntApplyPO.orgNatureDesc"
+        orgCategorySpecificDesc: "body.data.nbmsEntApplyPO.orgCategorySpecificDesc"
+        orgAddrProvinceDesc: "body.data.nbmsEntApplyPO.orgAddrProvinceDesc"
+        orgAddrCountyDesc: "body.data.nbmsEntApplyPO.orgAddrCountyDesc"
+        orgAddrCityDesc: "body.data.nbmsEntApplyPO.orgAddrCityDesc"
+        legalCrtTypeDesc: "body.data.nbmsEntApplyPO.legalCrtTypeDesc"
+        createDate: "body.data.nbmsEntApplyPO.createDate"
+        updateDate: "body.data.nbmsEntApplyPO.updateDate"
+        entInfoSyss_0_id: "body.data.nbmsEntApplyPO.entInfoSyss[0].id"
+        entInfoSyss_0_entApplyId: "body.data.nbmsEntApplyPO.entInfoSyss[0].entApplyId"
+        entApplyId: "body.data.nbmsEntApplyPO.entInfoSyss[0].entApplyId"
+        entInfoSyss_0_sysType: "body.data.nbmsEntApplyPO.entInfoSyss[0].sysType"
+        entInfoSyss_0_deployMode: "body.data.nbmsEntApplyPO.entInfoSyss[0].deployMode"
+        entInfoSyss_0_deployAddr: "body.data.nbmsEntApplyPO.entInfoSyss[0].deployAddr"
+        entInfoSyss_0_deployAddrProvince: "body.data.nbmsEntApplyPO.entInfoSyss[0].deployAddrProvince"
+        entInfoSyss_0_deployAddrCity: "body.data.nbmsEntApplyPO.entInfoSyss[0].deployAddrCity"
+        entInfoSyss_0_deployAddrCounty: "body.data.nbmsEntApplyPO.entInfoSyss[0].deployAddrCounty"
+        entInfoSyss_1_id: "body.data.nbmsEntApplyPO.entInfoSyss[1].id"
+        entInfoSyss_1_entApplyId: "body.data.nbmsEntApplyPO.entInfoSyss[1].entApplyId"
+        entInfoSyss_1_sysType: "body.data.nbmsEntApplyPO.entInfoSyss[1].sysType"
+        entInfoSyss_1_deployMode: "body.data.nbmsEntApplyPO.entInfoSyss[1].deployMode"
+        entInfoSyss_1_deployAddr: "body.data.nbmsEntApplyPO.entInfoSyss[1].deployAddr"
+        entInfoSyss_1_deployAddrProvince: "body.data.nbmsEntApplyPO.entInfoSyss[1].deployAddrProvince"
+        entInfoSyss_1_deployAddrCity: "body.data.nbmsEntApplyPO.entInfoSyss[1].deployAddrCity"
+        entInfoSyss_1_deployAddrCounty: "body.data.nbmsEntApplyPO.entInfoSyss[1].deployAddrCounty"
+        entInfoSyss_2_id: "body.data.nbmsEntApplyPO.entInfoSyss[2].id"
+        entInfoSyss_2_entApplyId: "body.data.nbmsEntApplyPO.entInfoSyss[2].entApplyId"
+        entInfoSyss_2_sysType: "body.data.nbmsEntApplyPO.entInfoSyss[2].sysType"
+        entInfoSyss_2_deployMode: "body.data.nbmsEntApplyPO.entInfoSyss[2].deployMode"
+        entInfoSyss_2_deployAddr: "body.data.nbmsEntApplyPO.entInfoSyss[2].deployAddr"
+        entInfoSyss_2_deployAddrProvince: "body.data.nbmsEntApplyPO.entInfoSyss[2].deployAddrProvince"
+        entInfoSyss_2_deployAddrCity: "body.data.nbmsEntApplyPO.entInfoSyss[2].deployAddrCity"
+        entInfoSyss_2_deployAddrCounty: "body.data.nbmsEntApplyPO.entInfoSyss[2].deployAddrCounty"
+        entInfoSyss_3_id: "body.data.nbmsEntApplyPO.entInfoSyss[3].id"
+        entInfoSyss_3_entApplyId: "body.data.nbmsEntApplyPO.entInfoSyss[3].entApplyId"
+        entInfoSyss_3_sysType: "body.data.nbmsEntApplyPO.entInfoSyss[3].sysType"
+        entInfoSyss_3_deployMode: "body.data.nbmsEntApplyPO.entInfoSyss[3].deployMode"
+        entInfoSyss_3_deployAddr: "body.data.nbmsEntApplyPO.entInfoSyss[3].deployAddr"
+        entInfoSyss_3_deployAddrProvince: "body.data.nbmsEntApplyPO.entInfoSyss[3].deployAddrProvince"
+        entInfoSyss_3_deployAddrCity: "body.data.nbmsEntApplyPO.entInfoSyss[3].deployAddrCity"
+        entInfoSyss_3_deployAddrCounty: "body.data.nbmsEntApplyPO.entInfoSyss[3].deployAddrCounty"

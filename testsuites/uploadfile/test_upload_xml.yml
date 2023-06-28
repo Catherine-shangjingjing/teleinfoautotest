@@ -1,0 +1,19 @@
+config:
+    name: xml上传
+
+    variables:
+        entaccount: "${ENV(entaccount)}"
+        entpassword: "${ENV(entpassword)}"
+        fileName: "${ENV(xmlFileName)}"
+teststeps:
+
+-   name: 登录-企业
+    testcase: testcases/login/login-ent.yml
+
+-   name: 上传xml文件
+    testcase: testcases/uploadfile/UploadXml.yml
+
+
+
+
+

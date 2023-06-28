@@ -1,0 +1,24 @@
+config:
+    name: 包含修改企业信息
+    variables: {
+      entPrefix: get_prefix(),
+      randomPrefix: "${get_prefix()}",
+      account: "${ENV(adminaccount)}",
+      password: "${ENV(adminpassword)}"
+    }
+teststeps:
+
+-   name: 审核驳回
+    testcase: testsuites/prefixAudit/prefixRejected.yaml
+
+
+-   name: 登录-企业
+    testcase: testcases/login/login-ent.yml
+
+-   name: 审核驳回信息查询
+    testcase: testcases/prefixAudit/register/apply_or_not.yml
+
+
+
+
+

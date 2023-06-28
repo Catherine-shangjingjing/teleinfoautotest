@@ -1,0 +1,6 @@
+config:
+    name: 门户查询不存在的标识
+
+teststeps:
+-   name: 门户查询标识信息不存在
+    testcase: testcases/checkhandle/checkId_exist.yml

@@ -1,0 +1,80 @@
+config:
+    name: idhub标识注册用例集-admin-30,31
+    variables:
+        # 用户注册-start-----------------
+        email: "${get_email()}"
+        mobile: "${get_mobile()}"
+        username: "${get_username()}"
+        # 用户注册-end-----------------
+        # 管理员用户
+        account: "${ENV(adminaccount)}"
+        password: "${ENV(adminpassword)}"
+        # 企业用户
+        entaccount: "$username"
+        entpassword: "${ENV(entpassword)}"
+#        randomPrefix: "${get_prefix()}"
+        idhub_biaoshi: "$prefix/${get_random_param(100, 1000000)}"
+        # 保存前缀配置-start-----------------
+        ip: ${ENV(idhub_ip)}
+        ipType: ${ENV(idhub_ipType)}
+        tcpPort: ${ENV(idhub_tcpPort)}
+        udpport: ''
+        httpPort: ${ENV(idhub_httpPort)}
+        prefix: "${ENV(prefix_second)}${get_random_param(1,10000,1)}"
+        personId: "${get_idcardno()}"
+        # 保存前缀配置-end-----------------
+    export: [ "applyNum", "delnum", "entNum", identityNumAdmin, "prefixNum", "resolvnumAdmin" ]
+teststeps:
+-   name: 用户注册
+    testcase: testcases/prefixAudit/register.yml
+
+-   name: 登录-企业
+    testcase: testcases/login/login-ent.yml
+
+-   name: 前缀注册企业资质图片上传
+    testcase: testcases/prefixAudit/register/upload_img.yml
+
+-   name: 前缀注册企业联系人身份证图片正面上传
+    testcase: testcases/prefixAudit/register/upload_img_f.yml
+
+-   name: 前缀注册企业联系人身份证图片背面上传
+    testcase: testcases/prefixAudit/register/upload_img_b.yml
+
+-   name: 企业注册第一步提交信息
+    testcase: testcases/prefixAudit/register/submit_first.yml
+
+-   name: 企业注册查询注册信息
+    testcase: testcases/prefixAudit/register/apply_or_not.yml
+
+-   name: 企业注册第二步提交信息
+    testcase: testcases/prefixAudit/register/submit_second.yml
+
+-   name: 企业注册查询注册信息
+    testcase: testcases/prefixAudit/register/apply_or_not.yml
+
+-   name: 企业注册最终第三步提交信息
+    testcase: testcases/prefixAudit/register/submit_final.yml
+-   name: 登录-管理员
+    testcase: testcases/login/login-admin.yml
+-   name: 年费费用查询
+    testcase: testcases/prefixAudit/audit/finance-rule-findRule.yml
+-   name: 注册费费用查询
+    testcase: testcases/prefixAudit/audit/finance-rule-findRule-reg.yml
+-   name: 审核结果保存
+    testcase: testcases/prefixAudit/audit/v3-ent-audit-save.yml
+-   name: 前缀管理列表
+    testcase: testcases/prefixmanager/v3-ent-prefix-manage-pageQuery.yml
+-   name: 前缀配置
+    testcase: testcases/prefixmanager/v3-ent-prefix-manage-configPage.yml
+-   name: 保存前缀配置
+    testcase: testcases/prefixmanager/v3-ent-prefix-manage-saveConfig.yml
+-   name: idhub预制前缀
+    testcase: testcases/idhub/idhubhomeprefrix.yml
+-   name: 首页统计查询-before
+    testcase: testcases/statistics/indexstatistics.yml
+-   name: 自建idhub创建标识
+    testcase: testcases/idhub/idhubreghandle-30.yml
+-   name: idhub解析标识
+    testcase: testcases/idhub/idhub_parse-30.yml
+-   name: 首页统计查询-after
+    testcase: testcases/statistics/indexstatistics-1.yml

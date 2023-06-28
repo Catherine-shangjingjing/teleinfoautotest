@@ -1,0 +1,142 @@
+2023-06-25 18:45:35.912 | INFO     | httprunner.runner:test_start:450 - Start to run testcase: xml上传, TestCase ID: e626ce32-e749-4c86-9c68-50e03e9433d2
+2023-06-25 18:45:35.913 | INFO     | httprunner.runner:__run_step:292 - run step begin: 登录-企业 >>>>>>
+2023-06-25 18:45:35.913 | INFO     | httprunner.runner:__run_step:292 - run step begin: 登录-企业用户 >>>>>>
+2023-06-25 18:45:36.167 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 57071
+2023-06-25 18:45:36.168 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:45:36.168 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/home/test/login
+headers  : {
+    "User-Agent": "python-requests/2.28.1",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Content-Length": "153",
+    "Content-Type": "application/json",
+    "HRUN-Request-ID": "HRUN-e626ce32-e749-4c86-9c68-50e03e9433d2-935913"
+}
+cookies  : {}
+body     : {
+    "captcha": "0000",
+    "captchaSign": "38be7cc8cac76d23e86626cb05d7f6d2b78d6331475624bdc58c23c527e3c5c5",
+    "emailCaptcha": "",
+    "username": "20230531-110943"
+}
+
+2023-06-25 18:45:36.169 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:45:36 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Set-Cookie": "SESSION=NGNkNmI0YTgtMmJiMy00MGZiLTlkMDItMGIwZWE4YzRlZTlm; Path=/; HttpOnly; SameSite=Lax",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {
+    "SESSION": "NGNkNmI0YTgtMmJiMy00MGZiLTlkMDItMGIwZWE4YzRlZTlm"
+}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": true
+}
+
+2023-06-25 18:45:36.169 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 254.11 ms, response_length: 0 bytes
+2023-06-25 18:45:36.169 | INFO     | httprunner.response:extract:179 - extract mapping: {'entSession': 'response.headers."Set-Cookie".session'}
+2023-06-25 18:45:36.170 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:45:36.170 | INFO     | httprunner.response:validate:249 - assert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass
+2023-06-25 18:45:36.170 | INFO     | httprunner.response:validate:249 - assert body.message equal success(str)	==> pass
+2023-06-25 18:45:36.171 | INFO     | httprunner.response:validate:249 - assert body.status equal 1(int)	==> pass
+2023-06-25 18:45:36.171 | INFO     | httprunner.response:validate:249 - assert body.data equal True(bool)	==> pass
+2023-06-25 18:45:36.171 | INFO     | httprunner.runner:__run_step:304 - run step end: 登录-企业用户 <<<<<<
+
+2023-06-25 18:45:36.171 | INFO     | httprunner.runner:__run_step_testcase:286 - export variables: {'entSession': 'response.headers."Set-Cookie".session'}
+2023-06-25 18:45:36.171 | INFO     | httprunner.runner:__run_step:304 - run step end: 登录-企业 <<<<<<
+
+2023-06-25 18:45:36.171 | INFO     | httprunner.runner:__run_step:292 - run step begin: 上传xml文件 >>>>>>
+2023-06-25 18:45:36.171 | INFO     | httprunner.runner:__run_step:292 - run step begin: xml上传注册标识 >>>>>>
+2023-06-25 18:45:36.242 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 57071
+2023-06-25 18:45:36.243 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:45:36.244 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/snms/identityv2/data/uploadXml
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Type": "multipart/form-data; boundary=b1a33b91c68c4e4fa209a590a9a9ea4f",
+    "HRUN-Request-ID": "HRUN-e626ce32-e749-4c86-9c68-50e03e9433d2-936173",
+    "Cookie": "SESSION=NGNkNmI0YTgtMmJiMy00MGZiLTlkMDItMGIwZWE4YzRlZTlm; SESSION=response.headers.\"Set-Cookie\".session",
+    "Content-Length": "1467"
+}
+cookies  : {
+    "SESSION": "NGNkNmI0YTgtMmJiMy00MGZiLTlkMDItMGIwZWE4YzRlZTlm"
+}
+body     : upload file stream (OMITTED)
+
+2023-06-25 18:45:36.244 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:45:36 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "message": "创建第1条标识: 88.408.13826286867/test001失败,原因: 标识【88.408.13826286867/test001】已存在;请修改后重新导入",
+    "status": -2,
+    "data": false
+}
+
+2023-06-25 18:45:36.245 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 69.44 ms, response_length: 0 bytes
+2023-06-25 18:45:36.245 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:45:36.245 | INFO     | httprunner.response:validate:249 - assert headers."Content-Type" equal application/json(str)	==> pass
+2023-06-25 18:45:36.246 | ERROR    | httprunner.response:validate:266 - assert body.message equal success(str)	==> fail
+check_item: body.message
+check_value: 创建第1条标识: 88.408.13826286867/test001失败,原因: 标识【88.408.13826286867/test001】已存在;请修改后重新导入(str)
+assert_method: equal
+expect_value: success(str)
+2023-06-25 18:45:36.246 | ERROR    | httprunner.response:validate:266 - assert body.status equal 1(int)	==> fail
+check_item: body.status
+check_value: -2(int)
+assert_method: equal
+expect_value: 1(int)
+2023-06-25 18:45:36.246 | ERROR    | httprunner.response:validate:266 - assert body.data equal True(bool)	==> fail
+check_item: body.data
+check_value: False(bool)
+assert_method: equal
+expect_value: True(bool)
+2023-06-25 18:45:36.246 | ERROR    | httprunner.runner:log_req_resp_details:194 - 
+******************************** DETAILED REQUEST & RESPONSE ********************************
+====== request details ======
+url: http://139.198.116.76:8000/api/snms/identityv2/data/uploadXml
+method: POST
+headers: {'Accept': 'application/json, text/plain, */*', 'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Connection': 'keep-alive', 'Content-Type': 'multipart/form-data; boundary=b1a33b91c68c4e4fa209a590a9a9ea4f', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36', 'HRUN-Request-ID': 'HRUN-e626ce32-e749-4c86-9c68-50e03e9433d2-936173'}
+params: {}
+data: <MultipartEncoder: {'file': ('88.408.13826286867_test053101.xml', <_io.BufferedReader name='/Users/shangjingjing/Desktop/自动化0613/teleinfoautotest/data/88.408.13826286867_test053101.xml'>, 'text/html')}>
+cookies: {'SESSION': 'response.headers."Set-Cookie".session'}
+timeout: 120
+allow_redirects: True
+verify: False
+json: None
+
+====== response details ======
+status_code: 200
+headers: {'Server': 'nginx', 'Date': 'Sun, 25 Jun 2023 10:45:36 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'X-Frame-Options': 'SAMEORIGIN', 'Connection': 'keep-alive'}
+body: '{"message":"创建第1条标识: 88.408.13826286867/test001失败,原因: 标识【88.408.13826286867/test001】已存在;请修改后重新导入","status":-2,"data":false}'
+

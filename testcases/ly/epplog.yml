@@ -1,0 +1,43 @@
+config:
+    name: epp日志列表
+    base_url: ${ENV(HOST)}
+    variables: {
+        account: "${ENV(adminaccount)}",
+        password: "${ENV(adminpassword)}"
+    }
+    verify: false
+teststeps:
+-   name: epp日志列表
+    request:
+        cookies:
+            SESSION: $adminSession
+        headers:
+            Accept: application/json, text/plain, */*
+            Accept-Encoding: gzip, deflate
+            Accept-Language: zh-CN,zh;q=0.9
+            Connection: keep-alive
+            User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36
+        method: GET
+        params:
+            cache: '1663913323537'
+            currentPage: '1'
+            order: ''
+            orderProp: ''
+        url: /api/log/epp
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - body.message
+        - success
+    -   eq:
+        - body.status
+        - 1
+    -   contains:
+        - body.data.content[0].request
+        - $entprefix

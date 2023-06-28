@@ -1,0 +1,4 @@
+[32m2023-06-14 17:37:21.365[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m450[0m - [1mStart to run testcase: 门户首页查询已删除的标识, TestCase ID: ccf7cd72-1299-49bb-b7c0-6895d00f50cb[0m
+[32m2023-06-14 17:37:21.366[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 企业申请托管并审核通过 >>>>>>[0m
+[32m2023-06-14 17:37:21.366[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 企业注册并前缀审核通过 >>>>>>[0m
+[32m2023-06-14 17:37:21.367[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m460[0m - [1mgenerate testcase log: /Users/shangjingjing/Desktop/自动化0613/teleinfoautotest/logs/ccf7cd72-1299-49bb-b7c0-6895d00f50cb.run.log[0m

@@ -1,0 +1,2 @@
+[32m2023-06-25 17:35:54.788[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m450[0m - [1mStart to run testcase: 托管审核驳回，查看驳回详情, TestCase ID: 2750c0e2-c788-4070-9464-76e131b94cab[0m
+[32m2023-06-25 17:35:54.789[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m460[0m - [1mgenerate testcase log: /Users/shangjingjing/Desktop/自动化0613/teleinfoautotest/logs/2750c0e2-c788-4070-9464-76e131b94cab.run.log[0m

@@ -1,0 +1,52 @@
+2023-06-13 15:46:01.438 | INFO     | httprunner.runner:test_start:450 - Start to run testcase: 门户查询标识信息用例集, TestCase ID: 5c2c2ce6-a734-48da-9091-5b34b6c249b9
+2023-06-13 15:46:01.438 | INFO     | httprunner.runner:__run_step:292 - run step begin: 门户查询标识信息不存在 >>>>>>
+2023-06-13 15:46:01.438 | INFO     | httprunner.runner:__run_step:292 - run step begin: 门户查询标识信息不存在 >>>>>>
+2023-06-13 15:47:16.445 | WARNING  | httprunner.client:request:188 - failed to get client address info: 'NoneType' object has no attribute 'connection'
+2023-06-13 15:47:16.448 | WARNING  | httprunner.client:request:196 - failed to get server address info: 'NoneType' object has no attribute 'connection'
+2023-06-13 15:47:16.450 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://139.198.115.70:8000/api/identityv2/query/data
+headers  : {}
+cookies  : {}
+body     : None
+
+2023-06-13 15:47:16.451 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 0
+headers  : {}
+cookies  : {}
+encoding : None
+content_type : 
+body     : 
+
+2023-06-13 15:47:16.452 | ERROR    | httprunner.client:request:215 - HTTPConnectionPool(host='139.198.115.70', port=8000): Max retries exceeded with url: /api/identityv2/query/data?handle=803.12.12%2F1234 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x107a44880>, 'Connection to 139.198.115.70 timed out. (connect timeout=120)'))
+2023-06-13 15:47:16.453 | ERROR    | httprunner.response:validate:266 - assert status_code equal 200(int)	==> fail
+check_item: status_code
+check_value: 0(int)
+assert_method: equal
+expect_value: 200(int)
+2023-06-13 15:47:16.453 | ERROR    | httprunner.response:validate:266 - assert body.message equal success(str)	==> fail
+check_item: body.message
+check_value: None(NoneType)
+assert_method: equal
+expect_value: success(str)
+2023-06-13 15:47:16.454 | ERROR    | httprunner.runner:log_req_resp_details:194 - 
+******************************** DETAILED REQUEST & RESPONSE ********************************
+====== request details ======
+url: http://139.198.115.70:8000/api/identityv2/query/data
+method: GET
+headers: {'Accept': 'application/json, text/plain, */*', 'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Connection': 'keep-alive', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36', 'HRUN-Request-ID': 'HRUN-5c2c2ce6-a734-48da-9091-5b34b6c249b9-361438'}
+params: {'handle': '803.12.12/1234'}
+data: None
+cookies: {}
+timeout: 120
+allow_redirects: True
+verify: False
+json: None
+
+====== response details ======
+status_code: 0
+headers: {}
+body: ''
+

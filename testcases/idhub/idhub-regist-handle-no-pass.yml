@@ -1,0 +1,36 @@
+config:
+    name: idhub注册标识-不通过
+    base_url: ${ENV(idhub_HOST)}
+    verify: false
+teststeps:
+-   name: idhub注册标识
+    request:
+        headers:
+            Accept: application/json, text/plain, */*
+            Accept-Encoding: gzip, deflate
+            Accept-Language: zh-CN,zh;q=0.9
+            Connection: keep-alive
+            User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36
+        method: PUT
+        json:
+            index: 0
+            type: "URL"
+            data:
+                format: "string"
+                value: "www.baidu.com"
+            ttl: 86400
+            timestamp: "2017-10-19 09:48:03"
+            references: [ ]
+            adminRead: "1"
+            adminWrite: "1"
+            publicRead: "1"
+            publicWrite: "0"
+        url: /api/handles/${idhub_biaoshi}
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   contains:
+        - body.msg
+        - "标识不存在"

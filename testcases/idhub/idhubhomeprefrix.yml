@@ -1,0 +1,29 @@
+config:
+    name: idhub预制前缀
+    base_url: ${ENV(idhub_HOST)}
+#    variables:
+#         prefix: $entPrefix
+#         prefix: 88.502.111111
+    verify: false
+teststeps:
+-   name: idhub预制前缀
+    request:
+        headers:
+            Accept: '*/*'
+            Accept-Encoding: gzip, deflate, br
+            Connection: keep-alive
+        method: PUT
+        url: /api/prefixes/$prefix
+    validate:
+    -   eq:
+        - status_code
+        - 200
+#    -   eq:
+#        - headers.Content-Type
+#        - application/json
+    -   eq:
+        - body.msg
+        - success
+    -   eq:
+        - body.responseCode
+        - 1

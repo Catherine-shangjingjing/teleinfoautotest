@@ -1,0 +1,6 @@
+2023-06-13 16:34:12.733 | INFO     | httprunner.runner:test_start:450 - Start to run testcase: 托管审核取消,企业登录系统查看托管配置, TestCase ID: bc5cfc7c-935b-4ff2-88ba-f758ad7d417c
+2023-06-13 16:35:27.727 | ERROR    | httprunner.parser:parse_string:342 - call function error:
+func_name: get_session
+args: ['admin20220929', 'Admin@123']
+kwargs: {}
+ConnectTimeout: HTTPConnectionPool(host='139.198.115.70', port=8000): Max retries exceeded with url: /api/home/test/login (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x105c7fcd0>, 'Connection to 139.198.115.70 timed out. (connect timeout=None)'))

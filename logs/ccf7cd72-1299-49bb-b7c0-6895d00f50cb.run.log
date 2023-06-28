@@ -1,0 +1,3 @@
+2023-06-14 17:37:21.365 | INFO     | httprunner.runner:test_start:450 - Start to run testcase: 门户首页查询已删除的标识, TestCase ID: ccf7cd72-1299-49bb-b7c0-6895d00f50cb
+2023-06-14 17:37:21.366 | INFO     | httprunner.runner:__run_step:292 - run step begin: 企业申请托管并审核通过 >>>>>>
+2023-06-14 17:37:21.366 | INFO     | httprunner.runner:__run_step:292 - run step begin: 企业注册并前缀审核通过 >>>>>>

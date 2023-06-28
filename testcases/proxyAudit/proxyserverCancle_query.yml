@@ -1,0 +1,49 @@
+config:
+    name: 企业用户取消托管后查询托管信息
+    base_url: ${ENV(HOST)}
+#    variables: {
+#        prefix: "88.502.99988",
+#        entaccount: "ysc" ,
+#        entpassword: "Ysc@1234" ,
+##        entsession: "${get_session($entaccount, $entpassword)}"
+#    }
+    verify: false
+teststeps:
+-   name: /api/prefixProxy/pageQuery
+    request:
+        cookies:
+            SESSION: $entSession
+        headers:
+            Accept: application/json, text/plain, */*
+            Accept-Encoding: gzip, deflate
+            Accept-Language: zh-CN,zh;q=0.9
+            Connection: keep-alive
+#            Cookie: SESSION=MWNjZjk4MDgtMTY0Zi00ODM3LWIwOTctNmJhMjU0MDZjODNk
+#            Host: 139.198.115.70:8000
+#            Referer: http://139.198.115.70:8000/snms/ui/entPrefix/proxy
+            User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36
+        method: GET
+        params:
+            cache: '1664333881101'
+            currentPage: '1'
+            entPrefix: $prefix
+            order: ''
+            orderProp: ''
+        url: /api/prefixProxy/pageQuery
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - body.message
+        - success
+    -   eq:
+        - body.status
+        - 1
+    -   eq:
+        - content.data.content.0.proxyState
+        - 1

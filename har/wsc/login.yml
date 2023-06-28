@@ -1,0 +1,41 @@
+config:
+    name: testcase description
+    variables: {}
+    verify: false
+teststeps:
+-   name: /api/home/test/login
+    request:
+        headers:
+            Accept: '*/*'
+            Accept-Encoding: gzip, deflate, br
+            Connection: keep-alive
+            Content-Length: '204'
+            Content-Type: application/json
+            Host: 139.198.115.70:8000
+            User-Agent: python-requests/2.28.1
+        json:
+            captcha: '0000'
+            captchaSign: 76435b17673a207b72acefa1e5737c84ab557662dc5c9f97bd00eee274f19ca6
+            emailCaptcha: ''
+            openId: ''
+            openUserName: ''
+            password: ''
+            username: PBdWY70B6KBrwP7d
+        method: POST
+        url: http://139.198.115.70:8000/api/home/test/login
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - body.message
+        - success
+    -   eq:
+        - body.status
+        - 1
+    -   eq:
+        - body.data
+        - true

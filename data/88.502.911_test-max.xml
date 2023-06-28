@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data>
+  <prefix>88.502.911</prefix>
+  <handle>88.502.000000/6tcuGWvQobi6y2Zx6xGDMNScG3z9HJMwcrGhXaGs6etFskz7P5WyEZcoos447GwQ</handle>
+  <meta>test-max</meta>
+  <items>
+    <!--item支持多条，最多500条-->
+    <item>
+      <identity>88.502.911/987654321</identity>
+      <terminalType>5631245</terminalType>
+      <subject>asdad6556156151adasdasda</subject>
+    </item>
+  </items>
+</data>

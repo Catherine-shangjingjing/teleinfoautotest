@@ -1,0 +1,240 @@
+2023-06-26 10:34:30.796 | INFO     | httprunner.runner:test_start:450 - Start to run testcase: 用户日志记录, TestCase ID: 710e3eda-f9fb-4b89-bc84-31e25d878d3d
+2023-06-26 10:34:30.796 | INFO     | httprunner.runner:__run_step:292 - run step begin: 管理员用户登录 >>>>>>
+2023-06-26 10:34:30.797 | INFO     | httprunner.runner:__run_step:292 - run step begin: 登录-企业用户 >>>>>>
+2023-06-26 10:34:30.921 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 51234
+2023-06-26 10:34:30.922 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-26 10:34:30.922 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/home/test/login
+headers  : {
+    "User-Agent": "python-requests/2.28.1",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Content-Length": "144",
+    "Content-Type": "application/json",
+    "HRUN-Request-ID": "HRUN-710e3eda-f9fb-4b89-bc84-31e25d878d3d-870797"
+}
+cookies  : {}
+body     : {
+    "captcha": "0000",
+    "captchaSign": "5d39bab12bba81ab59b3931d2ca06ee9603c3803355932be66974f122cab3502",
+    "emailCaptcha": "",
+    "username": "adminy"
+}
+
+2023-06-26 10:34:30.922 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Mon, 26 Jun 2023 02:34:31 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Set-Cookie": "SESSION=MjZhMzJhOWEtNGZmNS00YzJmLWIyNTMtOTA3MTJiZTcwNGEy; Path=/; HttpOnly; SameSite=Lax",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {
+    "SESSION": "MjZhMzJhOWEtNGZmNS00YzJmLWIyNTMtOTA3MTJiZTcwNGEy"
+}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": true
+}
+
+2023-06-26 10:34:30.922 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 124.56 ms, response_length: 0 bytes
+2023-06-26 10:34:30.922 | INFO     | httprunner.response:extract:179 - extract mapping: {'adminSession': 'response.headers."Set-Cookie".session'}
+2023-06-26 10:34:30.922 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-26 10:34:30.922 | INFO     | httprunner.response:validate:249 - assert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass
+2023-06-26 10:34:30.922 | INFO     | httprunner.response:validate:249 - assert body.message equal success(str)	==> pass
+2023-06-26 10:34:30.922 | INFO     | httprunner.response:validate:249 - assert body.status equal 1(int)	==> pass
+2023-06-26 10:34:30.923 | INFO     | httprunner.response:validate:249 - assert body.data equal True(bool)	==> pass
+2023-06-26 10:34:30.923 | INFO     | httprunner.runner:__run_step:304 - run step end: 登录-企业用户 <<<<<<
+
+2023-06-26 10:34:30.923 | INFO     | httprunner.runner:__run_step_testcase:286 - export variables: {'adminSession': 'response.headers."Set-Cookie".session'}
+2023-06-26 10:34:30.923 | INFO     | httprunner.runner:__run_step:304 - run step end: 管理员用户登录 <<<<<<
+
+2023-06-26 10:34:30.923 | INFO     | httprunner.runner:__run_step:292 - run step begin: 用户日志列表 >>>>>>
+2023-06-26 10:34:30.923 | INFO     | httprunner.runner:__run_step:292 - run step begin: 用户日志列表 >>>>>>
+2023-06-26 10:34:31.100 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 51234
+2023-06-26 10:34:31.101 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-26 10:34:31.102 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://139.198.116.76:8000/api/log/snms/user?cache=1663914572123&currentPage=1&order=&orderProp=
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "HRUN-Request-ID": "HRUN-710e3eda-f9fb-4b89-bc84-31e25d878d3d-870923",
+    "Cookie": "SESSION=MjZhMzJhOWEtNGZmNS00YzJmLWIyNTMtOTA3MTJiZTcwNGEy; SESSION=response.headers.\"Set-Cookie\".session"
+}
+cookies  : {
+    "SESSION": "MjZhMzJhOWEtNGZmNS00YzJmLWIyNTMtOTA3MTJiZTcwNGEy"
+}
+body     : None
+
+2023-06-26 10:34:31.103 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Mon, 26 Jun 2023 02:34:31 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": {
+        "first": true,
+        "last": false,
+        "totalPages": 375,
+        "totalElements": 3750,
+        "number": 1,
+        "size": 10,
+        "sort": {
+            "sorted": true,
+            "unsorted": false,
+            "empty": false
+        },
+        "numberOfElements": 10,
+        "content": [
+            {
+                "id": 64817,
+                "createDate": "2023-06-26 10:34:31",
+                "updateDate": "2023-06-26 10:34:31",
+                "userId": 630,
+                "userName": "adminy",
+                "operationType": 4,
+                "content": "登录成功",
+                "operationName": "adminy",
+                "escrowId": null
+            },
+            {
+                "id": 64816,
+                "createDate": "2023-06-26 10:34:29",
+                "updateDate": "2023-06-26 10:34:29",
+                "userId": 630,
+                "userName": "adminy",
+                "operationType": 4,
+                "content": "登录成功",
+                "operationName": "adminy",
+                "escrowId": null
+            },
+            {
+                "id": 64815,
+                "createDate": "2023-06-26 10:34:28",
+                "updateDate": "2023-06-26 10:34:28",
+                "userId": 1695,
+                "userName": "zXVD7XfqoMc9AjuGOsb2ILUo47Y2IaGy",
+                "operationType": 4,
+                "content": "登录成功",
+                "operationName": "zXVD7XfqoMc9AjuGOsb2ILUo47Y2IaGy",
+                "escrowId": null
+            },
+            {
+                "id": 64814,
+                "createDate": "2023-06-26 10:34:28",
+                "updateDate": "2023-06-26 10:34:28",
+                "userId": 630,
+                "userName": "adminy",
+                "operationType": 4,
+                "content": "登录成功",
+                "operationName": "adminy",
+                "escrowId": null
+            },
+            {
+                "id": 64813,
+                "createDate": "2023-06-26 10:34:27",
+                "updateDate": "2023-06-26 10:34:27",
+                "userId": 1695,
+                "userName": "zXVD7XfqoMc9AjuGOsb2ILUo47Y2IaGy",
+                "operationType": 4,
+                "content": "登录成功",
+                "operationName": "zXVD7XfqoMc9AjuGOsb2ILUo47Y2IaGy",
+                "escrowId": null
+            },
+            {
+                "id": 64812,
+                "createDate": "2023-06-26 10:34:26",
+                "updateDate": "2023-06-26 10:34:26",
+                "userId": 1695,
+                "userName": "zXVD7XfqoMc9AjuGOsb2ILUo47Y2IaGy",
+                "operationType": 1,
+                "content": "用户注册账号",
+                "operationName": "zXVD7XfqoMc9AjuGOsb2ILUo47Y2IaGy",
+                "escrowId": null
+            },
+            {
+                "id": 64811,
+                "createDate": "2023-06-26 10:34:25",
+                "updateDate": "2023-06-26 10:34:25",
+                "userId": 630,
+                "userName": "adminy",
+                "operationType": 4,
+                "content": "登录成功",
+                "operationName": "adminy",
+                "escrowId": null
+            },
+            {
+                "id": 64810,
+                "createDate": "2023-06-26 10:34:24",
+                "updateDate": "2023-06-26 10:34:24",
+                "userId": 630,
+                "userName": "adminy",
+                "operationType": 4,
+                "content": "登录成功",
+                "operationName": "adminy",
+                "escrowId": null
+            },
+            {
+                "id": 64809,
+                "createDate": "2023-06-26 10:34:23",
+                "updateDate": "2023-06-26 10:34:23",
+                "userId": 1694,
+                "userName": "zAUeacYASAGLeLhX2OcyNlsl85jXcY2H",
+                "operationType": 4,
+                "content": "登录成功",
+                "operationName": "zAUeacYASAGLeLhX2OcyNlsl85jXcY2H",
+                "escrowId": null
+            },
+            {
+                "id": 64808,
+                "createDate": "2023-06-26 10:34:22",
+                "updateDate": "2023-06-26 10:34:22",
+                "userId": 1694,
+                "userName": "zAUeacYASAGLeLhX2OcyNlsl85jXcY2H",
+                "operationType": 1,
+                "content": "用户注册账号",
+                "operationName": "zAUeacYASAGLeLhX2OcyNlsl85jXcY2H",
+                "escrowId": null
+            }
+        ]
+    }
+}
+
+2023-06-26 10:34:31.103 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 175.94 ms, response_length: 0 bytes
+2023-06-26 10:34:31.103 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-26 10:34:31.104 | INFO     | httprunner.response:validate:249 - assert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass
+2023-06-26 10:34:31.104 | INFO     | httprunner.response:validate:249 - assert body.message equal success(str)	==> pass
+2023-06-26 10:34:31.104 | INFO     | httprunner.response:validate:249 - assert body.status equal 1(int)	==> pass
+2023-06-26 10:34:31.104 | INFO     | httprunner.response:validate:249 - assert body.data.content[0].content equal 登录成功(str)	==> pass
+2023-06-26 10:34:31.104 | INFO     | httprunner.response:validate:249 - assert body.data.content[0].operationName equal adminy(str)	==> pass
+2023-06-26 10:34:31.104 | INFO     | httprunner.response:validate:249 - assert body.data.content[0].operationType equal 4(int)	==> pass
+2023-06-26 10:34:31.104 | INFO     | httprunner.runner:__run_step:304 - run step end: 用户日志列表 <<<<<<
+
+2023-06-26 10:34:31.104 | INFO     | httprunner.runner:__run_step:304 - run step end: 用户日志列表 <<<<<<
+

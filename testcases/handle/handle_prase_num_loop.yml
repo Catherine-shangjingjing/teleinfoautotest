@@ -1,0 +1,33 @@
+config:
+    name: 解析标识1w
+    parameters:
+      biaoshi: ${get_dict(1)}
+    variables: {
+      handle: $handle,
+      version: $version,
+      prefix: $prefix,
+      account: "${ENV(adminaccount)}",
+      password: "${ENV(adminpassword)}"
+    }
+    export: [ "applyNum", "delnum", "entNum", "identityNum", "prefixNum", "resolvnum" ]
+teststeps:
+
+-   name: 登录-管理员
+    testcase: testcases/login/login-admin.yml
+
+-   name: 企业申请中统计
+    testcase: testcases/statistics/indexstatistics.yml
+
+-   name: 标识注册
+    testcase: testcases/handle/handleCreate.yml
+
+-   name: 解析
+    testcase: testcases/handle/resolveHandle.yml
+
+-   name: 标识解析统计
+    testcase: testcases/statistics/indexstatistics_check_resolvNum.yml
+
+#-   name: 登录-管理员
+#    testcase: testcases/login/login-admin.yml
+
+

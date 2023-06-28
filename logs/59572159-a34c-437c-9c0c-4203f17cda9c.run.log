@@ -1,0 +1,55 @@
+2023-06-14 10:42:50.879 | INFO     | httprunner.runner:test_start:450 - Start to run testcase: 门户查询标识信息用例集, TestCase ID: 59572159-a34c-437c-9c0c-4203f17cda9c
+2023-06-14 10:42:50.879 | INFO     | httprunner.runner:__run_step:292 - run step begin: 门户查询标识信息不存在 >>>>>>
+2023-06-14 10:42:50.880 | INFO     | httprunner.runner:__run_step:292 - run step begin: 门户查询标识信息不存在 >>>>>>
+2023-06-14 10:42:51.065 | DEBUG    | httprunner.client:request:186 - client IP: 10.14.148.129, Port: 59023
+2023-06-14 10:42:51.065 | DEBUG    | httprunner.client:request:194 - server IP: 139.198.116.76, Port: 8000
+2023-06-14 10:42:51.065 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://139.198.116.76:8000/api/identityv2/query/data?handle=803.12.12%2F1234
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "HRUN-Request-ID": "HRUN-59572159-a34c-437c-9c0c-4203f17cda9c-570880"
+}
+cookies  : {}
+body     : None
+
+2023-06-14 10:42:51.066 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Wed, 14 Jun 2023 02:42:51 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "X-Frame-Options": "SAMEORIGIN"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": {
+        "handleVO": {
+            "prefix": "803.12.12",
+            "handle": "803.12.12/1234",
+            "templateVersion": null,
+            "value": null
+        },
+        "templateHandleVO": null
+    }
+}
+
+2023-06-14 10:42:51.066 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 184.64 ms, response_length: 0 bytes
+2023-06-14 10:42:51.067 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-14 10:42:51.067 | INFO     | httprunner.response:validate:249 - assert body.message equal success(str)	==> pass
+2023-06-14 10:42:51.067 | INFO     | httprunner.runner:__run_step:304 - run step end: 门户查询标识信息不存在 <<<<<<
+
+2023-06-14 10:42:51.067 | INFO     | httprunner.runner:__run_step:304 - run step end: 门户查询标识信息不存在 <<<<<<
+

@@ -1,0 +1,28 @@
+config:
+    name: 校验更新后的前缀信息
+    base_url: ${ENV(HOST)}
+    verify: false
+teststeps:
+-   name: 校验更新后的前缀信息
+    request:
+        cookies:
+            SESSION: $entSession
+        headers:
+            Accept: application/json, text/plain, */*
+            Accept-Encoding: gzip, deflate
+            Accept-Language: zh-CN,zh;q=0.9
+            Connection: keep-alive
+            User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36
+        method: GET
+        url: /api/v3/entApply/applyOrNot
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - body.message
+        - success
+    -   eq:
+        - body.data.nbmsEntApplyPO.legalName
+        - $legalNameUpdate

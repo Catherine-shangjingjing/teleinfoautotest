@@ -1,0 +1,83 @@
+config:
+    name: 前缀托管审核不通过
+    variables:
+        # 用户注册-start-----------------
+        email: "${get_email()}"
+        mobile: "${get_mobile()}"
+        username: "${get_username()}"
+        # 用户注册-end-----------------
+        account: "${ENV(adminaccount)}"
+        password: "${ENV(adminpassword)}"
+        # 企业用户
+        entaccount: "$username"
+        entpassword: "${ENV(entpassword)}"
+        pendingPrefixCondition: "${ENV(prefix_second)}${get_random_param(1000,10000000000,1)}"
+        prefix: "${ENV(prefix_second)}${get_random_param(1000,10000000000,1)}"
+        personId: "${get_idcardno()}"
+
+teststeps:
+-   name: 用户注册
+    testcase: testcases/prefixAudit/register.yml
+
+-   name: 登录-企业
+    testcase: testcases/login/login-ent.yml
+
+-   name: 前缀注册企业资质图片上传
+    testcase: testcases/prefixAudit/register/upload_img.yml
+
+-   name: 前缀注册企业联系人身份证图片正面上传
+    testcase: testcases/prefixAudit/register/upload_img_f.yml
+
+-   name: 前缀注册企业联系人身份证图片背面上传
+    testcase: testcases/prefixAudit/register/upload_img_b.yml
+
+-   name: 企业注册第一步提交信息
+    testcase: testcases/prefixAudit/register/submit_first.yml
+
+-   name: 企业注册查询注册信息
+    testcase: testcases/prefixAudit/register/apply_or_not.yml
+
+-   name: 企业注册第二步提交信息
+    testcase: testcases/prefixAudit/register/submit_second.yml
+
+-   name: 企业注册查询注册信息
+    testcase: testcases/prefixAudit/register/apply_or_not.yml
+
+-   name: 企业注册最终第三步提交信息
+    testcase: testcases/prefixAudit/register/submit_final.yml
+-   name: 登录-管理员
+    testcase: testcases/login/login-admin.yml
+-   name: 年费费用查询
+    testcase: testcases/prefixAudit/audit/finance-rule-findRule.yml
+-   name: 注册费费用查询
+    testcase: testcases/prefixAudit/audit/finance-rule-findRule-reg.yml
+-   name: 前缀审核结果保存
+    testcase: testcases/prefixAudit/audit/v3-ent-audit-save.yml
+-   name: 前缀分配列表
+    testcase: testcases/prefixAlloc/ent-prefix-alloc-pageQuery-1.yml
+-   name: 收费标准查询-注册费
+    testcase: testcases/prefixAudit/audit/finance-rule-findRule-reg.yml
+-   name: 收费标准查询-年费
+    testcase: testcases/prefixAudit/audit/finance-rule-findRule.yml
+-   name: 保存分配前缀
+    testcase: testcases/prefixAlloc/ent-prefix-alloc-savePrefix.yml
+#-   name: 管理员登陆
+#    testcase: testcases/login/login-admin.yml
+-   name: 前缀管理分页-未托管或者驳回
+    testcase: testcases/prefixmanager/ent-prefix-manage-pageQuery-no-proxy.yml
+-   name: 企业登陆
+    testcase: testcases/login/login-ent.yml
+-   name: 申请托管
+    testcase: testcases/prefixmanager/ent-proxy-apply.yml
+-   name: 管理员登陆
+    testcase: testcases/login/login-admin.yml
+-   name: 前缀管理分页-待审核
+    testcase: testcases/prefixmanager/ent-prefix-manage-pageQuery-audit.yml
+-   name: 托管审核分页
+    testcase: testcases/prefixmanager/ent-prefix-proxy-audit.yml
+-   name: 托管服务器获取
+    testcase: testcases/prefixmanager/proxy-server-pageQuery.yml
+-   name: 托管审核不通过
+    testcase: testcases/prefixmanager/ent-prefix-proxy-audit-no-pass.yml
+-   name: 前缀管理分页-驳回
+    testcase: testcases/prefixmanager/ent-prefix-manage-pageQuery-rejected.yml

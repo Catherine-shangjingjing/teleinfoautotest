@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data>
+  <prefix>88.408.171110471218</prefix>
+  <handle>88.408.000000/VZ5o3B5k96oUuTtpcwWjsziacNaXqhCP5escDtEdyXJabb74Ub2RdPH61jkrjNgfTBaimE2iJRTMa</handle>
+  <meta>zjauto5109</meta>
+  <items>
+    <!--item支持多条，最多500条-->
+    <item>
+      <identity></identity>
+      <terminalType></terminalType>
+      <subject></subject>
+      <useFor></useFor>
+      <serOrImei></serOrImei>
+      <licenseNo></licenseNo>
+      <licenseSign></licenseSign>
+      <autotest></autotest>
+    </item>
+  </items>
+</data>

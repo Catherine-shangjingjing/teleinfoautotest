@@ -1,0 +1,42 @@
+config:
+    name: 前缀删除
+    base_url: ${ENV(HOST)}
+    verify: false
+teststeps:
+-   name: 前缀删除
+    request:
+        cookies:
+            SESSION: $adminSession
+        headers:
+            Accept: application/json, text/plain, */*
+            Accept-Encoding: gzip, deflate
+            Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+            Cache-Control: no-cache
+            Connection: keep-alive
+            Content-Length: '0'
+            Pragma: no-cache
+            User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56
+            X-HTTP-Method-Override: delete
+        method: POST
+        params:
+            delTemplateAll: $delTemplateAll
+            entPrefix: $pendingPrefixConditionSecond
+            transferPrefix: $transferPrefix
+        url: /api/v3/ent/prefix/manage/delete
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json
+    -   eq:
+        - body.message
+        - success
+    -   eq:
+        - body.status
+        - 1
+    -   eq:
+        - body.data
+        - true

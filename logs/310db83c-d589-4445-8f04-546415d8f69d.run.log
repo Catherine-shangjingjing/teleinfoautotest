@@ -1,0 +1,2298 @@
+2023-06-25 18:43:57.421 | INFO     | httprunner.runner:test_start:450 - Start to run testcase: 前缀删除后注册和解析标识, TestCase ID: 310db83c-d589-4445-8f04-546415d8f69d
+2023-06-25 18:43:57.422 | INFO     | httprunner.runner:__run_step:292 - run step begin: 用户注册 >>>>>>
+2023-06-25 18:43:57.422 | INFO     | httprunner.runner:__run_step:292 - run step begin: 用户注册 >>>>>>
+2023-06-25 18:43:57.554 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 56587
+2023-06-25 18:43:57.554 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:43:57.554 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/home/test/registry
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "HRUN-Request-ID": "HRUN-310db83c-d589-4445-8f04-546415d8f69d-837422",
+    "Content-Length": "187",
+    "Content-Type": "application/json"
+}
+cookies  : {}
+body     : {
+    "email": "3sBWly3f9SxSxSZO@qaqseq.com",
+    "mobile": "13576659510",
+    "openId": "",
+    "openUserName": "",
+    "password": "Admin@123",
+    "remarks": "",
+    "username": "I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV"
+}
+
+2023-06-25 18:43:57.554 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:43:57 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": true
+}
+
+2023-06-25 18:43:57.554 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 130.66 ms, response_length: 0 bytes
+2023-06-25 18:43:57.555 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:43:57.555 | INFO     | httprunner.response:validate:249 - assert body.message equal success(str)	==> pass
+2023-06-25 18:43:57.555 | INFO     | httprunner.response:validate:249 - assert body.status equal 1(int)	==> pass
+2023-06-25 18:43:57.555 | INFO     | httprunner.response:validate:249 - assert body.message contains success(str)	==> pass
+2023-06-25 18:43:57.555 | INFO     | httprunner.response:validate:249 - assert body.status contained_by [1, 200](list)	==> pass
+2023-06-25 18:43:57.555 | INFO     | httprunner.runner:__run_step:304 - run step end: 用户注册 <<<<<<
+
+2023-06-25 18:43:57.555 | INFO     | httprunner.runner:__run_step:304 - run step end: 用户注册 <<<<<<
+
+2023-06-25 18:43:57.555 | INFO     | httprunner.runner:__run_step:292 - run step begin: 登录-企业 >>>>>>
+2023-06-25 18:43:57.555 | INFO     | httprunner.runner:__run_step:292 - run step begin: 登录-企业用户 >>>>>>
+2023-06-25 18:43:57.623 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 56587
+2023-06-25 18:43:57.624 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:43:57.624 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/home/test/login
+headers  : {
+    "User-Agent": "python-requests/2.28.1",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Content-Length": "170",
+    "Content-Type": "application/json",
+    "HRUN-Request-ID": "HRUN-310db83c-d589-4445-8f04-546415d8f69d-837556"
+}
+cookies  : {}
+body     : {
+    "captcha": "0000",
+    "captchaSign": "d2b5bb320b5642b4b927d868ada534f8b8f5d41399796cb5d3c80a25eb3168ed",
+    "emailCaptcha": "",
+    "username": "I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV"
+}
+
+2023-06-25 18:43:57.624 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:43:57 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Set-Cookie": "SESSION=NTkzNGUwNmMtNmE2NS00MTg3LTk0ZWYtZTA5OGFkNjY2NmFj; Path=/; HttpOnly; SameSite=Lax",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {
+    "SESSION": "NTkzNGUwNmMtNmE2NS00MTg3LTk0ZWYtZTA5OGFkNjY2NmFj"
+}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": true
+}
+
+2023-06-25 18:43:57.624 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 67.8 ms, response_length: 0 bytes
+2023-06-25 18:43:57.624 | INFO     | httprunner.response:extract:179 - extract mapping: {'entSession': 'response.headers."Set-Cookie".session'}
+2023-06-25 18:43:57.624 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:43:57.624 | INFO     | httprunner.response:validate:249 - assert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass
+2023-06-25 18:43:57.624 | INFO     | httprunner.response:validate:249 - assert body.message equal success(str)	==> pass
+2023-06-25 18:43:57.624 | INFO     | httprunner.response:validate:249 - assert body.status equal 1(int)	==> pass
+2023-06-25 18:43:57.624 | INFO     | httprunner.response:validate:249 - assert body.data equal True(bool)	==> pass
+2023-06-25 18:43:57.625 | INFO     | httprunner.runner:__run_step:304 - run step end: 登录-企业用户 <<<<<<
+
+2023-06-25 18:43:57.625 | INFO     | httprunner.runner:__run_step_testcase:286 - export variables: {'entSession': 'response.headers."Set-Cookie".session'}
+2023-06-25 18:43:57.625 | INFO     | httprunner.runner:__run_step:304 - run step end: 登录-企业 <<<<<<
+
+2023-06-25 18:43:57.625 | INFO     | httprunner.runner:__run_step:292 - run step begin: 前缀注册企业资质图片上传 >>>>>>
+2023-06-25 18:43:57.626 | INFO     | httprunner.runner:__run_step:292 - run step begin: 前缀注册企业资质图片上传 >>>>>>
+2023-06-25 18:43:57.728 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 56587
+2023-06-25 18:43:57.729 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:43:57.729 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/file/img/upload
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Type": "multipart/form-data; boundary=f06ad701c5664d07851d470261c5e635",
+    "HRUN-Request-ID": "HRUN-310db83c-d589-4445-8f04-546415d8f69d-837627",
+    "Cookie": "SESSION=NTkzNGUwNmMtNmE2NS00MTg3LTk0ZWYtZTA5OGFkNjY2NmFj; SESSION=response.headers.\"Set-Cookie\".session",
+    "Content-Length": "20435"
+}
+cookies  : {
+    "SESSION": "NTkzNGUwNmMtNmE2NS00MTg3LTk0ZWYtZTA5OGFkNjY2NmFj"
+}
+body     : upload file stream (OMITTED)
+
+2023-06-25 18:43:57.730 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:43:57 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": {
+        "id": 2842,
+        "path": "e85a25cc-2e28-4b1c-b093-ab137c3624ec.jpeg"
+    }
+}
+
+2023-06-25 18:43:57.730 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 100.91 ms, response_length: 0 bytes
+2023-06-25 18:43:57.731 | INFO     | httprunner.response:extract:179 - extract mapping: {'imgId': 2842}
+2023-06-25 18:43:57.731 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:43:57.731 | INFO     | httprunner.runner:__run_step:304 - run step end: 前缀注册企业资质图片上传 <<<<<<
+
+2023-06-25 18:43:57.732 | INFO     | httprunner.runner:__run_step_testcase:286 - export variables: {'imgId': 2842}
+2023-06-25 18:43:57.732 | INFO     | httprunner.runner:__run_step:304 - run step end: 前缀注册企业资质图片上传 <<<<<<
+
+2023-06-25 18:43:57.732 | INFO     | httprunner.runner:__run_step:292 - run step begin: 前缀注册企业联系人身份证图片正面上传 >>>>>>
+2023-06-25 18:43:57.732 | INFO     | httprunner.runner:__run_step:292 - run step begin: 前缀注册企业联系人身份证图片背面上传 >>>>>>
+2023-06-25 18:43:57.857 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 56587
+2023-06-25 18:43:57.857 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:43:57.858 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/file/img/upload
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Type": "multipart/form-data; boundary=5e9bb694e53a41f8b7362f0031c42c1c",
+    "HRUN-Request-ID": "HRUN-310db83c-d589-4445-8f04-546415d8f69d-837732",
+    "Cookie": "SESSION=NTkzNGUwNmMtNmE2NS00MTg3LTk0ZWYtZTA5OGFkNjY2NmFj; SESSION=response.headers.\"Set-Cookie\".session",
+    "Content-Length": "20435"
+}
+cookies  : {
+    "SESSION": "NTkzNGUwNmMtNmE2NS00MTg3LTk0ZWYtZTA5OGFkNjY2NmFj"
+}
+body     : upload file stream (OMITTED)
+
+2023-06-25 18:43:57.859 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:43:57 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": {
+        "id": 2843,
+        "path": "b7bdaa55-a534-4c18-96c0-c548407eaf85.jpeg"
+    }
+}
+
+2023-06-25 18:43:57.859 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 124.45 ms, response_length: 0 bytes
+2023-06-25 18:43:57.860 | INFO     | httprunner.response:extract:179 - extract mapping: {'imgId_f': 2843}
+2023-06-25 18:43:57.860 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:43:57.860 | INFO     | httprunner.runner:__run_step:304 - run step end: 前缀注册企业联系人身份证图片背面上传 <<<<<<
+
+2023-06-25 18:43:57.860 | INFO     | httprunner.runner:__run_step_testcase:286 - export variables: {'imgId_f': 2843}
+2023-06-25 18:43:57.860 | INFO     | httprunner.runner:__run_step:304 - run step end: 前缀注册企业联系人身份证图片正面上传 <<<<<<
+
+2023-06-25 18:43:57.861 | INFO     | httprunner.runner:__run_step:292 - run step begin: 前缀注册企业联系人身份证图片背面上传 >>>>>>
+2023-06-25 18:43:57.861 | INFO     | httprunner.runner:__run_step:292 - run step begin: 前缀注册企业联系人身份证图片背面上传 >>>>>>
+2023-06-25 18:43:57.958 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 56587
+2023-06-25 18:43:57.958 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:43:57.959 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/file/img/upload
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Type": "multipart/form-data; boundary=8143f499f0894d66b9cf31aba4f0ee35",
+    "HRUN-Request-ID": "HRUN-310db83c-d589-4445-8f04-546415d8f69d-837861",
+    "Cookie": "SESSION=NTkzNGUwNmMtNmE2NS00MTg3LTk0ZWYtZTA5OGFkNjY2NmFj; SESSION=response.headers.\"Set-Cookie\".session",
+    "Content-Length": "20435"
+}
+cookies  : {
+    "SESSION": "NTkzNGUwNmMtNmE2NS00MTg3LTk0ZWYtZTA5OGFkNjY2NmFj"
+}
+body     : upload file stream (OMITTED)
+
+2023-06-25 18:43:57.960 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:43:58 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": {
+        "id": 2844,
+        "path": "d65a0332-04fe-4c51-b3da-13bea2a311df.jpeg"
+    }
+}
+
+2023-06-25 18:43:57.960 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 96.58 ms, response_length: 0 bytes
+2023-06-25 18:43:57.960 | INFO     | httprunner.response:extract:179 - extract mapping: {'imgId_b': 2844}
+2023-06-25 18:43:57.961 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:43:57.961 | INFO     | httprunner.runner:__run_step:304 - run step end: 前缀注册企业联系人身份证图片背面上传 <<<<<<
+
+2023-06-25 18:43:57.961 | INFO     | httprunner.runner:__run_step_testcase:286 - export variables: {'imgId_b': 2844}
+2023-06-25 18:43:57.961 | INFO     | httprunner.runner:__run_step:304 - run step end: 前缀注册企业联系人身份证图片背面上传 <<<<<<
+
+2023-06-25 18:43:57.961 | INFO     | httprunner.runner:__run_step:292 - run step begin: 企业注册第一步提交信息 >>>>>>
+2023-06-25 18:43:57.962 | INFO     | httprunner.runner:__run_step:292 - run step begin: 企业注册第一步提交信息 >>>>>>
+2023-06-25 18:43:58.135 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 56587
+2023-06-25 18:43:58.136 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:43:58.137 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/v3/entApply/basicInfo/submit
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Type": "application/json;charset=UTF-8",
+    "HRUN-Request-ID": "HRUN-310db83c-d589-4445-8f04-546415d8f69d-837962",
+    "Cookie": "SESSION=NTkzNGUwNmMtNmE2NS00MTg3LTk0ZWYtZTA5OGFkNjY2NmFj; SESSION=response.headers.\"Set-Cookie\".session",
+    "Content-Length": "2555"
+}
+cookies  : {
+    "SESSION": "NTkzNGUwNmMtNmE2NS00MTg3LTk0ZWYtZTA5OGFkNjY2NmFj"
+}
+body     : {
+    "applyStep": 2,
+    "applyType": null,
+    "area": [
+        "110000",
+        "110100",
+        "110101"
+    ],
+    "cltrid": null,
+    "contactCrtBackImgPath": null,
+    "contactCrtBackImgRid": 2844,
+    "contactCrtFrontImgPath": null,
+    "contactCrtFrontImgRid": 2843,
+    "contactCrtNo": "360212198204265531",
+    "contactCrtType": 1,
+    "contactEmail": "3sBWly3f9SxSxSZO@qaqseq.com",
+    "contactName": "I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV",
+    "contactPhone": "13576659510",
+    "createDate": null,
+    "dataHostingContractFilePath": null,
+    "dataHostingContractFileRid": null,
+    "dataHostingOrg": null,
+    "entGeneralId": null,
+    "entInfoLicenses": [],
+    "entInfoSerIndustrys": [],
+    "entPrefix": "88.408.2521202773",
+    "escrowId": null,
+    "escrowOrgName": null,
+    "establishDate": null,
+    "extDomain": null,
+    "extIpAddr": null,
+    "extWebName": null,
+    "finalAuditMsg": null,
+    "finalAuditStatus": null,
+    "firstAuditMsg": null,
+    "firstAuditStatus": null,
+    "id": null,
+    "idRegNaImp": null,
+    "industry": [
+        "A",
+        "01"
+    ],
+    "industryCategory": "A",
+    "industrySpecific": "01",
+    "isSubmit": 0,
+    "legalCrtBackImgContent": null,
+    "legalCrtBackImgPath": null,
+    "legalCrtBackImgRid": 2844,
+    "legalCrtFrontImgContent": null,
+    "legalCrtFrontImgPath": null,
+    "legalCrtFrontImgRid": 2843,
+    "legalCrtNo": "360212198204265531",
+    "legalCrtType": "1",
+    "legalCrtTypeDesc": "中国居民身份证",
+    "legalEmail": null,
+    "legalFax": null,
+    "legalName": "张三",
+    "legalPhone": null,
+    "orgAddr": "致真",
+    "orgAddrCity": "110100",
+    "orgAddrCityDesc": "市辖区",
+    "orgAddrCounty": "110101",
+    "orgAddrCountyDesc": "东城区",
+    "orgAddrProvince": "110000",
+    "orgAddrProvinceDesc": "北京市",
+    "orgCategorySpecificDesc": "农、林、牧、渔业-农业",
+    "orgCrtCode": "I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV",
+    "orgCrtImgContent": null,
+    "orgCrtImgPath": null,
+    "orgCrtImgRid": 2842,
+    "orgCrtType": "1",
+    "orgDesc": null,
+    "orgName": "I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV",
+    "orgNature": "1",
+    "orgNatureDesc": "国有控股",
+    "periodValidity": null,
+    "regAuthority": null,
+    "regCapital": null,
+    "regRealNaImpName": null,
+    "regRealNaImpType": null,
+    "servHostingContractFilePath": null,
+    "servHostingContractFileRid": null,
+    "servHostingOrg": null,
+    "servSysBuildContractFilePath": null,
+    "servSysBuildContractFileRid": null,
+    "servSysBuildName": null,
+    "servSysBuildType": 1,
+    "servSysOperContractFilePath": null,
+    "servSysOperContractFileRid": null,
+    "servSysOperName": null,
+    "servSysOperType": 1,
+    "svtrid": null,
+    "thirdServiceMsg": null,
+    "thirdServiceStatus": null,
+    "updateDate": null,
+    "userId": null,
+    "userName": null,
+    "website": null
+}
+
+2023-06-25 18:43:58.138 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:43:58 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": true
+}
+
+2023-06-25 18:43:58.138 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 173.38 ms, response_length: 0 bytes
+2023-06-25 18:43:58.138 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:43:58.139 | INFO     | httprunner.response:validate:249 - assert body.message equal success(str)	==> pass
+2023-06-25 18:43:58.139 | INFO     | httprunner.runner:__run_step:304 - run step end: 企业注册第一步提交信息 <<<<<<
+
+2023-06-25 18:43:58.139 | INFO     | httprunner.runner:__run_step:304 - run step end: 企业注册第一步提交信息 <<<<<<
+
+2023-06-25 18:43:58.139 | INFO     | httprunner.runner:__run_step:292 - run step begin: 企业注册查询注册信息 >>>>>>
+2023-06-25 18:43:58.140 | INFO     | httprunner.runner:__run_step:292 - run step begin: 企业注册查询注册信息 >>>>>>
+2023-06-25 18:43:58.239 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 56587
+2023-06-25 18:43:58.239 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:43:58.240 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://139.198.116.76:8000/api/v3/entApply/applyOrNot
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "HRUN-Request-ID": "HRUN-310db83c-d589-4445-8f04-546415d8f69d-838140",
+    "Cookie": "SESSION=NTkzNGUwNmMtNmE2NS00MTg3LTk0ZWYtZTA5OGFkNjY2NmFj; SESSION=response.headers.\"Set-Cookie\".session"
+}
+cookies  : {
+    "SESSION": "NTkzNGUwNmMtNmE2NS00MTg3LTk0ZWYtZTA5OGFkNjY2NmFj"
+}
+body     : None
+
+2023-06-25 18:43:58.241 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:43:58 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": {
+        "nbmsEntApplyPO": {
+            "id": 1422,
+            "createDate": "2023-06-25 18:43:58",
+            "updateDate": "2023-06-25 18:43:58",
+            "applyType": null,
+            "entGeneralId": null,
+            "applyStep": 2,
+            "isSubmit": 0,
+            "entPrefix": "88.408.2521202773",
+            "firstAuditStatus": null,
+            "firstAuditMsg": null,
+            "thirdServiceStatus": null,
+            "thirdServiceMsg": null,
+            "userName": "I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV",
+            "finalAuditStatus": null,
+            "finalAuditMsg": null,
+            "svtrid": null,
+            "cltrid": null,
+            "userId": 1656,
+            "orgName": "I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV",
+            "orgNature": "1",
+            "orgAddrProvince": "110000",
+            "orgAddrCity": "110100",
+            "orgAddrCounty": "110101",
+            "orgAddr": "致真",
+            "orgCrtType": "1",
+            "orgCrtCode": "I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV",
+            "legalName": "张三",
+            "legalCrtType": "1",
+            "legalCrtNo": "360212198204265531",
+            "orgDesc": null,
+            "industryCategory": "A",
+            "industrySpecific": "01",
+            "contactName": "I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV",
+            "contactPhone": "13576659510",
+            "contactCrtType": 1,
+            "contactCrtNo": "360212198204265531",
+            "contactEmail": "3sBWly3f9SxSxSZO@qaqseq.com",
+            "website": null,
+            "regAuthority": null,
+            "regCapital": null,
+            "establishDate": null,
+            "periodValidity": null,
+            "legalEmail": null,
+            "legalPhone": null,
+            "legalFax": null,
+            "servSysBuildType": null,
+            "servSysBuildName": null,
+            "servSysOperType": null,
+            "servSysOperName": null,
+            "dataHostingOrg": null,
+            "servHostingOrg": null,
+            "regRealNaImpType": null,
+            "regRealNaImpName": null,
+            "idRegNaImp": null,
+            "extWebName": null,
+            "extDomain": null,
+            "extIpAddr": null,
+            "orgCrtImgRid": 2842,
+            "contactCrtFrontImgRid": 2843,
+            "contactCrtBackImgRid": 2844,
+            "legalCrtFrontImgRid": 2843,
+            "legalCrtBackImgRid": 2844,
+            "servSysBuildContractFileRid": null,
+            "servSysOperContractFileRid": null,
+            "dataHostingContractFileRid": null,
+            "servHostingContractFileRid": null,
+            "entInfoLicenses": [],
+            "entInfoSyss": [],
+            "entInfoSerIndustrys": [],
+            "escrowId": null,
+            "industryQualificationRid": null,
+            "certificationRid": null,
+            "openingBank": null,
+            "bankCard": null,
+            "verificationName": null,
+            "orgNatureDesc": "国有控股",
+            "orgCrtImgContent": null,
+            "orgCategorySpecificDesc": "农、林、牧、渔业-农业",
+            "orgAddrProvinceDesc": "北京市",
+            "orgAddrCountyDesc": "东城区",
+            "orgAddrCityDesc": "市辖区",
+            "legalCrtTypeDesc": "中国居民身份证",
+            "legalCrtFrontImgContent": null,
+            "legalCrtBackImgContent": null,
+            "orgCrtImgPath": "e85a25cc-2e28-4b1c-b093-ab137c3624ec.jpeg",
+            "contactCrtFrontImgPath": "b7bdaa55-a534-4c18-96c0-c548407eaf85.jpeg",
+            "contactCrtBackImgPath": "d65a0332-04fe-4c51-b3da-13bea2a311df.jpeg",
+            "legalCrtFrontImgPath": "b7bdaa55-a534-4c18-96c0-c548407eaf85.jpeg",
+            "legalCrtBackImgPath": "d65a0332-04fe-4c51-b3da-13bea2a311df.jpeg",
+            "servSysBuildContractFilePath": null,
+            "servSysOperContractFilePath": null,
+            "dataHostingContractFilePath": null,
+            "servHostingContractFilePath": null,
+            "industryQualificationFilePath": null,
+            "certificationFilePath": null,
+            "escrowOrgName": null
+        },
+        "nbmsEntPO": null,
+        "nbmsEntPrefixApplyPO": null,
+        "needRelog": null,
+        "applyStatus": 0
+    }
+}
+
+2023-06-25 18:43:58.242 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 98.77 ms, response_length: 0 bytes
+2023-06-25 18:43:58.245 | INFO     | httprunner.response:extract:179 - extract mapping: {'applyId': 1422, 'userId': 1656, 'userName': 'I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV', 'imgId_f': 2843, 'imgId_b': 2844, 'entId': None, 'entUserId': None, 'prefix': '88.408.2521202773', 'contactCrtNo': '360212198204265531', 'contactCrtType': 1, 'contactEmail': '3sBWly3f9SxSxSZO@qaqseq.com', 'contactName': 'I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV', 'contactPhone': '13576659510', 'industryCategory': 'A', 'industrySpecific': '01', 'orgName': 'I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV', 'orgNature': '1', 'orgAddrProvince': '110000', 'orgAddrCity': '110100', 'orgAddrCounty': '110101', 'orgAddr': '致真', 'orgCrtType': '1', 'orgCrtCode': 'I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV', 'legalName': '张三', 'legalEmail': None, 'legalPhone': None, 'legalCrtType': '1', 'legalCrtNo': '360212198204265531', 'legalCrtFrontImgRid': 2843, 'legalCrtBackImgRid': 2844, 'orgCrtImgRid': 2842, 'imgId': 2842, 'orgNatureDesc': '国有控股', 'orgCategorySpecificDesc': '农、林、牧、渔业-农业', 'orgAddrProvinceDesc': '北京市', 'orgAddrCountyDesc': '东城区', 'orgAddrCityDesc': '市辖区', 'legalCrtTypeDesc': '中国居民身份证', 'createDate': '2023-06-25 18:43:58', 'updateDate': '2023-06-25 18:43:58', 'entInfoSyss_0_id': None, 'entInfoSyss_0_entApplyId': None, 'entApplyId': None, 'entInfoSyss_0_sysType': None, 'entInfoSyss_0_deployMode': None, 'entInfoSyss_0_deployAddr': None, 'entInfoSyss_0_deployAddrProvince': None, 'entInfoSyss_0_deployAddrCity': None, 'entInfoSyss_0_deployAddrCounty': None, 'entInfoSyss_1_id': None, 'entInfoSyss_1_entApplyId': None, 'entInfoSyss_1_sysType': None, 'entInfoSyss_1_deployMode': None, 'entInfoSyss_1_deployAddr': None, 'entInfoSyss_1_deployAddrProvince': None, 'entInfoSyss_1_deployAddrCity': None, 'entInfoSyss_1_deployAddrCounty': None, 'entInfoSyss_2_id': None, 'entInfoSyss_2_entApplyId': None, 'entInfoSyss_2_sysType': None, 'entInfoSyss_2_deployMode': None, 'entInfoSyss_2_deployAddr': None, 'entInfoSyss_2_deployAddrProvince': None, 'entInfoSyss_2_deployAddrCity': None, 'entInfoSyss_2_deployAddrCounty': None, 'entInfoSyss_3_id': None, 'entInfoSyss_3_entApplyId': None, 'entInfoSyss_3_sysType': None, 'entInfoSyss_3_deployMode': None, 'entInfoSyss_3_deployAddr': None, 'entInfoSyss_3_deployAddrProvince': None, 'entInfoSyss_3_deployAddrCity': None, 'entInfoSyss_3_deployAddrCounty': None}
+2023-06-25 18:43:58.245 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:43:58.245 | INFO     | httprunner.response:validate:249 - assert body.message equal success(str)	==> pass
+2023-06-25 18:43:58.245 | INFO     | httprunner.runner:__run_step:304 - run step end: 企业注册查询注册信息 <<<<<<
+
+2023-06-25 18:43:58.245 | INFO     | httprunner.runner:__run_step_testcase:286 - export variables: {'orgName': 'I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV', 'userName': 'I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV', 'orgCategorySpecificDesc': '农、林、牧、渔业-农业', 'entInfoSyss_1_deployMode': None, 'entInfoSyss_2_sysType': None, 'orgAddr': '致真', 'prefix': '88.408.2521202773', 'entInfoSyss_3_deployAddrCity': None, 'legalCrtNo': '360212198204265531', 'entInfoSyss_0_id': None, 'contactName': 'I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV', 'entInfoSyss_1_entApplyId': None, 'legalCrtTypeDesc': '中国居民身份证', 'entUserId': None, 'orgCrtType': '1', 'orgAddrCounty': '110101', 'entInfoSyss_0_deployAddrCounty': None, 'entInfoSyss_0_deployAddr': None, 'industrySpecific': '01', 'entInfoSyss_2_deployMode': None, 'entInfoSyss_1_deployAddrCity': None, 'entInfoSyss_2_entApplyId': None, 'contactPhone': '13576659510', 'legalCrtFrontImgRid': 2843, 'entInfoSyss_1_sysType': None, 'entInfoSyss_3_deployAddr': None, 'contactCrtType': 1, 'entApplyId': None, 'orgAddrProvinceDesc': '北京市', 'entInfoSyss_3_deployAddrCounty': None, 'legalPhone': None, 'orgNature': '1', 'entInfoSyss_1_id': None, 'entInfoSyss_3_entApplyId': None, 'createDate': '2023-06-25 18:43:58', 'entInfoSyss_0_deployMode': None, 'entInfoSyss_2_deployAddrProvince': None, 'entInfoSyss_3_deployAddrProvince': None, 'entInfoSyss_2_deployAddrCity': None, 'entInfoSyss_0_deployAddrProvince': None, 'entInfoSyss_1_deployAddrProvince': None, 'imgId': 2842, 'applyId': 1422, 'imgId_f': 2843, 'imgId_b': 2844, 'legalEmail': None, 'legalCrtBackImgRid': 2844, 'entId': None, 'entInfoSyss_0_sysType': None, 'orgAddrCityDesc': '市辖区', 'entInfoSyss_2_id': None, 'entInfoSyss_3_sysType': None, 'industryCategory': 'A', 'userId': 1656, 'entInfoSyss_1_deployAddr': None, 'orgAddrCity': '110100', 'legalCrtType': '1', 'entInfoSyss_1_deployAddrCounty': None, 'contactEmail': '3sBWly3f9SxSxSZO@qaqseq.com', 'entInfoSyss_2_deployAddrCounty': None, 'orgAddrCountyDesc': '东城区', 'legalName': '张三', 'entInfoSyss_0_deployAddrCity': None, 'orgAddrProvince': '110000', 'contactCrtNo': '360212198204265531', 'orgCrtCode': 'I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV', 'orgNatureDesc': '国有控股', 'entInfoSyss_3_deployMode': None, 'entInfoSyss_2_deployAddr': None, 'orgCrtImgRid': 2842, 'entInfoSyss_0_entApplyId': None, 'updateDate': '2023-06-25 18:43:58', 'entInfoSyss_3_id': None}
+2023-06-25 18:43:58.245 | INFO     | httprunner.runner:__run_step:304 - run step end: 企业注册查询注册信息 <<<<<<
+
+2023-06-25 18:43:58.245 | INFO     | httprunner.runner:__run_step:292 - run step begin: 企业注册第二步提交信息 >>>>>>
+2023-06-25 18:43:58.246 | INFO     | httprunner.runner:__run_step:292 - run step begin: 企业注册第二步提交信息 >>>>>>
+2023-06-25 18:43:58.315 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 56587
+2023-06-25 18:43:58.315 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:43:58.317 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/v3/entApply/registerManageInfo
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Type": "application/json;charset=UTF-8",
+    "X-HTTP-Method-Override": "put",
+    "HRUN-Request-ID": "HRUN-310db83c-d589-4445-8f04-546415d8f69d-838246",
+    "Cookie": "SESSION=NTkzNGUwNmMtNmE2NS00MTg3LTk0ZWYtZTA5OGFkNjY2NmFj; SESSION=response.headers.\"Set-Cookie\".session",
+    "Content-Length": "3280"
+}
+cookies  : {
+    "SESSION": "NTkzNGUwNmMtNmE2NS00MTg3LTk0ZWYtZTA5OGFkNjY2NmFj"
+}
+body     : {
+    "applyStep": 3,
+    "applyType": null,
+    "cltrid": null,
+    "contactCrtBackImgPath": null,
+    "contactCrtBackImgRid": 2844,
+    "contactCrtFrontImgPath": null,
+    "contactCrtFrontImgRid": 2843,
+    "contactCrtNo": "360212198204265531",
+    "contactCrtType": 1,
+    "contactEmail": "3sBWly3f9SxSxSZO@qaqseq.com",
+    "contactName": "I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV",
+    "contactPhone": "13576659510",
+    "createDate": "2023-06-25 18:43:58",
+    "dataHostingContractFilePath": null,
+    "dataHostingContractFileRid": null,
+    "dataHostingOrg": null,
+    "entGeneralId": null,
+    "entInfoLicenses": [],
+    "entInfoSerIndustrys": [],
+    "entInfoSyss": [
+        {
+            "deployAddr": "致真",
+            "deployAddrCity": "110100",
+            "deployAddrCounty": "110101",
+            "deployAddrProvince": "110000",
+            "deployMode": 1,
+            "ipPort": null,
+            "name": null,
+            "sysType": 1
+        },
+        {
+            "deployAddr": "致真",
+            "deployAddrCity": "110100",
+            "deployAddrCounty": "110101",
+            "deployAddrProvince": "110000",
+            "deployMode": 1,
+            "ipPort": null,
+            "name": null,
+            "sysType": 2
+        },
+        {
+            "deployAddr": "天津",
+            "deployAddrCity": "120100",
+            "deployAddrCounty": "120101",
+            "deployAddrProvince": "120000",
+            "deployMode": 1,
+            "ipPort": null,
+            "name": null,
+            "sysType": 3
+        },
+        {
+            "deployAddr": "天津",
+            "deployAddrCity": "120100",
+            "deployAddrCounty": "120101",
+            "deployAddrProvince": "120000",
+            "deployMode": 1,
+            "ipPort": null,
+            "name": null,
+            "sysType": 4
+        }
+    ],
+    "entPrefix": "88.408.2521202773",
+    "escrowId": null,
+    "escrowOrgName": null,
+    "establishDate": null,
+    "extDomain": null,
+    "extIpAddr": null,
+    "extWebName": null,
+    "finalAuditMsg": null,
+    "finalAuditStatus": null,
+    "firstAuditMsg": null,
+    "firstAuditStatus": null,
+    "id": 1422,
+    "idRegNaImp": null,
+    "industryCategory": "A",
+    "industrySpecific": "01",
+    "isSubmit": 0,
+    "legalCrtBackImgContent": null,
+    "legalCrtBackImgPath": null,
+    "legalCrtBackImgRid": 2844,
+    "legalCrtFrontImgContent": null,
+    "legalCrtFrontImgPath": null,
+    "legalCrtFrontImgRid": 2843,
+    "legalCrtNo": "360212198204265531",
+    "legalCrtType": "1",
+    "legalCrtTypeDesc": "中国居民身份证",
+    "legalEmail": null,
+    "legalFax": null,
+    "legalName": "张三",
+    "legalPhone": null,
+    "orgAddr": "致真",
+    "orgAddrCity": "110100",
+    "orgAddrCityDesc": "市辖区",
+    "orgAddrCounty": "110101",
+    "orgAddrCountyDesc": "东城区",
+    "orgAddrProvince": "110000",
+    "orgAddrProvinceDesc": "北京市",
+    "orgCategorySpecificDesc": "农、林、牧、渔业-农业",
+    "orgCrtCode": "I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV",
+    "orgCrtImgContent": null,
+    "orgCrtImgPath": null,
+    "orgCrtImgRid": 2842,
+    "orgCrtType": "1",
+    "orgDesc": null,
+    "orgName": "I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV",
+    "orgNature": "1",
+    "orgNatureDesc": "1",
+    "periodValidity": null,
+    "regAuthority": null,
+    "regCapital": null,
+    "regRealNaImpName": null,
+    "regRealNaImpType": null,
+    "servHostingContractFilePath": null,
+    "servHostingContractFileRid": null,
+    "servHostingOrg": null,
+    "servSysBuildContractFilePath": null,
+    "servSysBuildContractFileRid": null,
+    "servSysBuildName": null,
+    "servSysBuildType": 1,
+    "servSysOperContractFilePath": null,
+    "servSysOperContractFileRid": null,
+    "servSysOperName": null,
+    "servSysOperType": 1,
+    "svtrid": null,
+    "thirdServiceMsg": null,
+    "thirdServiceStatus": null,
+    "updateDate": "2023-06-25 18:43:58",
+    "userId": 1656,
+    "userName": "I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV",
+    "website": null
+}
+
+2023-06-25 18:43:58.318 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:43:58 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": true
+}
+
+2023-06-25 18:43:58.318 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 68.58 ms, response_length: 0 bytes
+2023-06-25 18:43:58.318 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:43:58.319 | INFO     | httprunner.response:validate:249 - assert body.message equal success(str)	==> pass
+2023-06-25 18:43:58.319 | INFO     | httprunner.runner:__run_step:304 - run step end: 企业注册第二步提交信息 <<<<<<
+
+2023-06-25 18:43:58.319 | INFO     | httprunner.runner:__run_step:304 - run step end: 企业注册第二步提交信息 <<<<<<
+
+2023-06-25 18:43:58.320 | INFO     | httprunner.runner:__run_step:292 - run step begin: 企业注册查询注册信息 >>>>>>
+2023-06-25 18:43:58.320 | INFO     | httprunner.runner:__run_step:292 - run step begin: 企业注册查询注册信息 >>>>>>
+2023-06-25 18:43:58.510 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 56587
+2023-06-25 18:43:58.510 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:43:58.511 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://139.198.116.76:8000/api/v3/entApply/applyOrNot
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "HRUN-Request-ID": "HRUN-310db83c-d589-4445-8f04-546415d8f69d-838320",
+    "Cookie": "SESSION=NTkzNGUwNmMtNmE2NS00MTg3LTk0ZWYtZTA5OGFkNjY2NmFj; SESSION=response.headers.\"Set-Cookie\".session"
+}
+cookies  : {
+    "SESSION": "NTkzNGUwNmMtNmE2NS00MTg3LTk0ZWYtZTA5OGFkNjY2NmFj"
+}
+body     : None
+
+2023-06-25 18:43:58.513 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:43:58 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": {
+        "nbmsEntApplyPO": {
+            "id": 1422,
+            "createDate": "2023-06-25 18:43:58",
+            "updateDate": "2023-06-25 18:43:58",
+            "applyType": null,
+            "entGeneralId": null,
+            "applyStep": 3,
+            "isSubmit": 0,
+            "entPrefix": "88.408.2521202773",
+            "firstAuditStatus": null,
+            "firstAuditMsg": null,
+            "thirdServiceStatus": null,
+            "thirdServiceMsg": null,
+            "userName": "I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV",
+            "finalAuditStatus": null,
+            "finalAuditMsg": null,
+            "svtrid": null,
+            "cltrid": null,
+            "userId": 1656,
+            "orgName": "I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV",
+            "orgNature": "1",
+            "orgAddrProvince": "110000",
+            "orgAddrCity": "110100",
+            "orgAddrCounty": "110101",
+            "orgAddr": "致真",
+            "orgCrtType": "1",
+            "orgCrtCode": "I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV",
+            "legalName": "张三",
+            "legalCrtType": "1",
+            "legalCrtNo": "360212198204265531",
+            "orgDesc": null,
+            "industryCategory": "A",
+            "industrySpecific": "01",
+            "contactName": "I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV",
+            "contactPhone": "13576659510",
+            "contactCrtType": 1,
+            "contactCrtNo": "360212198204265531",
+            "contactEmail": "3sBWly3f9SxSxSZO@qaqseq.com",
+            "website": null,
+            "regAuthority": null,
+            "regCapital": null,
+            "establishDate": null,
+            "periodValidity": null,
+            "legalEmail": null,
+            "legalPhone": null,
+            "legalFax": null,
+            "servSysBuildType": 1,
+            "servSysBuildName": null,
+            "servSysOperType": 1,
+            "servSysOperName": null,
+            "dataHostingOrg": null,
+            "servHostingOrg": null,
+            "regRealNaImpType": null,
+            "regRealNaImpName": null,
+            "idRegNaImp": null,
+            "extWebName": null,
+            "extDomain": null,
+            "extIpAddr": null,
+            "orgCrtImgRid": 2842,
+            "contactCrtFrontImgRid": 2843,
+            "contactCrtBackImgRid": 2844,
+            "legalCrtFrontImgRid": 2843,
+            "legalCrtBackImgRid": 2844,
+            "servSysBuildContractFileRid": null,
+            "servSysOperContractFileRid": null,
+            "dataHostingContractFileRid": null,
+            "servHostingContractFileRid": null,
+            "entInfoLicenses": [],
+            "entInfoSyss": [
+                {
+                    "id": 3548,
+                    "entApplyId": 1422,
+                    "sysType": 1,
+                    "deployMode": 1,
+                    "deployAddr": "致真",
+                    "deployAddrProvince": "110000",
+                    "deployAddrCity": "110100",
+                    "deployAddrCounty": "110101",
+                    "name": null,
+                    "ipPort": null
+                },
+                {
+                    "id": 3549,
+                    "entApplyId": 1422,
+                    "sysType": 2,
+                    "deployMode": 1,
+                    "deployAddr": "致真",
+                    "deployAddrProvince": "110000",
+                    "deployAddrCity": "110100",
+                    "deployAddrCounty": "110101",
+                    "name": null,
+                    "ipPort": null
+                },
+                {
+                    "id": 3550,
+                    "entApplyId": 1422,
+                    "sysType": 3,
+                    "deployMode": 1,
+                    "deployAddr": "天津",
+                    "deployAddrProvince": "120000",
+                    "deployAddrCity": "120100",
+                    "deployAddrCounty": "120101",
+                    "name": null,
+                    "ipPort": null
+                },
+                {
+                    "id": 3551,
+                    "entApplyId": 1422,
+                    "sysType": 4,
+                    "deployMode": 1,
+                    "deployAddr": "天津",
+                    "deployAddrProvince": "120000",
+                    "deployAddrCity": "120100",
+                    "deployAddrCounty": "120101",
+                    "name": null,
+                    "ipPort": null
+                }
+            ],
+            "entInfoSerIndustrys": [],
+            "escrowId": null,
+            "industryQualificationRid": null,
+            "certificationRid": null,
+            "openingBank": null,
+            "bankCard": null,
+            "verificationName": null,
+            "orgNatureDesc": "国有控股",
+            "orgCrtImgContent": null,
+            "orgCategorySpecificDesc": "农、林、牧、渔业-农业",
+            "orgAddrProvinceDesc": "北京市",
+            "orgAddrCountyDesc": "东城区",
+            "orgAddrCityDesc": "市辖区",
+            "legalCrtTypeDesc": "中国居民身份证",
+            "legalCrtFrontImgContent": null,
+            "legalCrtBackImgContent": null,
+            "orgCrtImgPath": "e85a25cc-2e28-4b1c-b093-ab137c3624ec.jpeg",
+            "contactCrtFrontImgPath": "b7bdaa55-a534-4c18-96c0-c548407eaf85.jpeg",
+            "contactCrtBackImgPath": "d65a0332-04fe-4c51-b3da-13bea2a311df.jpeg",
+            "legalCrtFrontImgPath": "b7bdaa55-a534-4c18-96c0-c548407eaf85.jpeg",
+            "legalCrtBackImgPath": "d65a0332-04fe-4c51-b3da-13bea2a311df.jpeg",
+            "servSysBuildContractFilePath": null,
+            "servSysOperContractFilePath": null,
+            "dataHostingContractFilePath": null,
+            "servHostingContractFilePath": null,
+            "industryQualificationFilePath": null,
+            "certificationFilePath": null,
+            "escrowOrgName": null
+        },
+        "nbmsEntPO": null,
+        "nbmsEntPrefixApplyPO": null,
+        "needRelog": null,
+        "applyStatus": 0
+    }
+}
+
+2023-06-25 18:43:58.513 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 189.32 ms, response_length: 0 bytes
+2023-06-25 18:43:58.514 | INFO     | httprunner.response:extract:179 - extract mapping: {'applyId': 1422, 'userId': 1656, 'userName': 'I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV', 'imgId_f': 2843, 'imgId_b': 2844, 'entId': None, 'entUserId': None, 'prefix': '88.408.2521202773', 'contactCrtNo': '360212198204265531', 'contactCrtType': 1, 'contactEmail': '3sBWly3f9SxSxSZO@qaqseq.com', 'contactName': 'I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV', 'contactPhone': '13576659510', 'industryCategory': 'A', 'industrySpecific': '01', 'orgName': 'I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV', 'orgNature': '1', 'orgAddrProvince': '110000', 'orgAddrCity': '110100', 'orgAddrCounty': '110101', 'orgAddr': '致真', 'orgCrtType': '1', 'orgCrtCode': 'I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV', 'legalName': '张三', 'legalEmail': None, 'legalPhone': None, 'legalCrtType': '1', 'legalCrtNo': '360212198204265531', 'legalCrtFrontImgRid': 2843, 'legalCrtBackImgRid': 2844, 'orgCrtImgRid': 2842, 'imgId': 2842, 'orgNatureDesc': '国有控股', 'orgCategorySpecificDesc': '农、林、牧、渔业-农业', 'orgAddrProvinceDesc': '北京市', 'orgAddrCountyDesc': '东城区', 'orgAddrCityDesc': '市辖区', 'legalCrtTypeDesc': '中国居民身份证', 'createDate': '2023-06-25 18:43:58', 'updateDate': '2023-06-25 18:43:58', 'entInfoSyss_0_id': 3548, 'entInfoSyss_0_entApplyId': 1422, 'entApplyId': 1422, 'entInfoSyss_0_sysType': 1, 'entInfoSyss_0_deployMode': 1, 'entInfoSyss_0_deployAddr': '致真', 'entInfoSyss_0_deployAddrProvince': '110000', 'entInfoSyss_0_deployAddrCity': '110100', 'entInfoSyss_0_deployAddrCounty': '110101', 'entInfoSyss_1_id': 3549, 'entInfoSyss_1_entApplyId': 1422, 'entInfoSyss_1_sysType': 2, 'entInfoSyss_1_deployMode': 1, 'entInfoSyss_1_deployAddr': '致真', 'entInfoSyss_1_deployAddrProvince': '110000', 'entInfoSyss_1_deployAddrCity': '110100', 'entInfoSyss_1_deployAddrCounty': '110101', 'entInfoSyss_2_id': 3550, 'entInfoSyss_2_entApplyId': 1422, 'entInfoSyss_2_sysType': 3, 'entInfoSyss_2_deployMode': 1, 'entInfoSyss_2_deployAddr': '天津', 'entInfoSyss_2_deployAddrProvince': '120000', 'entInfoSyss_2_deployAddrCity': '120100', 'entInfoSyss_2_deployAddrCounty': '120101', 'entInfoSyss_3_id': 3551, 'entInfoSyss_3_entApplyId': 1422, 'entInfoSyss_3_sysType': 4, 'entInfoSyss_3_deployMode': 1, 'entInfoSyss_3_deployAddr': '天津', 'entInfoSyss_3_deployAddrProvince': '120000', 'entInfoSyss_3_deployAddrCity': '120100', 'entInfoSyss_3_deployAddrCounty': '120101'}
+2023-06-25 18:43:58.514 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:43:58.514 | INFO     | httprunner.response:validate:249 - assert body.message equal success(str)	==> pass
+2023-06-25 18:43:58.514 | INFO     | httprunner.runner:__run_step:304 - run step end: 企业注册查询注册信息 <<<<<<
+
+2023-06-25 18:43:58.514 | INFO     | httprunner.runner:__run_step_testcase:286 - export variables: {'orgName': 'I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV', 'userName': 'I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV', 'orgCategorySpecificDesc': '农、林、牧、渔业-农业', 'entInfoSyss_1_deployMode': 1, 'entInfoSyss_2_sysType': 3, 'orgAddr': '致真', 'prefix': '88.408.2521202773', 'entInfoSyss_3_deployAddrCity': '120100', 'legalCrtNo': '360212198204265531', 'entInfoSyss_0_id': 3548, 'contactName': 'I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV', 'entInfoSyss_1_entApplyId': 1422, 'legalCrtTypeDesc': '中国居民身份证', 'entUserId': None, 'orgCrtType': '1', 'orgAddrCounty': '110101', 'entInfoSyss_0_deployAddrCounty': '110101', 'entInfoSyss_0_deployAddr': '致真', 'industrySpecific': '01', 'entInfoSyss_2_deployMode': 1, 'entInfoSyss_1_deployAddrCity': '110100', 'entInfoSyss_2_entApplyId': 1422, 'contactPhone': '13576659510', 'legalCrtFrontImgRid': 2843, 'entInfoSyss_1_sysType': 2, 'entInfoSyss_3_deployAddr': '天津', 'contactCrtType': 1, 'entApplyId': 1422, 'orgAddrProvinceDesc': '北京市', 'entInfoSyss_3_deployAddrCounty': '120101', 'legalPhone': None, 'orgNature': '1', 'entInfoSyss_1_id': 3549, 'entInfoSyss_3_entApplyId': 1422, 'createDate': '2023-06-25 18:43:58', 'entInfoSyss_0_deployMode': 1, 'entInfoSyss_2_deployAddrProvince': '120000', 'entInfoSyss_3_deployAddrProvince': '120000', 'entInfoSyss_2_deployAddrCity': '120100', 'entInfoSyss_0_deployAddrProvince': '110000', 'entInfoSyss_1_deployAddrProvince': '110000', 'imgId': 2842, 'applyId': 1422, 'imgId_f': 2843, 'imgId_b': 2844, 'legalEmail': None, 'legalCrtBackImgRid': 2844, 'entId': None, 'entInfoSyss_0_sysType': 1, 'orgAddrCityDesc': '市辖区', 'entInfoSyss_2_id': 3550, 'entInfoSyss_3_sysType': 4, 'industryCategory': 'A', 'userId': 1656, 'entInfoSyss_1_deployAddr': '致真', 'orgAddrCity': '110100', 'legalCrtType': '1', 'entInfoSyss_1_deployAddrCounty': '110101', 'contactEmail': '3sBWly3f9SxSxSZO@qaqseq.com', 'entInfoSyss_2_deployAddrCounty': '120101', 'orgAddrCountyDesc': '东城区', 'legalName': '张三', 'entInfoSyss_0_deployAddrCity': '110100', 'orgAddrProvince': '110000', 'contactCrtNo': '360212198204265531', 'orgCrtCode': 'I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV', 'orgNatureDesc': '国有控股', 'entInfoSyss_3_deployMode': 1, 'entInfoSyss_2_deployAddr': '天津', 'orgCrtImgRid': 2842, 'entInfoSyss_0_entApplyId': 1422, 'updateDate': '2023-06-25 18:43:58', 'entInfoSyss_3_id': 3551}
+2023-06-25 18:43:58.514 | INFO     | httprunner.runner:__run_step:304 - run step end: 企业注册查询注册信息 <<<<<<
+
+2023-06-25 18:43:58.515 | INFO     | httprunner.runner:__run_step:292 - run step begin: 企业注册最终第三步提交信息 >>>>>>
+2023-06-25 18:43:58.515 | INFO     | httprunner.runner:__run_step:292 - run step begin: 企业注册最终第三步提交信息 >>>>>>
+2023-06-25 18:43:58.684 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 56587
+2023-06-25 18:43:58.684 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:43:58.686 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/v3/entApply/apply
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Type": "application/json;charset=UTF-8",
+    "HRUN-Request-ID": "HRUN-310db83c-d589-4445-8f04-546415d8f69d-838515",
+    "Cookie": "SESSION=NTkzNGUwNmMtNmE2NS00MTg3LTk0ZWYtZTA5OGFkNjY2NmFj; SESSION=response.headers.\"Set-Cookie\".session",
+    "Content-Length": "3280"
+}
+cookies  : {
+    "SESSION": "NTkzNGUwNmMtNmE2NS00MTg3LTk0ZWYtZTA5OGFkNjY2NmFj"
+}
+body     : {
+    "applyStep": 4,
+    "applyType": null,
+    "cltrid": null,
+    "contactCrtBackImgPath": null,
+    "contactCrtBackImgRid": 2844,
+    "contactCrtFrontImgPath": null,
+    "contactCrtFrontImgRid": 2843,
+    "contactCrtNo": "360212198204265531",
+    "contactCrtType": 1,
+    "contactEmail": "3sBWly3f9SxSxSZO@qaqseq.com",
+    "contactName": "I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV",
+    "contactPhone": "13576659510",
+    "createDate": "2023-06-25 18:43:58",
+    "dataHostingContractFilePath": null,
+    "dataHostingContractFileRid": null,
+    "dataHostingOrg": null,
+    "entGeneralId": null,
+    "entInfoLicenses": [],
+    "entInfoSerIndustrys": [],
+    "entInfoSyss": [
+        {
+            "deployAddr": "致真",
+            "deployAddrCity": "110100",
+            "deployAddrCounty": "110101",
+            "deployAddrProvince": "110000",
+            "deployMode": 1,
+            "ipPort": null,
+            "name": null,
+            "sysType": 2
+        },
+        {
+            "deployAddr": "致真",
+            "deployAddrCity": "110100",
+            "deployAddrCounty": "110101",
+            "deployAddrProvince": "110000",
+            "deployMode": 1,
+            "ipPort": null,
+            "name": null,
+            "sysType": 3
+        },
+        {
+            "deployAddr": "天津",
+            "deployAddrCity": "120100",
+            "deployAddrCounty": "120101",
+            "deployAddrProvince": "120000",
+            "deployMode": 1,
+            "ipPort": null,
+            "name": null,
+            "sysType": 4
+        },
+        {
+            "deployAddr": "天津",
+            "deployAddrCity": "120100",
+            "deployAddrCounty": "120101",
+            "deployAddrProvince": "120000",
+            "deployMode": 1,
+            "ipPort": null,
+            "name": null,
+            "sysType": 4
+        }
+    ],
+    "entPrefix": "88.408.2521202773",
+    "escrowId": null,
+    "escrowOrgName": null,
+    "establishDate": null,
+    "extDomain": null,
+    "extIpAddr": null,
+    "extWebName": null,
+    "finalAuditMsg": null,
+    "finalAuditStatus": null,
+    "firstAuditMsg": null,
+    "firstAuditStatus": null,
+    "id": 1422,
+    "idRegNaImp": null,
+    "industryCategory": "A",
+    "industrySpecific": "01",
+    "isSubmit": 0,
+    "legalCrtBackImgContent": null,
+    "legalCrtBackImgPath": null,
+    "legalCrtBackImgRid": 2844,
+    "legalCrtFrontImgContent": null,
+    "legalCrtFrontImgPath": null,
+    "legalCrtFrontImgRid": 2843,
+    "legalCrtNo": "360212198204265531",
+    "legalCrtType": "1",
+    "legalCrtTypeDesc": "中国居民身份证",
+    "legalEmail": null,
+    "legalFax": null,
+    "legalName": "张三",
+    "legalPhone": null,
+    "orgAddr": "致真",
+    "orgAddrCity": "110100",
+    "orgAddrCityDesc": "市辖区",
+    "orgAddrCounty": "110101",
+    "orgAddrCountyDesc": "东城区",
+    "orgAddrProvince": "110000",
+    "orgAddrProvinceDesc": "北京市",
+    "orgCategorySpecificDesc": "农、林、牧、渔业-农业",
+    "orgCrtCode": "I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV",
+    "orgCrtImgContent": null,
+    "orgCrtImgPath": null,
+    "orgCrtImgRid": 2842,
+    "orgCrtType": "1",
+    "orgDesc": null,
+    "orgName": "I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV",
+    "orgNature": "1",
+    "orgNatureDesc": "1",
+    "periodValidity": null,
+    "regAuthority": null,
+    "regCapital": null,
+    "regRealNaImpName": null,
+    "regRealNaImpType": null,
+    "servHostingContractFilePath": null,
+    "servHostingContractFileRid": null,
+    "servHostingOrg": null,
+    "servSysBuildContractFilePath": null,
+    "servSysBuildContractFileRid": null,
+    "servSysBuildName": null,
+    "servSysBuildType": 1,
+    "servSysOperContractFilePath": null,
+    "servSysOperContractFileRid": null,
+    "servSysOperName": null,
+    "servSysOperType": 1,
+    "svtrid": null,
+    "thirdServiceMsg": null,
+    "thirdServiceStatus": null,
+    "updateDate": "2023-06-25 18:43:58",
+    "userId": 1656,
+    "userName": "I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV",
+    "website": null
+}
+
+2023-06-25 18:43:58.687 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:43:58 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": true
+}
+
+2023-06-25 18:43:58.687 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 168.12 ms, response_length: 0 bytes
+2023-06-25 18:43:58.687 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:43:58.688 | INFO     | httprunner.response:validate:249 - assert body.message equal success(str)	==> pass
+2023-06-25 18:43:58.688 | INFO     | httprunner.runner:__run_step:304 - run step end: 企业注册最终第三步提交信息 <<<<<<
+
+2023-06-25 18:43:58.688 | INFO     | httprunner.runner:__run_step:304 - run step end: 企业注册最终第三步提交信息 <<<<<<
+
+2023-06-25 18:43:58.688 | INFO     | httprunner.runner:__run_step:292 - run step begin: 登录-管理员 >>>>>>
+2023-06-25 18:43:58.688 | INFO     | httprunner.runner:__run_step:292 - run step begin: 登录-企业用户 >>>>>>
+2023-06-25 18:43:58.751 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 56587
+2023-06-25 18:43:58.751 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:43:58.752 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/home/test/login
+headers  : {
+    "User-Agent": "python-requests/2.28.1",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Content-Length": "144",
+    "Content-Type": "application/json",
+    "HRUN-Request-ID": "HRUN-310db83c-d589-4445-8f04-546415d8f69d-838688",
+    "Cookie": "SESSION=NTkzNGUwNmMtNmE2NS00MTg3LTk0ZWYtZTA5OGFkNjY2NmFj"
+}
+cookies  : {
+    "SESSION": "NTkzNGUwNmMtNmE2NS00MTg3LTk0ZWYtZTA5OGFkNjY2NmFj"
+}
+body     : {
+    "captcha": "0000",
+    "captchaSign": "5d39bab12bba81ab59b3931d2ca06ee9603c3803355932be66974f122cab3502",
+    "emailCaptcha": "",
+    "username": "adminy"
+}
+
+2023-06-25 18:43:58.753 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:43:58 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Set-Cookie": "SESSION=MjFhZjJhNWUtMjcwNC00NjNkLWFlM2ItZTg5NWFkZDY3NWEx; Path=/; HttpOnly; SameSite=Lax",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {
+    "SESSION": "MjFhZjJhNWUtMjcwNC00NjNkLWFlM2ItZTg5NWFkZDY3NWEx"
+}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": true
+}
+
+2023-06-25 18:43:58.753 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 62.07 ms, response_length: 0 bytes
+2023-06-25 18:43:58.753 | INFO     | httprunner.response:extract:179 - extract mapping: {'adminSession': 'response.headers."Set-Cookie".session'}
+2023-06-25 18:43:58.754 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:43:58.754 | INFO     | httprunner.response:validate:249 - assert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass
+2023-06-25 18:43:58.754 | INFO     | httprunner.response:validate:249 - assert body.message equal success(str)	==> pass
+2023-06-25 18:43:58.754 | INFO     | httprunner.response:validate:249 - assert body.status equal 1(int)	==> pass
+2023-06-25 18:43:58.755 | INFO     | httprunner.response:validate:249 - assert body.data equal True(bool)	==> pass
+2023-06-25 18:43:58.755 | INFO     | httprunner.runner:__run_step:304 - run step end: 登录-企业用户 <<<<<<
+
+2023-06-25 18:43:58.755 | INFO     | httprunner.runner:__run_step_testcase:286 - export variables: {'adminSession': 'response.headers."Set-Cookie".session'}
+2023-06-25 18:43:58.755 | INFO     | httprunner.runner:__run_step:304 - run step end: 登录-管理员 <<<<<<
+
+2023-06-25 18:43:58.755 | INFO     | httprunner.runner:__run_step:292 - run step begin: 年费费用查询 >>>>>>
+2023-06-25 18:43:58.756 | INFO     | httprunner.runner:__run_step:292 - run step begin: 财务规则查询-年费 >>>>>>
+2023-06-25 18:43:58.804 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 56587
+2023-06-25 18:43:58.804 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:43:58.805 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://139.198.116.76:8000/api/finance/rule/findRule?cache=1663837640684&moneyType=2&userId=1656
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
+    "HRUN-Request-ID": "HRUN-310db83c-d589-4445-8f04-546415d8f69d-838756",
+    "Cookie": "SESSION=MjFhZjJhNWUtMjcwNC00NjNkLWFlM2ItZTg5NWFkZDY3NWEx; SESSION=response.headers.\"Set-Cookie\".session"
+}
+cookies  : {
+    "SESSION": "MjFhZjJhNWUtMjcwNC00NjNkLWFlM2ItZTg5NWFkZDY3NWEx"
+}
+body     : None
+
+2023-06-25 18:43:58.806 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:43:58 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": [
+        {
+            "id": 78,
+            "createDate": "2023-05-31 12:51:47",
+            "updateDate": "2023-05-31 12:51:47",
+            "name": "标准",
+            "money": 10000.0,
+            "moneyType": 2,
+            "prefixCount": 1,
+            "remart": "test",
+            "entName": null,
+            "entUserId": null,
+            "ruleType": 2,
+            "escrowId": null
+        }
+    ]
+}
+
+2023-06-25 18:43:58.806 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 48.13 ms, response_length: 0 bytes
+2023-06-25 18:43:58.807 | INFO     | httprunner.response:extract:179 - extract mapping: {'annualFeeRuleId': 78}
+2023-06-25 18:43:58.807 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:43:58.807 | INFO     | httprunner.response:validate:249 - assert body.message equal success(str)	==> pass
+2023-06-25 18:43:58.807 | INFO     | httprunner.response:validate:249 - assert body.status equal 1(int)	==> pass
+2023-06-25 18:43:58.808 | INFO     | httprunner.runner:__run_step:304 - run step end: 财务规则查询-年费 <<<<<<
+
+2023-06-25 18:43:58.808 | INFO     | httprunner.runner:__run_step_testcase:286 - export variables: {'annualFeeRuleId': 78}
+2023-06-25 18:43:58.808 | INFO     | httprunner.runner:__run_step:304 - run step end: 年费费用查询 <<<<<<
+
+2023-06-25 18:43:58.808 | INFO     | httprunner.runner:__run_step:292 - run step begin: 注册费费用查询 >>>>>>
+2023-06-25 18:43:58.809 | INFO     | httprunner.runner:__run_step:292 - run step begin: 财务规则查询-注册费 >>>>>>
+2023-06-25 18:43:58.905 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 56587
+2023-06-25 18:43:58.905 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:43:58.906 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://139.198.116.76:8000/api/finance/rule/findRule?moneyType=1&userId=1656
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
+    "HRUN-Request-ID": "HRUN-310db83c-d589-4445-8f04-546415d8f69d-838809",
+    "Cookie": "SESSION=MjFhZjJhNWUtMjcwNC00NjNkLWFlM2ItZTg5NWFkZDY3NWEx; SESSION=response.headers.\"Set-Cookie\".session"
+}
+cookies  : {
+    "SESSION": "MjFhZjJhNWUtMjcwNC00NjNkLWFlM2ItZTg5NWFkZDY3NWEx"
+}
+body     : None
+
+2023-06-25 18:43:58.907 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:43:59 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": [
+        {
+            "id": 77,
+            "createDate": "2023-05-31 12:51:33",
+            "updateDate": "2023-05-31 12:51:33",
+            "name": "标准",
+            "money": 10000.0,
+            "moneyType": 1,
+            "prefixCount": 1,
+            "remart": "test",
+            "entName": null,
+            "entUserId": null,
+            "ruleType": 2,
+            "escrowId": null
+        }
+    ]
+}
+
+2023-06-25 18:43:58.907 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 95.79 ms, response_length: 0 bytes
+2023-06-25 18:43:58.907 | INFO     | httprunner.response:extract:179 - extract mapping: {'regFeeRuleId': 77}
+2023-06-25 18:43:58.908 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:43:58.908 | INFO     | httprunner.response:validate:249 - assert body.message equal success(str)	==> pass
+2023-06-25 18:43:58.908 | INFO     | httprunner.response:validate:249 - assert body.status equal 1(int)	==> pass
+2023-06-25 18:43:58.909 | INFO     | httprunner.runner:__run_step:304 - run step end: 财务规则查询-注册费 <<<<<<
+
+2023-06-25 18:43:58.909 | INFO     | httprunner.runner:__run_step_testcase:286 - export variables: {'regFeeRuleId': 77}
+2023-06-25 18:43:58.909 | INFO     | httprunner.runner:__run_step:304 - run step end: 注册费费用查询 <<<<<<
+
+2023-06-25 18:43:58.909 | INFO     | httprunner.runner:__run_step:292 - run step begin: 前缀审核结果保存 >>>>>>
+2023-06-25 18:43:58.909 | INFO     | httprunner.runner:__run_step:292 - run step begin: 企业审核保存 >>>>>>
+2023-06-25 18:43:59.958 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 56587
+2023-06-25 18:43:59.958 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:43:59.959 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/v3/ent/audit/save?annualFeeRuleId=78&applyId=1422&auditMsg=%E5%AE%A1%E6%A0%B8%E9%80%9A%E8%BF%87&auditResult=pass&entPrefix=88.408.2521202773&regFeeRuleId=77
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
+    "Content-Length": "0",
+    "HRUN-Request-ID": "HRUN-310db83c-d589-4445-8f04-546415d8f69d-838910",
+    "Cookie": "SESSION=MjFhZjJhNWUtMjcwNC00NjNkLWFlM2ItZTg5NWFkZDY3NWEx; SESSION=response.headers.\"Set-Cookie\".session"
+}
+cookies  : {
+    "SESSION": "MjFhZjJhNWUtMjcwNC00NjNkLWFlM2ItZTg5NWFkZDY3NWEx"
+}
+body     : None
+
+2023-06-25 18:43:59.960 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:44:00 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": true
+}
+
+2023-06-25 18:43:59.960 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 1048.31 ms, response_length: 0 bytes
+2023-06-25 18:43:59.961 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:43:59.961 | INFO     | httprunner.response:validate:249 - assert body.message equal success(str)	==> pass
+2023-06-25 18:43:59.961 | INFO     | httprunner.response:validate:249 - assert body.status equal 1(int)	==> pass
+2023-06-25 18:43:59.961 | INFO     | httprunner.response:validate:249 - assert body.data equal True(bool)	==> pass
+2023-06-25 18:43:59.962 | INFO     | httprunner.runner:__run_step:304 - run step end: 企业审核保存 <<<<<<
+
+2023-06-25 18:43:59.962 | INFO     | httprunner.runner:__run_step:304 - run step end: 前缀审核结果保存 <<<<<<
+
+2023-06-25 18:43:59.962 | INFO     | httprunner.runner:__run_step:292 - run step begin: 前缀分配列表 >>>>>>
+2023-06-25 18:43:59.962 | INFO     | httprunner.runner:__run_step:292 - run step begin: 前缀分配分页 >>>>>>
+2023-06-25 18:44:00.015 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 56587
+2023-06-25 18:44:00.016 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:44:00.017 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://139.198.116.76:8000/api/v3/ent/prefix/alloc/pageQuery?currentPage=1&order=&orderProp=&orgName=I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
+    "HRUN-Request-ID": "HRUN-310db83c-d589-4445-8f04-546415d8f69d-839962",
+    "Cookie": "SESSION=MjFhZjJhNWUtMjcwNC00NjNkLWFlM2ItZTg5NWFkZDY3NWEx; SESSION=response.headers.\"Set-Cookie\".session"
+}
+cookies  : {
+    "SESSION": "MjFhZjJhNWUtMjcwNC00NjNkLWFlM2ItZTg5NWFkZDY3NWEx"
+}
+body     : None
+
+2023-06-25 18:44:00.020 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:44:00 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": {
+        "first": true,
+        "last": true,
+        "totalPages": 1,
+        "totalElements": 1,
+        "number": 1,
+        "size": 10,
+        "sort": null,
+        "numberOfElements": 1,
+        "content": [
+            {
+                "orgName": "I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV",
+                "entPrefix": "88.408.2521202773",
+                "orgTypeDesc": "国有控股",
+                "escrowOrgName": null,
+                "orgCategorySpecificDesc": "农、林、牧、渔业-农业",
+                "orgCrtCode": "I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV",
+                "userId": 1656,
+                "updateDate": "2023-06-25 18:44:00"
+            }
+        ]
+    }
+}
+
+2023-06-25 18:44:00.021 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 52.97 ms, response_length: 0 bytes
+2023-06-25 18:44:00.021 | INFO     | httprunner.response:extract:179 - extract mapping: {'userId': 1656, 'orgName': 'I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV'}
+2023-06-25 18:44:00.021 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:44:00.021 | INFO     | httprunner.response:validate:249 - assert body.message equal success(str)	==> pass
+2023-06-25 18:44:00.021 | INFO     | httprunner.response:validate:249 - assert body.status equal 1(int)	==> pass
+2023-06-25 18:44:00.021 | INFO     | httprunner.response:validate:249 - assert body.data.content[0].entPrefix equal 88.408.2521202773(str)	==> pass
+2023-06-25 18:44:00.021 | INFO     | httprunner.runner:__run_step:304 - run step end: 前缀分配分页 <<<<<<
+
+2023-06-25 18:44:00.021 | INFO     | httprunner.runner:__run_step_testcase:286 - export variables: {'orgName': 'I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV', 'userId': 1656}
+2023-06-25 18:44:00.021 | INFO     | httprunner.runner:__run_step:304 - run step end: 前缀分配列表 <<<<<<
+
+2023-06-25 18:44:00.022 | INFO     | httprunner.runner:__run_step:292 - run step begin: 收费标准查询-注册费 >>>>>>
+2023-06-25 18:44:00.022 | INFO     | httprunner.runner:__run_step:292 - run step begin: 财务规则查询-注册费 >>>>>>
+2023-06-25 18:44:00.082 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 56587
+2023-06-25 18:44:00.082 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:44:00.083 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://139.198.116.76:8000/api/finance/rule/findRule?moneyType=1&userId=1656
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
+    "HRUN-Request-ID": "HRUN-310db83c-d589-4445-8f04-546415d8f69d-840022",
+    "Cookie": "SESSION=MjFhZjJhNWUtMjcwNC00NjNkLWFlM2ItZTg5NWFkZDY3NWEx; SESSION=response.headers.\"Set-Cookie\".session"
+}
+cookies  : {
+    "SESSION": "MjFhZjJhNWUtMjcwNC00NjNkLWFlM2ItZTg5NWFkZDY3NWEx"
+}
+body     : None
+
+2023-06-25 18:44:00.084 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:44:00 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": [
+        {
+            "id": 77,
+            "createDate": "2023-05-31 12:51:33",
+            "updateDate": "2023-05-31 12:51:33",
+            "name": "标准",
+            "money": 10000.0,
+            "moneyType": 1,
+            "prefixCount": 1,
+            "remart": "test",
+            "entName": null,
+            "entUserId": null,
+            "ruleType": 2,
+            "escrowId": null
+        }
+    ]
+}
+
+2023-06-25 18:44:00.085 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 59.77 ms, response_length: 0 bytes
+2023-06-25 18:44:00.085 | INFO     | httprunner.response:extract:179 - extract mapping: {'regFeeRuleId': 77}
+2023-06-25 18:44:00.085 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:44:00.086 | INFO     | httprunner.response:validate:249 - assert body.message equal success(str)	==> pass
+2023-06-25 18:44:00.086 | INFO     | httprunner.response:validate:249 - assert body.status equal 1(int)	==> pass
+2023-06-25 18:44:00.086 | INFO     | httprunner.runner:__run_step:304 - run step end: 财务规则查询-注册费 <<<<<<
+
+2023-06-25 18:44:00.086 | INFO     | httprunner.runner:__run_step_testcase:286 - export variables: {'regFeeRuleId': 77}
+2023-06-25 18:44:00.086 | INFO     | httprunner.runner:__run_step:304 - run step end: 收费标准查询-注册费 <<<<<<
+
+2023-06-25 18:44:00.087 | INFO     | httprunner.runner:__run_step:292 - run step begin: 收费标准查询-年费 >>>>>>
+2023-06-25 18:44:00.087 | INFO     | httprunner.runner:__run_step:292 - run step begin: 财务规则查询-年费 >>>>>>
+2023-06-25 18:44:00.135 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 56587
+2023-06-25 18:44:00.135 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:44:00.136 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://139.198.116.76:8000/api/finance/rule/findRule?cache=1663837640684&moneyType=2&userId=1656
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
+    "HRUN-Request-ID": "HRUN-310db83c-d589-4445-8f04-546415d8f69d-840087",
+    "Cookie": "SESSION=MjFhZjJhNWUtMjcwNC00NjNkLWFlM2ItZTg5NWFkZDY3NWEx; SESSION=response.headers.\"Set-Cookie\".session"
+}
+cookies  : {
+    "SESSION": "MjFhZjJhNWUtMjcwNC00NjNkLWFlM2ItZTg5NWFkZDY3NWEx"
+}
+body     : None
+
+2023-06-25 18:44:00.137 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:44:00 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": [
+        {
+            "id": 78,
+            "createDate": "2023-05-31 12:51:47",
+            "updateDate": "2023-05-31 12:51:47",
+            "name": "标准",
+            "money": 10000.0,
+            "moneyType": 2,
+            "prefixCount": 1,
+            "remart": "test",
+            "entName": null,
+            "entUserId": null,
+            "ruleType": 2,
+            "escrowId": null
+        }
+    ]
+}
+
+2023-06-25 18:44:00.137 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 47.7 ms, response_length: 0 bytes
+2023-06-25 18:44:00.138 | INFO     | httprunner.response:extract:179 - extract mapping: {'annualFeeRuleId': 78}
+2023-06-25 18:44:00.138 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:44:00.138 | INFO     | httprunner.response:validate:249 - assert body.message equal success(str)	==> pass
+2023-06-25 18:44:00.139 | INFO     | httprunner.response:validate:249 - assert body.status equal 1(int)	==> pass
+2023-06-25 18:44:00.139 | INFO     | httprunner.runner:__run_step:304 - run step end: 财务规则查询-年费 <<<<<<
+
+2023-06-25 18:44:00.139 | INFO     | httprunner.runner:__run_step_testcase:286 - export variables: {'annualFeeRuleId': 78}
+2023-06-25 18:44:00.139 | INFO     | httprunner.runner:__run_step:304 - run step end: 收费标准查询-年费 <<<<<<
+
+2023-06-25 18:44:00.140 | INFO     | httprunner.runner:__run_step:292 - run step begin: 保存分配前缀 >>>>>>
+2023-06-25 18:44:00.140 | INFO     | httprunner.runner:__run_step:292 - run step begin: 保存再分配的前缀 >>>>>>
+2023-06-25 18:44:00.763 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 56587
+2023-06-25 18:44:00.763 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:44:00.764 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/v3/ent/prefix/alloc/savePrefix?annualFeeRuleId=78&pendingPrefix=88.408.9700023621&regFeeRuleId=77&userId=1656
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
+    "Content-Length": "0",
+    "HRUN-Request-ID": "HRUN-310db83c-d589-4445-8f04-546415d8f69d-840140",
+    "Cookie": "SESSION=MjFhZjJhNWUtMjcwNC00NjNkLWFlM2ItZTg5NWFkZDY3NWEx; SESSION=response.headers.\"Set-Cookie\".session"
+}
+cookies  : {
+    "SESSION": "MjFhZjJhNWUtMjcwNC00NjNkLWFlM2ItZTg5NWFkZDY3NWEx"
+}
+body     : None
+
+2023-06-25 18:44:00.766 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:44:00 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": "分配完成"
+}
+
+2023-06-25 18:44:00.766 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 622.36 ms, response_length: 0 bytes
+2023-06-25 18:44:00.766 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:44:00.766 | INFO     | httprunner.response:validate:249 - assert body.message equal success(str)	==> pass
+2023-06-25 18:44:00.766 | INFO     | httprunner.response:validate:249 - assert body.status equal 1(int)	==> pass
+2023-06-25 18:44:00.767 | INFO     | httprunner.response:validate:249 - assert body.data equal 分配完成(str)	==> pass
+2023-06-25 18:44:00.767 | INFO     | httprunner.runner:__run_step:304 - run step end: 保存再分配的前缀 <<<<<<
+
+2023-06-25 18:44:00.767 | INFO     | httprunner.runner:__run_step:304 - run step end: 保存分配前缀 <<<<<<
+
+2023-06-25 18:44:00.767 | INFO     | httprunner.runner:__run_step:292 - run step begin: 企业登陆 >>>>>>
+2023-06-25 18:44:00.767 | INFO     | httprunner.runner:__run_step:292 - run step begin: 登录-企业用户 >>>>>>
+2023-06-25 18:44:00.826 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 56587
+2023-06-25 18:44:00.826 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:44:00.827 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/home/test/login
+headers  : {
+    "User-Agent": "python-requests/2.28.1",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Content-Length": "170",
+    "Content-Type": "application/json",
+    "HRUN-Request-ID": "HRUN-310db83c-d589-4445-8f04-546415d8f69d-840767",
+    "Cookie": "SESSION=MjFhZjJhNWUtMjcwNC00NjNkLWFlM2ItZTg5NWFkZDY3NWEx"
+}
+cookies  : {
+    "SESSION": "MjFhZjJhNWUtMjcwNC00NjNkLWFlM2ItZTg5NWFkZDY3NWEx"
+}
+body     : {
+    "captcha": "0000",
+    "captchaSign": "d2b5bb320b5642b4b927d868ada534f8b8f5d41399796cb5d3c80a25eb3168ed",
+    "emailCaptcha": "",
+    "username": "I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV"
+}
+
+2023-06-25 18:44:00.828 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:44:00 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Set-Cookie": "SESSION=OWYyYzVlNTgtMWNhZC00ZmUyLWI4Y2YtMmVlZDkyNjE1OTY5; Path=/; HttpOnly; SameSite=Lax",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {
+    "SESSION": "OWYyYzVlNTgtMWNhZC00ZmUyLWI4Y2YtMmVlZDkyNjE1OTY5"
+}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": true
+}
+
+2023-06-25 18:44:00.828 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 58.34 ms, response_length: 0 bytes
+2023-06-25 18:44:00.828 | INFO     | httprunner.response:extract:179 - extract mapping: {'entSession': 'response.headers."Set-Cookie".session'}
+2023-06-25 18:44:00.829 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:44:00.829 | INFO     | httprunner.response:validate:249 - assert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass
+2023-06-25 18:44:00.829 | INFO     | httprunner.response:validate:249 - assert body.message equal success(str)	==> pass
+2023-06-25 18:44:00.829 | INFO     | httprunner.response:validate:249 - assert body.status equal 1(int)	==> pass
+2023-06-25 18:44:00.830 | INFO     | httprunner.response:validate:249 - assert body.data equal True(bool)	==> pass
+2023-06-25 18:44:00.830 | INFO     | httprunner.runner:__run_step:304 - run step end: 登录-企业用户 <<<<<<
+
+2023-06-25 18:44:00.830 | INFO     | httprunner.runner:__run_step_testcase:286 - export variables: {'entSession': 'response.headers."Set-Cookie".session'}
+2023-06-25 18:44:00.830 | INFO     | httprunner.runner:__run_step:304 - run step end: 企业登陆 <<<<<<
+
+2023-06-25 18:44:00.830 | INFO     | httprunner.runner:__run_step:292 - run step begin: 申请托管 >>>>>>
+2023-06-25 18:44:00.831 | INFO     | httprunner.runner:__run_step:292 - run step begin: 托管申请 >>>>>>
+2023-06-25 18:44:00.902 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 56587
+2023-06-25 18:44:00.903 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:44:00.904 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://139.198.116.76:8000/api/prefixProxy/apply?entPrefix=88.408.9700023621
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "HRUN-Request-ID": "HRUN-310db83c-d589-4445-8f04-546415d8f69d-840831",
+    "Cookie": "SESSION=OWYyYzVlNTgtMWNhZC00ZmUyLWI4Y2YtMmVlZDkyNjE1OTY5; SESSION=response.headers.\"Set-Cookie\".session"
+}
+cookies  : {
+    "SESSION": "OWYyYzVlNTgtMWNhZC00ZmUyLWI4Y2YtMmVlZDkyNjE1OTY5"
+}
+body     : None
+
+2023-06-25 18:44:00.904 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:44:01 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": null
+}
+
+2023-06-25 18:44:00.905 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 71.53 ms, response_length: 0 bytes
+2023-06-25 18:44:00.905 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:44:00.905 | INFO     | httprunner.response:validate:249 - assert body.message equal success(str)	==> pass
+2023-06-25 18:44:00.906 | INFO     | httprunner.runner:__run_step:304 - run step end: 托管申请 <<<<<<
+
+2023-06-25 18:44:00.906 | INFO     | httprunner.runner:__run_step:304 - run step end: 申请托管 <<<<<<
+
+2023-06-25 18:44:00.907 | INFO     | httprunner.runner:__run_step:292 - run step begin: 管理员登陆 >>>>>>
+2023-06-25 18:44:00.907 | INFO     | httprunner.runner:__run_step:292 - run step begin: 登录-企业用户 >>>>>>
+2023-06-25 18:44:01.010 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 56587
+2023-06-25 18:44:01.010 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:44:01.010 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/home/test/login
+headers  : {
+    "User-Agent": "python-requests/2.28.1",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Content-Length": "144",
+    "Content-Type": "application/json",
+    "HRUN-Request-ID": "HRUN-310db83c-d589-4445-8f04-546415d8f69d-840908",
+    "Cookie": "SESSION=OWYyYzVlNTgtMWNhZC00ZmUyLWI4Y2YtMmVlZDkyNjE1OTY5"
+}
+cookies  : {
+    "SESSION": "OWYyYzVlNTgtMWNhZC00ZmUyLWI4Y2YtMmVlZDkyNjE1OTY5"
+}
+body     : {
+    "captcha": "0000",
+    "captchaSign": "5d39bab12bba81ab59b3931d2ca06ee9603c3803355932be66974f122cab3502",
+    "emailCaptcha": "",
+    "username": "adminy"
+}
+
+2023-06-25 18:44:01.010 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:44:01 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Set-Cookie": "SESSION=M2Q3NzVkZmQtYzIwMC00OGQwLWExNjItZDIzOGZmMGZkNWI3; Path=/; HttpOnly; SameSite=Lax",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {
+    "SESSION": "M2Q3NzVkZmQtYzIwMC00OGQwLWExNjItZDIzOGZmMGZkNWI3"
+}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": true
+}
+
+2023-06-25 18:44:01.010 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 102.12 ms, response_length: 0 bytes
+2023-06-25 18:44:01.011 | INFO     | httprunner.response:extract:179 - extract mapping: {'adminSession': 'response.headers."Set-Cookie".session'}
+2023-06-25 18:44:01.011 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:44:01.011 | INFO     | httprunner.response:validate:249 - assert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass
+2023-06-25 18:44:01.011 | INFO     | httprunner.response:validate:249 - assert body.message equal success(str)	==> pass
+2023-06-25 18:44:01.011 | INFO     | httprunner.response:validate:249 - assert body.status equal 1(int)	==> pass
+2023-06-25 18:44:01.011 | INFO     | httprunner.response:validate:249 - assert body.data equal True(bool)	==> pass
+2023-06-25 18:44:01.011 | INFO     | httprunner.runner:__run_step:304 - run step end: 登录-企业用户 <<<<<<
+
+2023-06-25 18:44:01.011 | INFO     | httprunner.runner:__run_step_testcase:286 - export variables: {'adminSession': 'response.headers."Set-Cookie".session'}
+2023-06-25 18:44:01.011 | INFO     | httprunner.runner:__run_step:304 - run step end: 管理员登陆 <<<<<<
+
+2023-06-25 18:44:01.011 | INFO     | httprunner.runner:__run_step:292 - run step begin: 前缀管理分页-待审核 >>>>>>
+2023-06-25 18:44:01.012 | INFO     | httprunner.runner:__run_step:292 - run step begin: 前缀管理分页-待审核 >>>>>>
+2023-06-25 18:44:01.062 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 56587
+2023-06-25 18:44:01.063 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:44:01.063 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://139.198.116.76:8000/api/v3/ent/prefix/manage/pageQuery?cache=1663838231980&currentPage=1&entPrefix=88.408.9700023621&escrowOrgName=&order=&orderProp=&state=
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
+    "HRUN-Request-ID": "HRUN-310db83c-d589-4445-8f04-546415d8f69d-841012",
+    "Cookie": "SESSION=M2Q3NzVkZmQtYzIwMC00OGQwLWExNjItZDIzOGZmMGZkNWI3; SESSION=response.headers.\"Set-Cookie\".session"
+}
+cookies  : {
+    "SESSION": "M2Q3NzVkZmQtYzIwMC00OGQwLWExNjItZDIzOGZmMGZkNWI3"
+}
+body     : None
+
+2023-06-25 18:44:01.064 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:44:01 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": {
+        "first": true,
+        "last": true,
+        "totalPages": 1,
+        "totalElements": 1,
+        "number": 1,
+        "size": 10,
+        "sort": {
+            "sorted": false,
+            "unsorted": true,
+            "empty": true
+        },
+        "numberOfElements": 1,
+        "content": [
+            {
+                "userId": 1656,
+                "entPrefix": "88.408.9700023621",
+                "state": 1,
+                "entGeneralId": null,
+                "entName": "I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV",
+                "escrowOrgName": null,
+                "proxyState": 2,
+                "createDate": "2023-06-25 18:44:01",
+                "updateDate": "2023-06-25 18:44:01",
+                "id": 719
+            }
+        ]
+    }
+}
+
+2023-06-25 18:44:01.065 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 50.22 ms, response_length: 0 bytes
+2023-06-25 18:44:01.065 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:44:01.065 | INFO     | httprunner.response:validate:249 - assert body.message equal success(str)	==> pass
+2023-06-25 18:44:01.065 | INFO     | httprunner.response:validate:249 - assert body.data.content[0].proxyState equal 2(int)	==> pass
+2023-06-25 18:44:01.065 | INFO     | httprunner.runner:__run_step:304 - run step end: 前缀管理分页-待审核 <<<<<<
+
+2023-06-25 18:44:01.066 | INFO     | httprunner.runner:__run_step:304 - run step end: 前缀管理分页-待审核 <<<<<<
+
+2023-06-25 18:44:01.066 | INFO     | httprunner.runner:__run_step:292 - run step begin: 托管审核分页 >>>>>>
+2023-06-25 18:44:01.066 | INFO     | httprunner.runner:__run_step:292 - run step begin: 前缀审核列表 >>>>>>
+2023-06-25 18:44:01.117 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 56587
+2023-06-25 18:44:01.117 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:44:01.118 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://139.198.116.76:8000/api/proxyserver/prefix/audit/pageQuery?cache=1663920502544&currentPage=1&entNameCn=&escrowOrgName=&order=&orderProp=&prefix=88.408.9700023621
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "HRUN-Request-ID": "HRUN-310db83c-d589-4445-8f04-546415d8f69d-841066",
+    "Cookie": "SESSION=M2Q3NzVkZmQtYzIwMC00OGQwLWExNjItZDIzOGZmMGZkNWI3; SESSION=response.headers.\"Set-Cookie\".session"
+}
+cookies  : {
+    "SESSION": "M2Q3NzVkZmQtYzIwMC00OGQwLWExNjItZDIzOGZmMGZkNWI3"
+}
+body     : None
+
+2023-06-25 18:44:01.120 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:44:01 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": {
+        "first": true,
+        "last": true,
+        "totalPages": 1,
+        "totalElements": 1,
+        "number": 1,
+        "size": 10,
+        "sort": {
+            "sorted": true,
+            "unsorted": false,
+            "empty": false
+        },
+        "numberOfElements": 1,
+        "content": [
+            {
+                "id": 374,
+                "prefix": "88.408.9700023621",
+                "entNameCn": "I7XLtGQuC5xLjd5Ljq7fHUhbuNLV5akV",
+                "escrowOrgName": null,
+                "isProxy": 2,
+                "userId": 1656,
+                "createDate": "2023-06-25 18:44:01",
+                "updateDate": "2023-06-25 18:44:01"
+            }
+        ]
+    }
+}
+
+2023-06-25 18:44:01.120 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 50.72 ms, response_length: 0 bytes
+2023-06-25 18:44:01.120 | INFO     | httprunner.response:extract:179 - extract mapping: {'prefixauditid': 374}
+2023-06-25 18:44:01.120 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:44:01.121 | INFO     | httprunner.response:validate:249 - assert headers."Content-Type" equal application/json(str)	==> pass
+2023-06-25 18:44:01.121 | INFO     | httprunner.response:validate:249 - assert body.message equal success(str)	==> pass
+2023-06-25 18:44:01.121 | INFO     | httprunner.response:validate:249 - assert body.status equal 1(int)	==> pass
+2023-06-25 18:44:01.121 | INFO     | httprunner.runner:__run_step:304 - run step end: 前缀审核列表 <<<<<<
+
+2023-06-25 18:44:01.121 | INFO     | httprunner.runner:__run_step_testcase:286 - export variables: {'prefixauditid': 374}
+2023-06-25 18:44:01.121 | INFO     | httprunner.runner:__run_step:304 - run step end: 托管审核分页 <<<<<<
+
+2023-06-25 18:44:01.121 | INFO     | httprunner.runner:__run_step:292 - run step begin: 托管服务器获取 >>>>>>
+2023-06-25 18:44:01.121 | INFO     | httprunner.runner:__run_step:292 - run step begin: 托管服务器列表 >>>>>>
+2023-06-25 18:44:01.171 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 56587
+2023-06-25 18:44:01.171 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:44:01.172 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://139.198.116.76:8000/api/system/proxy/server/pageQuery?cache=1663915357874
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "HRUN-Request-ID": "HRUN-310db83c-d589-4445-8f04-546415d8f69d-841122",
+    "Cookie": "SESSION=M2Q3NzVkZmQtYzIwMC00OGQwLWExNjItZDIzOGZmMGZkNWI3; SESSION=response.headers.\"Set-Cookie\".session"
+}
+cookies  : {
+    "SESSION": "M2Q3NzVkZmQtYzIwMC00OGQwLWExNjItZDIzOGZmMGZkNWI3"
+}
+body     : None
+
+2023-06-25 18:44:01.173 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:44:01 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": {
+        "first": true,
+        "last": true,
+        "totalPages": 1,
+        "totalElements": 1,
+        "number": 1,
+        "size": 10,
+        "sort": {
+            "sorted": true,
+            "unsorted": false,
+            "empty": false
+        },
+        "numberOfElements": 1,
+        "content": [
+            {
+                "id": 5,
+                "createDate": "2023-05-31 10:16:20",
+                "updateDate": "2023-05-31 10:16:20",
+                "srvName": "托管服务器-勿动",
+                "ipType": 4,
+                "ip": "192.168.0.76",
+                "tcpPort": 2643,
+                "udpPort": null,
+                "httpPort": 8083,
+                "ipTypeReslove": 4,
+                "ipReslove": "139.198.116.208",
+                "tcpPortReslove": 2643,
+                "udpPortReslove": null,
+                "httpPortReslove": 8083
+            }
+        ]
+    }
+}
+
+2023-06-25 18:44:01.173 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 49.12 ms, response_length: 0 bytes
+2023-06-25 18:44:01.174 | INFO     | httprunner.response:extract:179 - extract mapping: {'proxyserverid': 5}
+2023-06-25 18:44:01.174 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:44:01.175 | INFO     | httprunner.response:validate:249 - assert headers."Content-Type" equal application/json(str)	==> pass
+2023-06-25 18:44:01.175 | INFO     | httprunner.response:validate:249 - assert body.message equal success(str)	==> pass
+2023-06-25 18:44:01.175 | INFO     | httprunner.response:validate:249 - assert body.status equal 1(int)	==> pass
+2023-06-25 18:44:01.176 | INFO     | httprunner.runner:__run_step:304 - run step end: 托管服务器列表 <<<<<<
+
+2023-06-25 18:44:01.176 | INFO     | httprunner.runner:__run_step_testcase:286 - export variables: {'proxyserverid': 5}
+2023-06-25 18:44:01.176 | INFO     | httprunner.runner:__run_step:304 - run step end: 托管服务器获取 <<<<<<
+
+2023-06-25 18:44:01.176 | INFO     | httprunner.runner:__run_step:292 - run step begin: 托管审核通过 >>>>>>
+2023-06-25 18:44:01.176 | INFO     | httprunner.runner:__run_step:292 - run step begin: 托管审核保存 >>>>>>
+2023-06-25 18:44:01.264 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 56587
+2023-06-25 18:44:01.264 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:44:01.266 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/proxyserver/prefix/audit/save?auditResult=pass&id=374&ids=5
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Length": "0",
+    "HRUN-Request-ID": "HRUN-310db83c-d589-4445-8f04-546415d8f69d-841177",
+    "Cookie": "SESSION=M2Q3NzVkZmQtYzIwMC00OGQwLWExNjItZDIzOGZmMGZkNWI3; SESSION=response.headers.\"Set-Cookie\".session"
+}
+cookies  : {
+    "SESSION": "M2Q3NzVkZmQtYzIwMC00OGQwLWExNjItZDIzOGZmMGZkNWI3"
+}
+body     : None
+
+2023-06-25 18:44:01.266 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:44:01 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": true
+}
+
+2023-06-25 18:44:01.267 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 87.11 ms, response_length: 0 bytes
+2023-06-25 18:44:01.267 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:44:01.267 | INFO     | httprunner.response:validate:249 - assert headers."Content-Type" equal application/json(str)	==> pass
+2023-06-25 18:44:01.268 | INFO     | httprunner.response:validate:249 - assert body.message equal success(str)	==> pass
+2023-06-25 18:44:01.268 | INFO     | httprunner.response:validate:249 - assert body.status equal 1(int)	==> pass
+2023-06-25 18:44:01.268 | INFO     | httprunner.response:validate:249 - assert body.data equal True(bool)	==> pass
+2023-06-25 18:44:01.268 | INFO     | httprunner.runner:__run_step:304 - run step end: 托管审核保存 <<<<<<
+
+2023-06-25 18:44:01.269 | INFO     | httprunner.runner:__run_step:304 - run step end: 托管审核通过 <<<<<<
+
+2023-06-25 18:44:01.269 | INFO     | httprunner.runner:__run_step:292 - run step begin: 删除前缀 >>>>>>
+2023-06-25 18:44:01.269 | INFO     | httprunner.runner:__run_step:292 - run step begin: 前缀删除 >>>>>>
+2023-06-25 18:44:01.661 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 56587
+2023-06-25 18:44:01.661 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:44:01.662 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://139.198.116.76:8000/api/v3/ent/prefix/manage/delete?delTemplateAll=1&entPrefix=88.408.9700023621&transferPrefix=
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
+    "Cache-Control": "no-cache",
+    "Content-Length": "0",
+    "Pragma": "no-cache",
+    "X-HTTP-Method-Override": "delete",
+    "HRUN-Request-ID": "HRUN-310db83c-d589-4445-8f04-546415d8f69d-841270",
+    "Cookie": "SESSION=M2Q3NzVkZmQtYzIwMC00OGQwLWExNjItZDIzOGZmMGZkNWI3; SESSION=response.headers.\"Set-Cookie\".session"
+}
+cookies  : {
+    "SESSION": "M2Q3NzVkZmQtYzIwMC00OGQwLWExNjItZDIzOGZmMGZkNWI3"
+}
+body     : None
+
+2023-06-25 18:44:01.663 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 25 Jun 2023 10:44:01 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "message": "success",
+    "status": 1,
+    "data": true
+}
+
+2023-06-25 18:44:01.663 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 391.2 ms, response_length: 0 bytes
+2023-06-25 18:44:01.663 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:44:01.664 | INFO     | httprunner.response:validate:249 - assert headers."Content-Type" equal application/json(str)	==> pass
+2023-06-25 18:44:01.664 | INFO     | httprunner.response:validate:249 - assert body.message equal success(str)	==> pass
+2023-06-25 18:44:01.664 | INFO     | httprunner.response:validate:249 - assert body.status equal 1(int)	==> pass
+2023-06-25 18:44:01.664 | INFO     | httprunner.response:validate:249 - assert body.data equal True(bool)	==> pass
+2023-06-25 18:44:01.665 | INFO     | httprunner.runner:__run_step:304 - run step end: 前缀删除 <<<<<<
+
+2023-06-25 18:44:01.665 | INFO     | httprunner.runner:__run_step:304 - run step end: 删除前缀 <<<<<<
+
+2023-06-25 18:44:01.665 | INFO     | httprunner.runner:__run_step:292 - run step begin: 调用idhub接口创建标识1条 >>>>>>
+2023-06-25 18:44:01.665 | INFO     | httprunner.runner:__run_step:292 - run step begin: idhub注册标识 >>>>>>
+2023-06-25 18:44:01.775 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 56587
+2023-06-25 18:44:01.775 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:44:01.776 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : PUT
+url      : http://139.198.116.208:8083/api/handles/88.408.9700023621/446879
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "HRUN-Request-ID": "HRUN-310db83c-d589-4445-8f04-546415d8f69d-841665",
+    "Content-Length": "227",
+    "Content-Type": "application/json"
+}
+cookies  : {
+    "SESSION": "M2Q3NzVkZmQtYzIwMC00OGQwLWExNjItZDIzOGZmMGZkNWI3"
+}
+body     : {
+    "index": 0,
+    "type": "URL",
+    "data": {
+        "format": "string",
+        "value": "www.baidu.com"
+    },
+    "ttl": 86400,
+    "timestamp": "2017-10-19 09:48:03",
+    "references": [],
+    "adminRead": "1",
+    "adminWrite": "1",
+    "publicRead": "1",
+    "publicWrite": "0"
+}
+
+2023-06-25 18:44:01.777 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Content-Type": "application/json",
+    "Server": "GoFrame HTTP Server",
+    "Trace-Id": "1df32b2ff8e06b1715c13314898af60a",
+    "Date": "Sun, 25 Jun 2023 10:44:01 GMT",
+    "Content-Length": "69",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "msg": "标识不存在 88.408.9700023621/446879",
+    "responseCode": 100
+}
+
+2023-06-25 18:44:01.777 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 109.44 ms, response_length: 0 bytes
+2023-06-25 18:44:01.778 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:44:01.778 | INFO     | httprunner.response:validate:249 - assert body.msg contains 标识不存在(str)	==> pass
+2023-06-25 18:44:01.778 | INFO     | httprunner.runner:__run_step:304 - run step end: idhub注册标识 <<<<<<
+
+2023-06-25 18:44:01.779 | INFO     | httprunner.runner:__run_step:304 - run step end: 调用idhub接口创建标识1条 <<<<<<
+
+2023-06-25 18:44:01.779 | INFO     | httprunner.runner:__run_step:292 - run step begin: 调用idhub接口解析标识1条 >>>>>>
+2023-06-25 18:44:01.780 | INFO     | httprunner.runner:__run_step:292 - run step begin: idhub解析标识 >>>>>>
+2023-06-25 18:44:01.834 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 56587
+2023-06-25 18:44:01.835 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2023-06-25 18:44:01.835 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://139.198.116.208:8083/api/handles/88.408.9700023621/446879
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "HRUN-Request-ID": "HRUN-310db83c-d589-4445-8f04-546415d8f69d-841780"
+}
+cookies  : {
+    "SESSION": "M2Q3NzVkZmQtYzIwMC00OGQwLWExNjItZDIzOGZmMGZkNWI3"
+}
+body     : None
+
+2023-06-25 18:44:01.836 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Content-Type": "application/json",
+    "Server": "GoFrame HTTP Server",
+    "Trace-Id": "41426b32f8e06b1716c13314622a445b",
+    "Date": "Sun, 25 Jun 2023 10:44:01 GMT",
+    "Content-Length": "105",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "handle": "88.408.9700023621/446879",
+    "msg": "标识不存在 88.408.9700023621/446879",
+    "responseCode": 100
+}
+
+2023-06-25 18:44:01.836 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 54.33 ms, response_length: 0 bytes
+2023-06-25 18:44:01.837 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-06-25 18:44:01.837 | INFO     | httprunner.runner:__run_step:304 - run step end: idhub解析标识 <<<<<<
+
+2023-06-25 18:44:01.837 | INFO     | httprunner.runner:__run_step:304 - run step end: 调用idhub接口解析标识1条 <<<<<<
+

@@ -1,0 +1,164 @@
+config:
+    name: testcase description
+    variables: {}
+    verify: false
+teststeps:
+-   name: /api/snms/identityv2/data
+    request:
+        cookies:
+            SESSION: OTYzODYwNjAtYTlhNC00ZDExLTgyMDEtOWI0OWU4OTgyOTAx
+        headers:
+            Accept: application/json, text/plain, */*
+            Accept-Encoding: gzip, deflate
+            Accept-Language: zh-CN,zh;q=0.9
+            Connection: keep-alive
+            Content-Length: '2403'
+            Content-Type: application/json
+            Cookie: SESSION=OTYzODYwNjAtYTlhNC00ZDExLTgyMDEtOWI0OWU4OTgyOTAx
+            Host: 139.198.115.70:8000
+            Origin: http://139.198.115.70:8000
+            Referer: http://139.198.115.70:8000/snms/ui/identityv2/identity
+            User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36
+        json:
+            handle: 88.502.119/89890
+            prefix: 88.502.119
+            templateVersion: test90900
+            value:
+            -   auth: ''
+                data:
+                    format: string
+                    value: 2125654564tryrt混合类型JLHLH
+                index: 2000
+                name: 终端类型
+                rule:
+                -   message: 必填项，不能为空
+                    required: false
+                    trigger: blur
+                -   message: 最小长度为0
+                    min: 0
+                    trigger: blur
+                -   max: 65536
+                    message: 最大长度为65536
+                    trigger: blur
+                type: terminalType
+            -   auth: ''
+                data:
+                    format: string
+                    value: 测试主体
+                index: 2001
+                name: 所属主体
+                rule:
+                -   message: 必填项，不能为空
+                    required: false
+                    trigger: blur
+                -   message: 最小长度为0
+                    min: 0
+                    trigger: blur
+                -   max: 65536
+                    message: 最大长度为65536
+                    trigger: blur
+                type: subject
+            -   auth: ''
+                data:
+                    format: string
+                    value: 测试用途
+                index: 2002
+                name: 用途
+                rule:
+                -   message: 必填项，不能为空
+                    required: false
+                    trigger: blur
+                -   message: 最小长度为0
+                    min: 0
+                    trigger: blur
+                -   max: 65536
+                    message: 最大长度为65536
+                    trigger: blur
+                type: useFor
+            -   auth: ''
+                data:
+                    format: string
+                    value: dfjsldjfslfjls字符测试
+                index: 2003
+                name: 串号或IMEI
+                rule:
+                -   message: 必填项，不能为空
+                    required: false
+                    trigger: blur
+                -   message: 最小长度为0
+                    min: 0
+                    trigger: blur
+                -   max: 65536
+                    message: 最大长度为65536
+                    trigger: blur
+                type: serOrImei
+            -   auth: ''
+                data:
+                    format: string
+                    value: 中文测试中文测试
+                index: 2004
+                name: 进网许可证编号
+                rule:
+                -   message: 必填项，不能为空
+                    required: false
+                    trigger: blur
+                -   message: 最小长度为0
+                    min: 0
+                    trigger: blur
+                -   max: 65536
+                    message: 最大长度为65536
+                    trigger: blur
+                type: licenseNo
+            -   auth: ''
+                data:
+                    format: string
+                    value: 2408080数字测试
+                index: 2005
+                name: 进网许可标志序号
+                rule:
+                -   message: 必填项，不能为空
+                    required: false
+                    trigger: blur
+                -   message: 最小长度为0
+                    min: 0
+                    trigger: blur
+                -   max: 65536
+                    message: 最大长度为65536
+                    trigger: blur
+                type: licenseSign
+            -   auth: ''
+                data:
+                    format: string
+                    value: 新增属性中文测试
+                index: 2006
+                name: 数据模板测试
+                rule:
+                -   message: 必填项，不能为空
+                    required: false
+                    trigger: blur
+                -   message: 最小长度为0
+                    min: 0
+                    trigger: blur
+                -   max: 10000
+                    message: 最大长度为10000
+                    trigger: blur
+                type: autotest
+        method: POST
+        url: http://139.198.115.70:8000/api/snms/identityv2/data
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json
+    -   eq:
+        - body.message
+        - success
+    -   eq:
+        - body.status
+        - 1
+    -   eq:
+        - body.data
+        - true
