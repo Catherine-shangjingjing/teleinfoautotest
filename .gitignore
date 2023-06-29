@@ -1,0 +1,14 @@
+.env
+reports/*
+__pycache__/*
+*.pyc
+.python-version
+logs/*
+
+.DS_Store
+./logs/*
+.idea/*
+assets
+.idea
+reportsreport.html
+*.py

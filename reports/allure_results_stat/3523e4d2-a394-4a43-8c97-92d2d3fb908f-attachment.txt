@@ -1,2 +1,0 @@
-[32m2023-06-27 15:50:32.340[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m450[0m - [1mStart to run testcase: idhub标识注册-ent-33, TestCase ID: 08c42667-dec3-43c0-9b32-c4acfb07b183[0m
-[32m2023-06-27 15:50:32.341[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m460[0m - [1mgenerate testcase log: /Users/shangjingjing/Desktop/自动化0613/teleinfoautotest/logs/08c42667-dec3-43c0-9b32-c4acfb07b183.run.log[0m
