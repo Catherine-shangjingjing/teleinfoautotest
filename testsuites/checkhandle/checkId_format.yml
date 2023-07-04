@@ -1,6 +1,0 @@
-config:
-    name: 门户查询格式错误的标识信息用例集
-
-teststeps:
--   name: 门户查询标识信息格式错误
-    testcase: testcases/checkhandle/checkId_format.yml
