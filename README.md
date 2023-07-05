@@ -127,7 +127,8 @@
 
 ### （3）场景用例编写:
 
-`config:`
+`config:`  
+
 `    name: 测试百度  #场景用例名称`
 
     `variables:
