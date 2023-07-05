@@ -21,15 +21,17 @@
 
 ### （2）接口用例编写：
 
-`config:
+`config:`  
+
     name: 百度搜索  #用例名称，可修改为自己的用例名称
-    base_url: ${ENV(HOST)} #全局url
-    variables: {}  #变量，测试用例的配置项，可作用于整个用例
-    verify: false  #不是必须的，可选，指定是否验证服务器的TLS证书，如果没有设置verify或将其设置为True，则会发生SSLError
-teststeps:  #测试步骤
--   name: 百度搜索  #测试步骤名称，可修改为自己的测试用例步骤名称
-    request:  #请求信息
-        cookies:
+    base_url: ${ENV(HOST)} #全局url  
+    variables: {}  #变量，测试用例的配置项，可作用于整个用例 
+    verify: false  #不是必须的，可选，指定是否验证服务器的TLS证书，如果没有设置verify或将其设置为True，则会发生SSLError 
+`teststeps:  #测试步骤`  
+`-   name: 百度搜索  #测试步骤名称，可修改为自己的测试用例步骤名称` 
+`    request:  #请求信息`
+`        cookies:`  
+
             BAIDUID: 5D7168F0F45A749F0EFBA6BC33B895D7:FG=1
             BAIDUID_BFESS: 5D7168F0F45A749F0EFBA6BC33B895D7:FG=1
             BA_HECTOR: 250h040g212h8ka1ahal2g0i1ia4d201o
@@ -126,11 +128,16 @@ teststeps:  #测试步骤
 ### （3）场景用例编写:
 
 `config:`
+
 `    name: 测试百度  #场景用例名称`
+
     `variables:
+
         content: "自动化测试"  #场景用例变量`
 `teststeps:`
+
 `-   name: 测试百度搜索  #步骤名称`
+
 `    testcase: testcases/baidu.yml  #步骤用例的路径`
 
 ### （4）调试：
