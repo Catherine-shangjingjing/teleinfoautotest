@@ -10,25 +10,18 @@
 
 ### （2）安装pytest，使用pip进行安装，安装指令为pip install pytest
 
-### （3）安装allure，对于Windows系统，需下载allure最新版本https://github.com/allure-framework/allure2/releases，安装后在环境变量中配置allure的安装路径；对于mac系统，可以使用brew进行安装，安装指令为brew install allure，也可先下载allure到本地，完成安装后配置bin目录到环境变量文件中
+### （3）安装allure，对于Windows系统，需下载allure最新版本[https://github.com/allure-framework/allure2/releases]()，安装后在环境变量中配置allure的安装路径；对于mac系统，可以使用brew进行安装，安装指令为brew install allure，也可先下载allure到本地，完成安装后配置bin目录到环境变量文件中
 
 ### （4）安装allure-pytest插件，安装指令为pip install allure-pytest
 
 ## 4，使用说明
 
 ### （1）项目目录说明：
-![img.png](img.png)
-har ：存放har文件，可由charles或者fiddler抓包生成
-logs ：存放执行日志
-reports ：存放报告
-testcases ：存放测试用例，可由一个或者多个接口构成
-testsuite ：存放测试用例集，可由一条或者多条用例组成
-.env ：存放环境变量，可以在全局进行调用
-.gitgnore ：使用git做版本控制时，添加在此文件中的文件不会被git管理
-debugtalk.py ：定义python函数，可编写一些测试中需要用到的方法
-run.py :执行脚本，用来执行用例
-（2）接口用例编写：
-config:
+![img_1.png](img_1.png)
+
+### （2）接口用例编写：
+
+`config:
     name: 百度搜索  #用例名称，可修改为自己的用例名称
     base_url: ${ENV(HOST)} #全局url
     variables: {}  #变量，测试用例的配置项，可作用于整个用例
@@ -128,52 +121,44 @@ teststeps:  #测试步骤
         - 200
     -   eq:
         - headers.Content-Type
-        - text/html;charset=utf-8
-（3）场景用例编写:
-config:
+        - text/html;charset=utf-8`
+
+### （3）场景用例编写:
+
+`config:
     name: 测试百度  #场景用例名称
     variables:
         content: "自动化测试"  #场景用例变量
 teststeps:
 -   name: 测试百度搜索  #步骤名称
-    testcase: testcases/baidu.yml  #步骤用例的路径
-（4）调试：
-调试代码可以使用hrun+用例名称来进行调试，比如hrun testcases/baidu.yml，或者hrun testsuites/baidu_test.yml 但是这样运行只能看出是成功还是失败，如果失败了，失败的原因定位不是很容易
+    testcase: testcases/baidu.yml  #步骤用例的路径`
+
+### （4）调试：
+
+调试代码可以使用hrun+用例名称来进行调试，比如hrun testcases/baidu.yml，或者hrun testsuites/baidu_test.yml 但是这样运行只能看出是成功还是失败，如果失败了，失败的原因定位不是很容易  
+
 如果使用allure生成在线报告，通过在线报告查看问题，就会容易许多，使用hrun testcases/prefixmanager.yml --alluredir=reports/allure_results --clean-alluredir 执行用例，指定运行结果保存目录，之后运行allure generate --clean reports/allure_results -o reports/allure_reports 生成allure报告，并指定报告保存目录，然后打开reports/allure_reports/index.html，可以查看在线报告，查看执行日志，定位错误原因
-（5）.env嗯文件的使用
+
+### （5）.env嗯文件的使用
+
 在.env文件中以变量名：变量值的形式创建环境变量，在用例中使用时，用${ENV(变量名)}进行调用。
-（6）debugtalk的使用
+
+### （6）debugtalk的使用
+
 可以在debugtalk中定义一些函数，在用例中直接进行调用，用${方法名称}进行调用
-（7）variables的使用
+
+### （7）variables的使用
+
 可通过在variables中定义对应的变量，同时在需要引用变量的地方用$符号调用对应的变量即可
-(8)提取变量
+
+### (8)提取变量
+
 使用extract提取参数，供后续步骤使用，后续步骤中可通过$变量名进行使用
-（9）导出变量
+
+### （9）导出变量
+
 使用export导出变量，方便调用本用例的其他用例后续步骤中使用
-（10）断言的使用
-"eq", "equals", "==", "is"
-"实际结果"和"期望结果"相等
-"lt", "less_than"
-"实际结果"小于"期望结果"
-"le", "less_than_or_equals"
-"实际结果"小于等于"期望结果"
-"gt", "greater_than"
-"实际结果"大于"期望结果"
-"ge", "greater_than_or_equals"
-"实际结果"大于等于"期望结果"
-"ne", "not_equals"
-"实际结果"和"期望结果"不相等
-"str_eq", "string_equals"
-转义字符串后对比，"实际结果"和"期望结果"相等
-"len_eq", "length_equals", "count_eq"
-字符串或list长度，"实际结果"和"期望结果"相等
-"len_gt", "count_gt", "length_greater_than", "count_greater_than"
-"实际结果的长度"大于"期望结果"
-"len_ge", "count_ge", "length_greater_than_or_equals",
-"count_greater_than_or_equals"
-"实际结果的长度"大于等于"期望结果"
-"len_lt", "count_lt", "length_less_than", "count_less_than"
-"实际结果的长度"小于"期望结果"
-"len_le", "count_le", "length_less_than_or_equals",
-"count_less_than_or_equals"
-"实际结果的长度"小于等于"期望结果"
+
+### （10）断言的使用
+
+![img.png](img.png)
