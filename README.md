@@ -125,13 +125,13 @@ teststeps:  #测试步骤
 
 ### （3）场景用例编写:
 
-`config:
-    name: 测试百度  #场景用例名称
-    variables:
-        content: "自动化测试"  #场景用例变量
-teststeps:
--   name: 测试百度搜索  #步骤名称
-    testcase: testcases/baidu.yml  #步骤用例的路径`
+`config:`
+`    name: 测试百度  #场景用例名称`
+    `variables:
+        content: "自动化测试"  #场景用例变量`
+`teststeps:`
+`-   name: 测试百度搜索  #步骤名称`
+`    testcase: testcases/baidu.yml  #步骤用例的路径`
 
 ### （4）调试：
 
