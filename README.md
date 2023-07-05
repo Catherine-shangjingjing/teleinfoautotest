@@ -1,15 +1,23 @@
 # teleinfo接口自动化测试框架
 
-1，该项目用于teleinfo接口自动化测试，可用于项目测试准入、准出，线上监控，回归测试等
-2，该项目使用httprunner作为基础框架，融合和pytest和allure，支持yaml,json和pytest三种格式的用例，支持录制脚本，可以在线生成报告，
-在框架的基础上增加了一些使用方法以及运行脚本,对于接口功能的验证，该框架可以满足大部分接口自动化测试的要求，但是对于一些需要循环调用或者是轮训的接口，该框架暂时不能很好的使用
-3，安装说明：此框架的基础组件为httprunner，pytest和allure，因此需要对这三个组件进行安装
-（1）httprunner需要使用pip进行安装，安装指令为pip install httprunner，也可进行指定版本安装，安装指令为pip install httprunner==3.1.6，其中3.1.6为版本号，安装完成后可以使用pip show httprunner进行已安装版本查看，也可以使用httprunner -h查看帮助信息
-（2）安装pytest，使用pip进行安装，安装指令为pip install pytest
-（3）安装allure，对于Windows系统，需下载allure最新版本https://github.com/allure-framework/allure2/releases，安装后在环境变量中配置allure的安装路径；对于mac系统，可以使用brew进行安装，安装指令为brew install allure，也可先下载allure到本地，完成安装后配置bin目录到环境变量文件中
-（4）安装allure-pytest插件，安装指令为pip install allure-pytest
-4，使用说明
-（1）项目目录说明：
+## 1，该项目用于teleinfo接口自动化测试，可用于项目测试准入、准出，线上监控，回归测试等
+
+## 2，该项目使用httprunner作为基础框架，融合和pytest和allure，支持yaml,json和pytest三种格式的用例，支持录制脚本，可以在线生成报告，  在框架的基础上增加了一些使用方法以及运行脚本,对于接口功能的验证，该框架可以满足大部分接口自动化测试的要求，但是对于一些需要循环调用或者是轮训的接口，该框架暂时不能很好的使用
+
+## 3，安装说明：此框架的基础组件为httprunner，pytest和allure，因此需要对这三个组件进行安装
+
+### （1）httprunner需要使用pip进行安装，安装指令为pip install httprunner，也可进行指定版本安装，安装指令为pip install httprunner==3.1.6，其中3.1.6为版本号，安装完成后可以使用pip show httprunner进行已安装版本查看，也可以使用httprunner -h查看帮助信息
+
+### （2）安装pytest，使用pip进行安装，安装指令为pip install pytest
+
+### （3）安装allure，对于Windows系统，需下载allure最新版本https://github.com/allure-framework/allure2/releases，安装后在环境变量中配置allure的安装路径；对于mac系统，可以使用brew进行安装，安装指令为brew install allure，也可先下载allure到本地，完成安装后配置bin目录到环境变量文件中
+
+### （4）安装allure-pytest插件，安装指令为pip install allure-pytest
+
+## 4，使用说明
+
+### （1）项目目录说明：
+![img.png](img.png)
 har ：存放har文件，可由charles或者fiddler抓包生成
 logs ：存放执行日志
 reports ：存放报告
